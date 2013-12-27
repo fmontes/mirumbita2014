@@ -1,4 +1,4 @@
-Zenphoto Theme Developer Environment
+Zenphoto Theme Developer
 ====================================
 
 Grunt:
