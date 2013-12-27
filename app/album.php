@@ -5,14 +5,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php zp_apply_filter('theme_head'); ?>
-		<?php printHeadTitle(); ?>
-		<meta http-equiv="content-type" content="text/html; charset=<?php echo LOCAL_CHARSET; ?>" />
-		<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/style.css" type="text/css" />
-		<?php if (class_exists('RSS')) printRSSHeaderLink('Album',getAlbumTitle()); ?>
-</head>
+		<?php include 'includes/head_meta.php'; ?>
+	</head>
 	<body>
-		<?php zp_apply_filter('theme_body_open'); ?>
+		<?php include 'includes/footer.php'; ?>
 		<?php printHomeLink('', ' | '); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext('Albums Index'); ?>"><?php echo getGalleryTitle();?></a> | <?php printParentBreadcrumb(); ?><?php printAlbumTitle();?>
 		<?php
 			if (getOption('Allow_search')) {
@@ -32,10 +28,7 @@
 		<?php endwhile; ?>
 		<?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
 		<?php printTags('links', gettext('<strong>Tags:</strong>').' ', 'taglist', ''); ?>
-		<?php if (class_exists('RSS')) printRSSLink('Gallery','','RSS', ' | '); ?>
-		<?php printZenphotoLink(); ?>
-		<?php
-			zp_apply_filter('theme_body_close');
-		?>
+
+		<?php include 'includes/footer.php'; ?>
 	</body>
 </html>

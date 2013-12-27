@@ -5,15 +5,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php zp_apply_filter('theme_head'); ?>
-		<?php printHeadTitle(); ?>
-		<meta http-equiv="content-type" content="text/html; charset=<?php echo LOCAL_CHARSET; ?>" />
-		<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/style.css" type="text/css" />
-		<?php if (class_exists('RSS')) printRSSHeaderLink('Gallery',gettext('Gallery RSS')); ?>
+		<?php include 'includes/head_meta.php'; ?>
 	</head>
 	<body>
+		<?php include 'includes/header.php'; ?>
 		<?php
-			zp_apply_filter('theme_body_open');
 			$total = getNumImages() + getNumAlbums();
 			if (!$total) {
 				$_zp_current_search->clearSearchWords();
@@ -47,10 +43,6 @@
 		?>
 		<?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
 		<?php printTags('links', gettext('<strong>Tags:</strong>').' ', 'taglist', ''); ?>
-		<?php if (class_exists('RSS')) printRSSLink('Gallery','','RSS', ' | '); ?>
-		<?php printZenphotoLink(); ?>
-		<?php
-			zp_apply_filter('theme_body_close');
-		?>
+		<?php include 'includes/footer.php'; ?>
 	</body>
 </html>

@@ -78,7 +78,7 @@ module.exports = function(grunt) {
                 cwd: '<%= project.app %>',
                 dest: '<%= project.dist %>',
                 src: [
-                    '*.php',
+                    '**/*.php',
                     'css/{,*/}*.*',
                     'fonts/{,*/}*.*',
                     'js/{,*/}*.*'
@@ -100,7 +100,7 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: '<%= project.app %>',
                 dest: '<%= project.dist %>',
-                src: '*.php'
+                src: '**/*.php'
             }
         }
     });
