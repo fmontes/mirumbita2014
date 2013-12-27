@@ -1,0 +1,33 @@
+{
+  "name": "mirumbita",
+  "version": "0.0.0",
+  "description": "Zenphoto theme for mirumbita.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fmontes/mirumbita.git"
+  },
+  "keywords": [
+    "zenphoto",
+    "responsive",
+    "mobilefirst"
+  ],
+  "author": "Freddy Montes (@fmontes)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/fmontes/mirumbita/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "time-grunt": "~0.2.5",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-imagemin": "~0.4.0"
+  }
+}
