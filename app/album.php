@@ -8,7 +8,7 @@
 		<?php include 'includes/head_meta.php'; ?>
 	</head>
 	<body>
-		<?php include 'includes/footer.php'; ?>
+		<?php include 'includes/header.php'; ?>
 		<?php printHomeLink('', ' | '); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext('Albums Index'); ?>"><?php echo getGalleryTitle();?></a> | <?php printParentBreadcrumb(); ?><?php printAlbumTitle();?>
 		<?php
 			if (getOption('Allow_search')) {
