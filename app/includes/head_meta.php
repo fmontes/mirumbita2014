@@ -1,7 +1,25 @@
-<?php zp_apply_filter('theme_head'); ?>
-<?php printHeadTitle(); ?>
-<meta http-equiv="content-type" content="text/html; charset=<?php echo LOCAL_CHARSET; ?>" />
-<?php if (class_exists('RSS')) printRSSHeaderLink('Gallery',gettext('Gallery RSS')); ?>
-<link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/main.css" type="text/css" />
-<!-- @TODO find a way to remove this automatically for production -->
-<script src="//localhost:35729/livereload.js"></script>
+<?php
+    // force UTF-8
+    if (!defined("WEBPATH")) die();
+?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <?php printHeadTitle(); ?>
+        <meta charset="<?php echo LOCAL_CHARSET; ?>">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/main.css" type="text/css" />
+
+        <?php zp_apply_filter('theme_head'); ?>
+
+        <!-- @TODO find a way to remove this automatically for production -->
+        <script src="//localhost:35729/livereload.js"></script>
+
+        <!-- @TODO add modernizer -->
+    </head>

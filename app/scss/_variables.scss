@@ -1,0 +1,15 @@
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$container-style: fluid;
+
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: 1em;
+
+// Alternative layouts
+$tablet: 40em 8;
+$computer: 60em 12;
+
+$show-grid-backgrounds: true;

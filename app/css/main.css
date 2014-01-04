@@ -1,851 +1,450 @@
-/*
-
-    Zen Photo Default 1.0
-
-*/
-/* Basics
------------------------------- */
-/* line 9, ../scss/main.scss */
-html {
-  /* Moz */
-  height: 100%;
+/* normalize.css v1.1.0 | MIT License | git.io/normalize */
+/* normalize.css v1.1.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_html5.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
 }
 
-/* Main Layout
------------------------------- */
-/* line 16, ../scss/main.scss */
-body {
-  background: #F5F5F3;
-  margin: 0px;
-  padding: 0px 0px 50px;
-  text-align: center;
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_html5.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
 
-/* line 22, ../scss/main.scss */
-#main {
-  text-align: left;
-  margin: 20px auto;
-  width: 685px;
-  background: #fff;
-  padding: 20px 30px 70px;
-  border-top: 1px solid #E6E6DF;
-  border-right: 1px solid #E6E6DF;
-  border-bottom: 5px solid #E6E6DF;
-  border-left: 1px solid #E6E6DF;
-}
-
-/* line 33, ../scss/main.scss */
-#credit, #sort {
-  margin: 0 auto;
-  width: 640px;
-  font-size: 85%;
-  color: #96967E;
-  text-align: right;
-  clear: both;
-}
-
-/* line 41, ../scss/main.scss */
-#credit a, #sort a {
-  text-decoration: none;
-  color: #96967E;
-  border-bottom: 1px dotted #96967E;
-}
-
-/* line 46, ../scss/main.scss */
-#credit a:hover, #sort a:hover {
-  color: #BDBDAE;
-  border-bottom: 1px solid #BDBDAE;
-  text-decoration: none;
-}
-
-/* line 51, ../scss/main.scss */
-#gallerytitle {
-  border-bottom: 1px solid #E6E6DF;
-  padding-bottom: 14px;
-  margin-bottom: 20px;
-  /*min-height: 40px;
-  _height: 40px;*/
-}
-
-/* line 58, ../scss/main.scss */
-#gallerytitle h2 {
-  font-weight: normal;
-  font-size: 12pt;
-  margin-top: 18px;
-  width: 510px;
-}
-
-/* Link Styles
------------------------------- */
-/* line 67, ../scss/main.scss */
-a:link, a:active, a:visited {
-  text-decoration: underline;
-  color: #17A;
-}
-
-/* line 68, ../scss/main.scss */
-a:hover, a:focus {
-  text-decoration: underline;
-  color: #6BD;
-}
-
-/* Text Styles
------------------------------- */
-/* line 72, ../scss/main.scss */
-body {
-  font: normal 82%/200% "Helvetica Neue", "Lucida Grande", Arial, Helvetica, sans-serif;
-  color: #5A5A4B;
-  line-height: 1.5em;
-}
-
-/* line 77, ../scss/main.scss */
-h2 {
-  font: 115% "Helvetica Neue", "Lucida Grande", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #002E5B;
-}
-
-/* line 82, ../scss/main.scss */
-h2 a:link, h2 a:visited {
-  color: #8DB8CF;
-  text-decoration: none;
-}
-
-/* line 86, ../scss/main.scss */
-h2 span {
-  color: #8DB8CF;
-}
-
-/* line 89, ../scss/main.scss */
-h2 a:hover {
-  color: #94c2e5;
-  text-decoration: none;
-}
-
-/* line 93, ../scss/main.scss */
-h3 {
-  font: 110% "Helvetica Neue", "Lucida Grande", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  color: #002E5B;
-  margin-top: 30px;
-}
-
-/* line 99, ../scss/main.scss */
-h3 a:link, h3 a:visited {
-  text-decoration: none;
-}
-
-/* line 100, ../scss/main.scss */
-h3 a:hover {
-  text-decoration: none;
-}
-
-/* Miscellaneous
------------------------------- */
-/* line 105, ../scss/main.scss */
-hr {
-  clear: both;
+/* line 39, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_html5.scss */
+audio:not([controls]) {
+  display: none;
   height: 0;
-  border: 0;
-  border-top: 1px solid #E6E6DF;
-  margin: 0 0 12px 0;
-  padding: 0;
 }
 
-/* line 113, ../scss/main.scss */
-img {
-  border: 0;
+/* line 46, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_html5.scss */
+[hidden] {
+  display: none;
 }
 
-/* line 116, ../scss/main.scss */
-blockquote {
-  border-left: 1px dotted #96967E;
-  margin-left: 20px;
-  padding-left: 20px;
-  color: #363630;
+/* normalize.css v1.1.0 | Base | MIT License | git.io/normalize */
+/* line 13, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_base.scss */
+html {
+  font-size: 100%;
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 
-/* line 123, ../scss/main.scss */
-#imagemetadata {
-  text-align: right;
-}
-
-/* line 127, ../scss/main.scss */
-#imagemetadata table {
-  text-align: left;
-  line-height: 1em;
-  border: 1px solid #ccc;
-  top: 2em;
-  right: 0px;
-  background-color: #fafafa;
-}
-
-/* line 136, ../scss/main.scss */
-#imagemetadata table td {
-  border-bottom: 1px solid #f0f0f0;
-  background-color: #f8f8f8;
-  padding: 2px 5px;
-}
-
-/* Page Navigation
------------------------------- */
-/* line 145, ../scss/main.scss */
-ul.pagelist {
-  clear: both;
-  padding: 0;
-  margin: 20px 0 0 0;
-  list-style-type: none;
-}
-
-/* line 151, ../scss/main.scss */
-ul.pagelist li {
-  display: inline;
-}
-
-/* line 154, ../scss/main.scss */
-ul.pagelist li a, ul.pagelist span.disabledlink {
-  padding: 4px;
-}
-
-/* line 157, ../scss/main.scss */
-ul.pagelist li.current a {
-  font-weight: bold;
-  text-decoration: none;
-  cursor: default;
-  color: #5A5A4B;
-}
-
-/* line 163, ../scss/main.scss */
-ul.pagelist li.prev {
-  margin-right: 10px;
-}
-
-/* line 166, ../scss/main.scss */
-ul.pagelist li.next {
-  margin-left: 10px;
-}
-
-/* line 169, ../scss/main.scss */
-.disabledlink {
-  color: #ddd;
-  cursor: default;
-}
-
-/* line 173, ../scss/main.scss */
-.pagenav {
-  clear: both;
-}
-
-/* line 176, ../scss/main.scss */
-.disabled_nav {
-  visibility: hidden;
-}
-
-/* AJAX
------------------------------- */
-/* line 183, ../scss/main.scss */
-#albumDescEditable, #albumTagsEditable {
-  margin-bottom: 12px;
-}
-
-/* line 186, ../scss/main.scss */
-#imageDescEditable, #albumTagsEditable {
-  margin-top: 24px;
-}
-
-/* line 189, ../scss/main.scss */
-#imageDesc, #exif_link {
-  margin-bottom: 4px;
-}
-
-/* line 193, ../scss/main.scss */
-#exif_link {
-  float: right;
-}
-
-/* Tags
------------------------------- */
-/* line 199, ../scss/main.scss */
-ul.taglist {
-  display: inline;
-  list-style-type: none;
-}
-
-/* line 204, ../scss/main.scss */
-ul.taglist li {
-  background: url(../images/tag.png) no-repeat left center;
-  list-style-type: none;
-  padding-left: 18px;
-  float: left;
-  padding-right: 5px;
-  color: #999999;
-  display: inline;
-  list-style-type: none;
-}
-
-/* line 215, ../scss/main.scss */
-span.tags_title {
-  background: none;
-  padding-right: 5px;
-  padding-left: 0;
-  float: left;
-  display: block;
-}
-
-/* Image Thumbnails
------------------------------- */
-/* line 225, ../scss/main.scss */
-#images {
-  float: left;
-  width: 650px;
-  border: 0px solid gray;
-}
-
-/* line 230, ../scss/main.scss */
-.imagethumb a, .imagethumb a:hover {
-  display: block;
-  padding: 9px;
-  margin: 0px 9px 9px 0px;
-  line-height: 0px;
-  border: 1px solid #e6e6e6;
-  background-color: #f6f6f6;
-}
-
-/* line 238, ../scss/main.scss */
-.imagethumb a:visited {
-  background-color: #fcfcfc;
-  border: 1px solid #f8f8f8;
-}
-
-/* line 242, ../scss/main.scss */
-.imagethumb a:hover {
-  background-color: #f3f3f3;
-  border: 1px solid #cccccc;
-}
-
-/* line 246, ../scss/main.scss */
-.imagethumb {
-  float: left;
-  position: relative;
-}
-
-/* line 250, ../scss/main.scss */
-.albumdesc2 {
-  line-height: 18px;
-}
-
-/* Album Thumbnails
------------------------------- */
-/* line 257, ../scss/main.scss */
-#albums {
-  float: left;
-}
-
-/* line 260, ../scss/main.scss */
-.album {
-  margin: 0 12px 8px 0;
-  padding: 10px 8px 2px 10px;
-  float: left;
-  width: 305px;
-  border: 1px solid #E7F0F5;
-  background: #F7F9FD;
-  line-height: 100%;
-  position: relative;
-}
-
-/* line 271, ../scss/main.scss */
-.album .thumb {
-  float: left;
-  margin-right: 6px;
-}
-
-/* line 275, ../scss/main.scss */
-.album h3 {
-  padding: 0;
-  margin: 0;
-}
-
-/* line 279, ../scss/main.scss */
-.album p {
-  line-height: 12px;
-  font-size: 11px;
-  padding: 4px 0px 0px;
-  margin: 0px;
-}
-
-/* line 285, ../scss/main.scss */
-.albumdesc small {
-  color: #8DB8CF;
-}
-
-/* favorites styles */
-/* line 290, ../scss/main.scss */
-.album .imageFavorites {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  z-index: 2000;
-}
-
-/* line 296, ../scss/main.scss */
-.imagethumb .imageFavorites {
-  position: absolute;
-  right: 12px;
-  bottom: 18px;
-  z-index: 2000;
-}
-
-/* line 303, ../scss/main.scss */
-.imageFavorites input:hover {
-  cursor: pointer !important;
-}
-
-/* Individual Image
------------------------------- */
-/* line 311, ../scss/main.scss */
-.image {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* line 316, ../scss/main.scss */
-#image {
-  text-align: center;
-  line-height: 0;
-}
-
-/* line 320, ../scss/main.scss */
-.imgnav {
-  float: right;
-  width: 140px;
-  text-align: center;
-  border: 1px solid #D5E6EE;
-  background: #EEF5F9;
-  margin-top: -10px;
-}
-
-/* line 328, ../scss/main.scss */
-.imgnav .imgprevious a, .imgnav .imgnext a {
-  display: block;
-  width: 50%;
-  height: 100%;
-  float: left;
-  padding: 4px 0;
-  font-size: 120%;
-  text-decoration: none;
-  line-height: 180%;
-  color: #237898;
-}
-
-/* line 339, ../scss/main.scss */
-.imgnav .imgprevious a:hover, .imgnav .imgnext a:hover {
-  background-color: #fff;
-  text-decoration: none;
-  color: #002E5B;
-}
-
-/* line 344, ../scss/main.scss */
-.imgnav .imgprevious a {
-  float: left;
-}
-
-/* line 347, ../scss/main.scss */
-.imgnav .imgnext a {
-  float: right;
-}
-
-/* line 350, ../scss/main.scss */
-#narrow {
-  margin: 0 auto;
-  width: 440px;
-}
-
-/* Comments
------------------------------- */
-/* line 358, ../scss/main.scss */
-#comments {
-  clear: both;
-}
-
-/* line 361, ../scss/main.scss */
-.comment {
-  padding: 10px;
-  border: 1px solid #E7F0F5;
-  background: #FBFCFD;
-  margin-bottom: 12px;
-}
-
-/* line 367, ../scss/main.scss */
-.commentmeta {
-  margin-bottom: 12px;
-}
-
-/* line 370, ../scss/main.scss */
-.commentauthor {
-  font-weight: bold;
-}
-
-/* line 373, ../scss/main.scss */
-.commentdate {
-  margin-top: 12px;
-  color: #8DB8CF;
-  font-size: 85%;
-}
-
-/* jQuery pagination comments */
-/* line 381, ../scss/main.scss */
-.Pagination {
-  margin-bottom: 10px;
-}
-
-/* line 385, ../scss/main.scss */
-.Pagination span.current,
-.Pagination span.next,
-.Pagination a,
-.Pagination a.next {
-  padding: 0px 4px 0px 4px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-/* line 394, ../scss/main.scss */
-.Pagination span.prev,
-.Pagination a.prev {
-  padding: 0px 4px 0px 0px;
-  margin-left: 0;
-  margin-right: 0px;
-}
-
-/* Forms
------------------------------- */
-/* line 403, ../scss/main.scss */
-.captchainputbox {
-  width: 6.5em;
-  padding: 2px;
-}
-
-/* line 407, ../scss/main.scss */
-#captcha {
-  vertical-align: middle;
-}
-
-/* line 410, ../scss/main.scss */
-.inputbox {
-  width: 250px;
-  padding: 2px;
-}
-
-/* line 414, ../scss/main.scss */
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_base.scss */
+html,
+button,
+input,
+select,
 textarea {
-  padding: 4px;
-  width: 100%;
-  color: #5A5A4B;
-  font: 100%/200% "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-family: sans-serif;
 }
 
-/* line 420, ../scss/main.scss */
-.checkbox {
-  cursor: pointer;
+/* line 37, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_base.scss */
+body {
+  margin: 0;
 }
 
-/* line 423, ../scss/main.scss */
-.pushbutton {
-  cursor: pointer;
-  padding: 5px 10px;
+/* normalize.css v1.1.0 | Links | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_links.scss */
+a:focus {
+  outline: thin dotted;
 }
 
-/* line 427, ../scss/main.scss */
-label {
-  cursor: pointer;
+/* line 15, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_links.scss */
+a:active,
+a:hover {
+  outline: 0;
 }
 
-/* line 430, ../scss/main.scss */
-label:hover {
+/* normalize.css v1.1.0 | Typography | MIT License | git.io/normalize */
+/* line 13, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 19, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 29, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 34, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 39, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/* line 47, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 53, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 59, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+blockquote {
+  margin: 1em 40px;
+}
+
+/* line 66, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 73, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 81, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+mark {
+  background: #ff0;
   color: #000;
 }
 
-/* line 433, ../scss/main.scss */
-#map {
-  margin-left: -77px;
+/* line 89, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+p,
+pre {
+  margin: 1em 0;
 }
 
-/* line 434, ../scss/main.scss */
-#rating {
-  margin-top: 10px;
+/* line 97, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
 }
 
-/* Admin Toolbox
------------------------------- */
-/* line 438, ../scss/main.scss */
-#admin, #admin_data {
-  position: fixed;
-  right: 0px;
-  top: 0px;
-  width: 130px;
-  border-bottom: 1px solid #E6E6DF;
-  border-left: 1px solid #E6E6DF;
-  background: #fff;
-  z-index: 2;
-  text-align: left;
+/* line 110, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
-/* line 448, ../scss/main.scss */
-#admin_data {
-  top: 0px;
-  padding-top: 20px;
-  z-index: 1;
-  line-height: 1.6em;
+/* line 118, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-/* line 455, ../scss/main.scss */
-#admin h3 {
-  font-weight: normal;
-  color: #999;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+/* line 127, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+q {
+  quotes: none;
 }
 
-/* line 461, ../scss/main.scss */
-#admin h3:hover {
-  color: #036;
+/* line 131, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
 
-/* Search Box
------------------------------- */
-/* line 465, ../scss/main.scss */
-#search {
-  float: right;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-}
-
-/* line 472, ../scss/main.scss */
-#search input.pushbutton {
-  padding: 1px;
+/* line 140, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+small {
   font-size: 80%;
 }
 
-/* line 476, ../scss/main.scss */
-#search a {
-  text-decoration: none;
-}
-
-/* line 479, ../scss/main.scss */
-#search ul {
-  border: 1px solid #ccc;
-  position: absolute;
-  text-align: left;
-  list-style: none;
-  height: 8em;
-  width: 20em;
-  overflow: auto;
-  background-color: white;
-  z-index: 10;
-}
-
-/* line 486, ../scss/main.scss */
-#searchfields_icon {
+/* line 146, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
-  top: 4px;
+  vertical-align: baseline;
 }
 
-/* line 490, ../scss/main.scss */
-.clear {
-  clear: both;
-  height: 10px;
+/* line 154, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+sup {
+  top: -0.5em;
 }
 
-/* Archive View
----------------------------- */
-/* line 497, ../scss/main.scss */
-#archive {
-  width: 300px;
-  margin: 0 auto;
-  text-align: center;
+/* line 158, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_typography.scss */
+sub {
+  bottom: -0.25em;
 }
 
-/* line 502, ../scss/main.scss */
-ul.archive * {
-  padding: 0;
+/* line 8, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_lists.scss */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+/* line 15, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_lists.scss */
+dd {
+  margin: 0 0 0 40px;
+}
+
+/* line 21, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_lists.scss */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/* line 29, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_lists.scss */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* normalize.css v1.1.0 | Embedded Content | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_embeds.scss */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 18, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_embeds.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* normalize.css v1.1.0 | Figures | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_figures.scss */
+figure {
   margin: 0;
-  list-style: none;
 }
 
-/* line 507, ../scss/main.scss */
-ul.archive .year {
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 5px;
-  font-weight: bold;
-  font-size: 18px;
+/* normalize.css v1.1.0 | Forms | MIT License | git.io/normalize */
+/* line 10, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+form {
+  margin: 0;
 }
 
-/* line 514, ../scss/main.scss */
-ul.archive .month {
-  font-size: 14px;
-  list-style: none;
-  border-top: 2px solid #E6E6DF;
-  padding-top: 5px;
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
 }
 
-/* Tag Cloud
----------------------------- */
-/* line 523, ../scss/main.scss */
-#tag_cloud {
-  text-align: center;
-  background: #eee;
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px;
 }
 
-/* line 528, ../scss/main.scss */
-#tag_cloud ul li {
-  display: inline;
-  list-style-type: none;
-}
-
-/* line 533, ../scss/main.scss */
-#tag_cloud p {
-  padding: 10px 0;
-  margin: 20px 0;
-  background: #fff;
-  border-top: 3px solid #E6E6DF;
-  border-bottom: 3px solid #E6E6DF;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* Error Messages
------------------------------- */
-/* line 545, ../scss/main.scss */
-.errorbox {
-  padding: 20px;
-  background-color: #FDD;
-  border-top: 1px solid #FAA;
-  border-left: 1px solid #FAA;
-  border-right: 1px solid #FAA;
-  border-bottom: 5px solid #FAA;
-  margin-bottom: 10px;
+/* line 46, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
   font-size: 100%;
-  color: #DD6666;
+  margin: 0;
+  vertical-align: baseline;
+  *vertical-align: middle;
 }
 
-/* line 556, ../scss/main.scss */
-.errorbox h2 {
-  color: #DD6666;
-  font-size: 100%;
-  font-weight: bold;
-  margin: 0px;
+/* line 62, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button,
+input {
+  line-height: normal;
 }
 
-/* line 562, ../scss/main.scss */
-.errorlist {
-  list-style-type: none;
+/* line 72, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button,
+select {
+  text-transform: none;
 }
 
-/* Zenphoto link
------------------------------- */
-/* line 569, ../scss/main.scss */
-#zen-part {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.8em;
-  font-weight: 100;
-}
-
-/* line 575, ../scss/main.scss */
-#photo-part {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.9em;
-  font-weight: bold;
-}
-
-/* centering flowplayer 3 on image.php */
-/* line 582, ../scss/main.scss */
-#image .flowplayer,
-.jp-audio,
-.jp-video {
-  margin: 0 auto;
-}
-
-/* line 588, ../scss/main.scss */
-.textobject {
-  font-size: 12px;
-  line-height: 16px;
-  text-align: left !important;
-  text-decoration: none !important;
-  overflow: scroll !important;
-}
-
-/* box for important notes
------------------------------- */
-/* line 597, ../scss/main.scss */
-.notebox {
-  padding: 5px 10px 5px 10px;
-  background-color: #FFEFB7;
-  border-width: 1px 1px 2px 1px;
-  border-color: #FFDEB5;
-  border-style: solid;
-  margin-bottom: 10px;
-  font-size: 100%;
-  -moz-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-}
-
-/* line 611, ../scss/main.scss */
-.notebox li {
-  list-style-type: none;
-}
-
-/* line 615, ../scss/main.scss */
-.notebox h2, .notebox strong {
-  color: #663300;
-  font-size: 100%;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-/* Messages
------------------------------- */
-/* line 623, ../scss/main.scss */
-.messagebox {
-  background-color: #C0FFA8;
-  padding: 10px 15px 10px 15px;
-  border-width: 1px 1px 2px 1px;
-  border-color: #8BD37C;
-  border-style: solid;
-  margin-bottom: 10px;
-}
-
-/* line 632, ../scss/main.scss */
-.messagebox h2 {
-  color: #006633;
-  font-size: 100%;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-
-/* line 639, ../scss/main.scss */
-.button {
+/* line 87, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
   cursor: pointer;
-  padding: 5px 10px;
+  *overflow: visible;
 }
 
-/* line 644, ../scss/main.scss */
-label {
-  cursor: pointer;
+/* line 100, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
 }
 
-/* line 648, ../scss/main.scss */
-label:hover {
-  color: #000;
+/* line 112, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+  *height: 13px;
+  *width: 13px;
 }
 
-/* line 652, ../scss/main.scss */
-#registration_form {
-  width: 370px;
+/* line 126, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 136, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 143, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 152, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_forms.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* normalize.css v1.1.0 | Tables | MIT License | git.io/normalize */
+/* line 9, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-normalize-1.4.3/stylesheets/normalize/_tables.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 1, ../scss/_layout.scss */
+.page-wrapper {
+  *zoom: 1;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(21.05263%, rgba(100, 100, 225, 0.25)), color-stop(21.05263%, rgba(0, 0, 0, 0)), color-stop(26.31579%, rgba(0, 0, 0, 0)), color-stop(26.31579%, rgba(100, 100, 225, 0.25)), color-stop(47.36842%, rgba(100, 100, 225, 0.25)), color-stop(47.36842%, rgba(0, 0, 0, 0)), color-stop(52.63158%, rgba(0, 0, 0, 0)), color-stop(52.63158%, rgba(100, 100, 225, 0.25)), color-stop(73.68421%, rgba(100, 100, 225, 0.25)), color-stop(73.68421%, rgba(0, 0, 0, 0)), color-stop(78.94737%, rgba(0, 0, 0, 0)), color-stop(78.94737%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 21.05263%, rgba(0, 0, 0, 0) 21.05263%, rgba(0, 0, 0, 0) 26.31579%, rgba(100, 100, 225, 0.25) 26.31579%, rgba(100, 100, 225, 0.25) 47.36842%, rgba(0, 0, 0, 0) 47.36842%, rgba(0, 0, 0, 0) 52.63158%, rgba(100, 100, 225, 0.25) 52.63158%, rgba(100, 100, 225, 0.25) 73.68421%, rgba(0, 0, 0, 0) 73.68421%, rgba(0, 0, 0, 0) 78.94737%, rgba(100, 100, 225, 0.25) 78.94737%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (min-width: 40em) {
+  /* line 1, ../scss/_layout.scss */
+  .page-wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .page-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 60em) {
+  /* line 1, ../scss/_layout.scss */
+  .page-wrapper {
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+  .page-wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/* line 2, ../scss/pages/_home.scss */
+.home-latest-albums ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

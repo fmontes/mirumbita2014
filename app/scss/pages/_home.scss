@@ -1,0 +1,7 @@
+.home-latest-albums {
+    ul {
+        @include reset-list-style;
+        margin: 0;
+        padding: 0;
+    }
+}
