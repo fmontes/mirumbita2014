@@ -21,5 +21,5 @@
         <!-- @TODO find a way to remove this automatically for production -->
         <script src="//localhost:35729/livereload.js"></script>
 
-        <!-- @TODO add modernizer -->
+        <script src="<?php echo $_zp_themeroot; ?>/js/vendor/modernizr.custom.js"></script>
     </head>
