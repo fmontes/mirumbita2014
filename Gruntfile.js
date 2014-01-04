@@ -11,7 +11,7 @@ module.exports = function(grunt) {
         // configurable paths
         project: {
             app: 'app',
-            dist: '../mirumbita'
+            dist: '../../themes/mirumbita'
         },
 
         // Watching files
