@@ -81,7 +81,9 @@ module.exports = function(grunt) {
                     '**/*.php',
                     'css/{,*/}*.*',
                     'fonts/{,*/}*.*',
-                    'js/{,*/}*.*'
+                    'js/{,*/}*.*',
+                    // Bower componets
+                    'bower_components/jquery/jquery.min.js',
                 ]
             },
             css: {
