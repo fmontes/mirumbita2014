@@ -10,11 +10,6 @@
 	<body>
 		<?php include 'includes/header.php'; ?>
 		<?php printHomeLink('', ' | '); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext('Albums Index'); ?>"><?php echo getGalleryTitle();?></a> | <?php printParentBreadcrumb(); ?><?php printAlbumTitle();?>
-		<?php
-			if (getOption('Allow_search')) {
-				printSearchForm("","search","",gettext("Search gallery"));
-			}
-		?>
 		<?php if (hasPrevImage()) { ?>
 			<a href="<?php echo html_encode(getPrevImageURL());?>" title="<?php echo gettext("Previous Image"); ?>"><?php echo gettext("prev"); ?></a>
 		<?php } if (hasNextImage()) { ?>

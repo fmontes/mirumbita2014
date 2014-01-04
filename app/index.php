@@ -9,20 +9,8 @@
 	</head>
 	<body>
 		<?php include 'includes/header.php'; ?>
-		<h1><?php printGalleryTitle(); ?></h1>
-		<?php
-			if (getOption('Allow_search')) {
-				printSearchForm("","search","",gettext("Search gallery"));
-			}
-		?>
-		<?php printGalleryDesc(); ?>
-		<?php while (next_album()): ?>
-			<a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext('View album:'); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumThumbImage(getAnnotatedAlbumTitle()); ?></a>
-			<a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext('View album:'); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumTitle(); ?></a>
-			<?php printAlbumDate(""); ?>
-			<?php printAlbumDesc(); ?>
-		<?php endwhile; ?>
-		<?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
+
+		<?php printLatestAlbums(getOption('latest_albums_number_home'), true, true, false, '', '200', '300', false, false); ?>
 
 		<?php include 'includes/footer.php'; ?>
 	</body>
