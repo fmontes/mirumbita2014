@@ -23,6 +23,8 @@
 
             </div><!-- // inner-wrapper -->
         </div><!-- // outer-wrapper -->
+
         <?php include "includes/scripts.php"; ?>
     </body>
+
 </html>
