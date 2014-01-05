@@ -1,0 +1,18 @@
+.nav {
+    @include translate3d(-100%, 0, 0, 0);
+    @include transition(all .5s ease-in);
+    background-color: #eee;
+    height: 100%;
+    position: absolute;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.menu-active {
+    .nav {
+        @include translate3d(0, 0, 0, 0);
+    }
+}

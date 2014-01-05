@@ -17,3 +17,7 @@ Extensions used in this theme:
 More information about zenphoto themes
 --------------------------------------
 http://www.zenphoto.org/news/theming-tutorial
+
+Todo
+----
+* Add fastclick: https://github.com/ftlabs/fastclick

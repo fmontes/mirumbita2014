@@ -2,13 +2,8 @@
 
 <div class="header-wrapper">
     <header class="header">
+        <a href="#" class="btn toggle-menu js-toggle-menu">toggle</a>
         <div class="logo"><?php printHomeLink("", ""); ?></div>
-        <nav class="nav" role="navigation">
-            <?php if(function_exists("printAlbumMenu")) { ?>
-                <?php printAlbumMenuList("list-top", NULL, "main-nav", "active", "", "", $allalbums, false, false);
-                ?>
-            <?php } ?>
-        </nav>
 
         <?php if (getOption("Allow_search")) { ?>
             <div class="header-search">

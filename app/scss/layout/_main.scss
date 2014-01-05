@@ -1,5 +1,9 @@
-.page-wrapper {
+@import "header";
+@import "nav";
+
+.inner-wrapper {
     @include container;
+    @include transition(all .5s ease-in);
     @include susy-grid-background;
 
     @include at-breakpoint($tablet) {
@@ -12,6 +16,8 @@
     }
 }
 
-.header {
-    
+.menu-active {
+    .inner-wrapper {
+        @include translate3d(100px, 0, 0, 0);
+    }
 }

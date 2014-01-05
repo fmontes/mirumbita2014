@@ -5,7 +5,9 @@
 // Basic
 @import "mixins";
 @import "variables";
-@import "layout";
+
+// Layout
+@import "layout/main";
 
 // Pages
 @import "pages/home";
