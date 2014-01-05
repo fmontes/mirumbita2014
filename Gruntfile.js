@@ -72,6 +72,7 @@ module.exports = function(grunt) {
 
         // Modernizr builder for your project.
         // It is based on the Modernizr team's Modulizr tool.
+        // https://github.com/Modernizr/grunt-modernizr
         modernizr: {
 
             // [REQUIRED] Path to the build you're using for development.
@@ -105,7 +106,7 @@ module.exports = function(grunt) {
             'uglify': true,
 
             // Define any tests you want to implicitly include.
-            'tests': ['csstransforms3d'],
+            'tests': ['csstransforms3d', 'csstransitions'],
 
             // By default, this task will crawl your project for references to Modernizr tests.
             // Set to false to disable.
