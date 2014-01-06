@@ -28,9 +28,9 @@ class ThemeOptions {
         setThemeOptionDefault('images_per_row', 5);
         setThemeOptionDefault('image_size', 595);
         setThemeOptionDefault('image_use_side', 'longest');
-        setThemeOptionDefault('thumb_size', 100);
-        setThemeOptionDefault('thumb_crop_width', 100);
-        setThemeOptionDefault('thumb_crop_height', 100);
+        setThemeOptionDefault('thumb_size', 480);
+        setThemeOptionDefault('thumb_crop_width', 480);
+        setThemeOptionDefault('thumb_crop_height', 480);
         setThemeOptionDefault('thumb_crop', 1);
         setThemeOptionDefault('thumb_transition', 1);
 
@@ -61,7 +61,7 @@ class ThemeOptions {
                 'key' => 'latest_albums_number_home',
                 'type' => OPTION_TYPE_CLEARTEXT,
                 'order' => 0,
-                'desc' => gettext('This theme display the latest albums in the homepage, you can set how much you want to display')
+                'desc' => gettext('This theme display the latest albums in the homepage, you can set how many albums you want to display')
             )
 
             /* Radio buttons */

@@ -13,24 +13,34 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext("Albums Index"); ?>"><?php echo getGalleryTitle();?></a>
-                        <?php printParentBreadcrumb(); ?>
-                        <?php printAlbumTitle();?>
-                        <?php printAlbumDesc(); ?>
+                        <h1 class="page-title"><?php printAlbumTitle();?></h1>
+                        <p><?php printAlbumDesc(); ?></p>
 
-                        <?php while (next_album()): ?>
-                            <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumThumbImage(getAnnotatedAlbumTitle()); ?></a>
-                            <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumTitle(); ?></a>
-                            <?php printAlbumDate(""); ?>
-                            <?php printAlbumDesc(); ?>
-                        <?php endwhile; ?>
+                        <?php if (next_album()): ?>
+                            <section class="item-listing">
+                                <ul>
+                                    <?php
+                                        while (next_album()):
+                                            include "includes/album-item.php";
+                                        endwhile;
+                                    ?>
+                                </ul>
+                            </section>
+                        <?php endif; ?>
 
-                        <?php while (next_image()): ?>
-                            <a href="<?php echo html_encode(getImageLinkURL());?>" title="<?php echo getBareImageTitle();?>"><?php printImageThumb(getAnnotatedImageTitle()); ?></a>
+                        <?php if (next_image()): ?>
+                            <div class="item-listing">
+                                <ul>
+                                    <?php
+                                        while (next_image()):
+                                            include "includes/image-item.php";
+                                        endwhile;
+                                    ?>
+                                </ul>
                             </div>
-                        <?php endwhile; ?>
+                        <?php endif; ?>
+
                         <?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
-                        <?php printTags("links", gettext("<strong>Tags:</strong>")." ", "taglist", ""); ?>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 

@@ -13,33 +13,52 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
+
                         <?php
-                            $total = getNumImages() + getNumAlbums();
-                            if (!$total) {
+                            $c = 0;
+                            $numimages = getNumImages();
+                            $numalbums = getNumAlbums();
+                            $total = $numimages + $numalbums;
+                            if ($total == 0) {
                                 $_zp_current_search->clearSearchWords();
                             }
-                        ?>
-                        <?php printHomeLink("", " | "); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo ("Gallery Index"); ?>"><?php echo getGalleryTitle();?></a> | <?php echo gettext("Search");?>
-                        <?php printSearchForm("","search","",gettext("Search gallery")); ?>
-                        <?php
-                            if (($total = getNumImages() + getNumAlbums()) > 0) {
-                                if (isset($_REQUEST["date"])){
-                                    $searchwords = getSearchDate();
-                                } else { $searchwords = getSearchWords(); }
-                                    echo sprintf(gettext("Total matches for <em>%1$s</em>: %2$u"), html_encode($searchwords), $total);
+
+                            $searchwords = getSearchWords();
+                            $searchdate = getSearchDate();
+                            if (!empty($searchdate)) {
+                                if (!empty($searchwords)) {
+                                    $searchwords .= ": ";
+                                }
+                                $searchwords .= $searchdate;
                             }
-                            $c = 0;
                         ?>
-                        <?php while (next_album()): $c++;?>
-                            <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumThumbImage(getAnnotatedAlbumTitle()); ?></a>
-                            <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>"><?php printAlbumTitle(); ?></a>
-                            <?php printAlbumDate(""); ?>
-                            <?php printAlbumDesc(); ?>
-                        <?php endwhile; ?>
-                        <?php while (next_image()): $c++;?>
-                            <a href="<?php echo html_encode(getImageLinkURL());?>" title="<?php echo getBareImageTitle();?>"><?php printImageThumb(getAnnotatedImageTitle()); ?></a>
-                            </div>
-                        <?php endwhile; ?>
+
+                        <?php if ($total > 0 ) { ?>
+                            <h4 class="search results">
+                                <?php printf(ngettext('We found %1$u result for <em>%2$s</em>','We found %1$u results for <em>%2$s</em>',$total), $total, html_encode($searchwords)); ?>
+                            </h4>
+                        <?php } ?>
+
+                        <section class="item-listing">
+                            <ul>
+                                <?php
+                                    while (next_album()): $c++;
+                                        include "includes/album-item.php";
+                                    endwhile;
+                                ?>
+                            </ul>
+                        </section>
+
+                        <div class="item-listing">
+                            <ul>
+                                <?php
+                                    while (next_image()): $c++;
+                                        include "includes/image-item.php";
+                                    endwhile;
+                                ?>
+                            </ul>
+                        </div>
+
                         <?php
                             if ($c == 0) {
                                 echo gettext("Sorry, no image matches found. Try refining your search.");

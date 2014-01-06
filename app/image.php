@@ -13,23 +13,17 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <?php printHomeLink("", " | "); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext("Albums Index"); ?>"><?php echo getGalleryTitle();?></a> | <?php printParentBreadcrumb(); ?><?php printAlbumTitle();?>
+                        <?php printParentBreadcrumb("", " | ", " | "); printAlbumBreadcrumb("", " | "); ?><?php printImageTitle(true); ?>
+
+                        <a href="<?php echo getFullImageURL(); ?>" title="<?php echo getBareImageTitle();?>" class="main-image">
+                            <img src="<?php echo getDefaultSizedImage(); ?>" alt="<?php echo getBareImageTitle();?>">
+                        </a>
+
                         <?php if (hasPrevImage()) { ?>
                             <a href="<?php echo html_encode(getPrevImageURL());?>" title="<?php echo gettext("Previous Image"); ?>"><?php echo gettext("prev"); ?></a>
                         <?php } if (hasNextImage()) { ?>
                             <a href="<?php echo html_encode(getNextImageURL());?>" title="<?php echo gettext("Next Image"); ?>"><?php echo gettext("next"); ?></a>
                         <?php } ?>
-                        <?php printHomeLink("", " | "); ?><a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php gettext("Albums Index"); ?>"><?php echo getGalleryTitle();?></a> | <?php printParentBreadcrumb("", " | ", " | "); printAlbumBreadcrumb("", " | "); ?><?php printImageTitle(true); ?>
-                        <a href="<?php echo html_encode($fullimage);?>" title="<?php echo getBareImageTitle();?>">
-                            <?php printDefaultSizedImage(getImageTitle()); ?>
-                        </a>
-                        <?php printImageDesc(); ?>
-                        <?php
-                            if (getImageMetaData()) {
-                                printImageMetadata("", false); ;
-                            }
-                        ?>
-                        <?php printTags("links", gettext("<strong>Tags:</strong>")." ", "taglist", ""); ?>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 

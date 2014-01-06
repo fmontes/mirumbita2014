@@ -13,8 +13,8 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <div class="home-latest-albums">
-                            <?php printLatestAlbums(getOption("latest_albums_number_home"), true, true, false, "", "200", "300", false, false); ?>
+                        <div class="item-listing home-latest-albums">
+                            <?php printLatestAlbums(getOption("latest_albums_number_home"), true, true, false, "", "200", "480", false, false); ?>
                         </div><!-- // home-latest-albums -->
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->

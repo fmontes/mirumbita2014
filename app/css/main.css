@@ -355,11 +355,23 @@ table {
   border-spacing: 0;
 }
 
+/* line 1, ../scss/_base.scss */
+img {
+  max-width: 100%;
+}
+
 @media (min-width: 40em) {
   /* line 1, ../scss/layout/_header.scss */
   .toggle-menu {
     display: none;
   }
+}
+
+/* line 2, ../scss/layout/_modules.scss */
+.item-listing ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 3, ../scss/layout/_nav.scss */
@@ -416,7 +428,7 @@ table {
   transition: all 0.25s ease-out;
 }
 
-/* line 4, ../scss/layout/_main.scss */
+/* line 5, ../scss/layout/_main.scss */
 .inner-wrapper {
   *zoom: 1;
   padding-left: 20px;
@@ -444,7 +456,7 @@ table {
   display: table;
   clear: both;
 }
-/* line 8, ../scss/layout/_main.scss */
+/* line 9, ../scss/layout/_main.scss */
 .csstransitions .inner-wrapper {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -452,7 +464,7 @@ table {
   transition: all 0.25s ease-out;
 }
 @media (min-width: 40em) {
-  /* line 4, ../scss/layout/_main.scss */
+  /* line 5, ../scss/layout/_main.scss */
   .inner-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -481,7 +493,7 @@ table {
   }
 }
 @media (min-width: 60em) {
-  /* line 4, ../scss/layout/_main.scss */
+  /* line 5, ../scss/layout/_main.scss */
   .inner-wrapper {
     padding-left: 20px;
     padding-right: 20px;
@@ -510,7 +522,7 @@ table {
   }
 }
 
-/* line 25, ../scss/layout/_main.scss */
+/* line 26, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(104px, 0, 0);
   -moz-transform: perspective(0) translate3d(104px, 0, 0);
@@ -519,22 +531,15 @@ table {
   transform: perspective(0) translate3d(104px, 0, 0);
   left: 0;
 }
-/* line 30, ../scss/layout/_main.scss */
+/* line 31, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   position: relative;
   left: 104px;
 }
 
-/* line 36, ../scss/layout/_main.scss */
+/* line 37, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
-}
-
-/* line 2, ../scss/pages/_home.scss */
-.home-latest-albums ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }

@@ -4,7 +4,9 @@
     <header class="header">
         <a href="#" class="btn toggle-menu js-toggle-menu">toggle</a>
 
-        <div class="logo"><?php printHomeLink("", ""); ?></div>
+        <a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext("Albums Index"); ?>" class="logo">
+            <?php echo getGalleryTitle();?>
+        </a>
 
         <nav class="nav header-nav" role="navigation">
             <?php include "main-nav.php"; ?>
@@ -12,7 +14,7 @@
 
         <?php if (getOption("Allow_search")) { ?>
             <div class="header-search">
-                <?php printSearchForm("","search","",gettext("Search gallery")); ?>
+            <?php printSearchForm("", "header-search", "", gettext("Search"), "", [title, desc], [], false); ?>
             </div>
         <?php } ?>
     </header>

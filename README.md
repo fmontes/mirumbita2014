@@ -21,3 +21,4 @@ http://www.zenphoto.org/news/theming-tutorial
 Todo
 ----
 * Add fastclick: https://github.com/ftlabs/fastclick
+* Add lazyload
