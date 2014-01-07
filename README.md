@@ -1,6 +1,6 @@
 Mirumbita.com
 ========================
-Redesign of mirumbita.com usign just zenphoto now
+Redesign of mirumbita.com using just zenphoto now
 
 Grunt:
 ------

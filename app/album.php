@@ -16,29 +16,25 @@
                         <h1 class="page-title"><?php printAlbumTitle();?></h1>
                         <p><?php printAlbumDesc(); ?></p>
 
-                        <?php if (next_album()): ?>
-                            <section class="item-listing">
-                                <ul>
-                                    <?php
-                                        while (next_album()):
-                                            include "includes/album-item.php";
-                                        endwhile;
-                                    ?>
-                                </ul>
-                            </section>
-                        <?php endif; ?>
+                        <section class="item-listing album-listing">
+                            <ul>
+                                <?php
+                                    while (next_album()):
+                                        include "includes/album-item.php";
+                                    endwhile;
+                                ?>
+                            </ul>
+                        </section>
 
-                        <?php if (next_image()): ?>
-                            <div class="item-listing">
-                                <ul>
-                                    <?php
-                                        while (next_image()):
-                                            include "includes/image-item.php";
-                                        endwhile;
-                                    ?>
-                                </ul>
-                            </div>
-                        <?php endif; ?>
+                        <div class="item-listing image-listing">
+                            <ul>
+                                <?php
+                                    while (next_image()):
+                                        include "includes/image-item.php";
+                                    endwhile;
+                                ?>
+                            </ul>
+                        </div>
 
                         <?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
                     </div><!-- // content -->
