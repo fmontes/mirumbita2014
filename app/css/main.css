@@ -368,7 +368,7 @@ table {
 /* line 7, ../scss/_base.scss */
 html {
   background-color: #eeeeee;
-  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  font-family: FiraSans, Geneva, Tahoma, Verdana, sans-serif;
 }
 
 /* line 14, ../scss/_base.scss */
@@ -574,7 +574,7 @@ a:hover, a:focus {
     }
 }
 */
-/* line 22, ../scss/styles/_fontello.scss */
+/* line 22, ../scss/styles/_fonticons.scss */
 [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
@@ -600,24 +600,32 @@ a:hover, a:focus {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 26, ../scss/styles/_fontello.scss */
+/* line 26, ../scss/styles/_fonticons.scss */
 .icon-search:before {
   content: '\e802';
 }
 
 /* '' */
-/* line 27, ../scss/styles/_fontello.scss */
+/* line 27, ../scss/styles/_fonticons.scss */
 .icon-comments:before {
   content: '\e801';
 }
 
 /* '' */
-/* line 28, ../scss/styles/_fontello.scss */
+/* line 28, ../scss/styles/_fonticons.scss */
 .icon-menu:before {
   content: '\e800';
 }
 
 /* '' */
+@font-face {
+  font-family: 'FiraSans';
+  src: url("../fonts/firasansot-regular-webfont.eot");
+  src: url("../fonts/firasansot-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasansot-regular-webfont.woff") format("woff"), url("../fonts/firasansot-regular-webfont.ttf") format("truetype"), url("../fonts/firasansot-regular-webfont.svg#fira_sans_otregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* line 1, ../scss/styles/_header.scss */
 .btn-toggle-search,
 .btn-toggle-menu {
@@ -778,7 +786,7 @@ a:hover, a:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 5, ../scss/styles/_main.scss */
+/* line 6, ../scss/styles/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
 }
@@ -803,9 +811,9 @@ a:hover, a:focus {
 }
 /* line 15, ../scss/pages/_home.scss */
 .home-latest-albums .album-date {
-  font-size: 0.75em;
-  line-height: 2em;
-  color: #cccccc;
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  color: #aaaaaa;
   display: block;
 }
 /* line 21, ../scss/pages/_home.scss */

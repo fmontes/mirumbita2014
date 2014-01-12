@@ -13,8 +13,8 @@
     }
 
     .album-date {
-        @include adjust-font-size-to($font-small-x, 1);
-        color: $gray;
+        @include adjust-font-size-to($font-small);
+        color: $gray-dark;
         display: block;
     }
 
