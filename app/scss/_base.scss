@@ -9,11 +9,15 @@ html {
     font-family: $font-body;
 }
 
+
+
 // Images
 
 img {
     max-width: 100%;
 }
+
+
 
 // Links
 
@@ -31,7 +35,17 @@ a {
     }
 }
 
+
+
 // Buttons
+
 .btn {
     @include btn;
+}
+
+
+// Headings
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-head;
 }

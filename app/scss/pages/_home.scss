@@ -12,10 +12,11 @@
         margin: $pv * 2 0;
     }
 
-    .album-date {
-        @include adjust-font-size-to($font-small);
-        color: $gray-dark;
-        display: block;
+    .album-image-number {
+        &:before {
+            content: "•";
+            margin: 0 $ph / 2;
+        }
     }
 
     .album-info {
@@ -26,6 +27,11 @@
         padding: $pv $ph;
     }
 
+    .album-meta {
+        @include adjust-font-size-to($font-small);
+        color: $gray-dark;
+    }
+
     .album-thumb {
         display: block;
     }
@@ -33,6 +39,10 @@
     .album-title {
         @include adjust-font-size-to($font-large);
         margin: 0
+    }
+
+    .album-social {
+        @include pie-clearfix;
     }
 
     .fb-like {

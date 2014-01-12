@@ -35,9 +35,14 @@
                                                     <?php echo $album->getTitle() ?>
                                                 </a>
                                             </h3>
-                                            <?php $date = date_create($album->getDateTime()); ?>
-                                            <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>" class="album-date"><?php echo date_format($date, 'd/m/y'); ?></time>
-                                            <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                            <div class="album-meta">
+                                                <?php $date = date_create($album->getDateTime()); ?>
+                                                <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>" class="album-date"><?php echo date_format($date, 'd/m/y'); ?></time>
+                                                <span class="album-image-number"><?php echo $album->getNumImages() . " " . gettext("photos") ?></span>
+                                            </div>
+                                            <div class="album-social">
+                                                <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                            </div>
                                         </div>
                                     </article>
                                 </li>
