@@ -1,5 +1,7 @@
-.toggle-menu {
-    @include at-breakpoint($tablet) {
-        display: none;
-    }
+.header-search {
+    width: 100%;
+}
+
+.header-wrapper {
+    position: relative;
 }

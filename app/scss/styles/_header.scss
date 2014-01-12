@@ -1,0 +1,37 @@
+.header-inner {
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+}
+
+.header-search {
+    background-color: $green;
+    padding: $pg;
+
+    .csstransforms3d & {
+        @include translate3d(0, -60px, 0, 0);
+        margin-bottom: -60px;
+
+        &.search-active {
+           @include translate3d(0, 0, 0, 0);
+           margin-bottom: 0;
+        }
+    }
+
+    .csstransitions & {
+        @include transition(all .25s ease-out);
+    }
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    padding: 13px 0;
+    width: 150px;
+}
+
+.toggle-menu {
+    @include at-breakpoint($tablet) {
+        display: none;
+    }
+}

@@ -385,11 +385,24 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-@media (min-width: 40em) {
-  /* line 1, ../scss/layout/_header.scss */
-  .toggle-menu {
-    display: none;
-  }
+/* line 1, ../scss/_helpers.scss */
+.left {
+  float: left;
+}
+
+/* line 5, ../scss/_helpers.scss */
+.right {
+  float: right;
+}
+
+/* line 1, ../scss/layout/_header.scss */
+.header-search {
+  width: 100%;
+}
+
+/* line 5, ../scss/layout/_header.scss */
+.header-wrapper {
+  position: relative;
 }
 
 /* line 2, ../scss/layout/_modules.scss */
@@ -445,39 +458,29 @@ a:hover, a:focus {
 }
 
 /* line 5, ../scss/layout/_main.scss */
-.inner-wrapper {
+.content-wrapper {
   *zoom: 1;
   padding-left: 10px;
   padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
-  background-color: white;
-  position: relative;
-  z-index: 2;
 }
 /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.inner-wrapper:after {
+.content-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 11, ../scss/layout/_main.scss */
-.csstransitions .inner-wrapper {
-  -webkit-transition: all 0.25s ease-out;
-  -moz-transition: all 0.25s ease-out;
-  -o-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
-}
 @media (min-width: 40em) {
   /* line 5, ../scss/layout/_main.scss */
-  .inner-wrapper {
+  .content-wrapper {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .inner-wrapper:after {
+  .content-wrapper:after {
     content: "";
     display: table;
     clear: both;
@@ -485,21 +488,35 @@ a:hover, a:focus {
 }
 @media (min-width: 60em) {
   /* line 5, ../scss/layout/_main.scss */
-  .inner-wrapper {
+  .content-wrapper {
     padding-left: 10px;
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
   }
   /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .inner-wrapper:after {
+  .content-wrapper:after {
     content: "";
     display: table;
     clear: both;
   }
 }
 
-/* line 26, ../scss/layout/_main.scss */
+/* line 17, ../scss/layout/_main.scss */
+.inner-wrapper {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+/* line 22, ../scss/layout/_main.scss */
+.csstransitions .inner-wrapper {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+/* line 29, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(70%, 0, 0);
   -moz-transform: perspective(0) translate3d(70%, 0, 0);
@@ -508,16 +525,69 @@ a:hover, a:focus {
   transform: perspective(0) translate3d(70%, 0, 0);
   left: 0;
 }
-/* line 31, ../scss/layout/_main.scss */
+/* line 34, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   left: 70%;
 }
 
-/* line 36, ../scss/layout/_main.scss */
+/* line 39, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
+}
+
+/* line 1, ../scss/styles/_header.scss */
+.header-inner {
+  background-color: white;
+  position: relative;
+  z-index: 2;
+}
+
+/* line 7, ../scss/styles/_header.scss */
+.header-search {
+  background-color: #51bd1f;
+  padding: 10px;
+}
+/* line 11, ../scss/styles/_header.scss */
+.csstransforms3d .header-search {
+  -webkit-transform: perspective(0) translate3d(0, -60px, 0);
+  -moz-transform: perspective(0) translate3d(0, -60px, 0);
+  -ms-transform: perspective(0) translate3d(0, -60px, 0);
+  -o-transform: perspective(0) translate3d(0, -60px, 0);
+  transform: perspective(0) translate3d(0, -60px, 0);
+  margin-bottom: -60px;
+}
+/* line 15, ../scss/styles/_header.scss */
+.csstransforms3d .header-search.search-active {
+  -webkit-transform: perspective(0) translate3d(0, 0, 0);
+  -moz-transform: perspective(0) translate3d(0, 0, 0);
+  -ms-transform: perspective(0) translate3d(0, 0, 0);
+  -o-transform: perspective(0) translate3d(0, 0, 0);
+  transform: perspective(0) translate3d(0, 0, 0);
+  margin-bottom: 0;
+}
+/* line 21, ../scss/styles/_header.scss */
+.csstransitions .header-search {
+  -webkit-transition: all 0.25s ease-out;
+  -moz-transition: all 0.25s ease-out;
+  -o-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+/* line 26, ../scss/styles/_header.scss */
+.logo {
+  display: block;
+  margin: auto;
+  padding: 13px 0;
+  width: 150px;
+}
+
+@media (min-width: 40em) {
+  /* line 33, ../scss/styles/_header.scss */
+  .toggle-menu {
+    display: none;
+  }
 }
 
 /* line 1, ../scss/styles/_nav.scss */
@@ -567,7 +637,7 @@ a:hover, a:focus {
   color: white;
 }
 
-/* line 3, ../scss/styles/_main.scss */
+/* line 4, ../scss/styles/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
 }

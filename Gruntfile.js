@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: '<%= jshint.all %>',
-                tasks: ['jshint', 'copy:js']
+                tasks: ['copy:js']
             },
             php: {
                 files: '<%= project.app %>/**/*.php',
@@ -106,7 +106,7 @@ module.exports = function(grunt) {
             'uglify': true,
 
             // Define any tests you want to implicitly include.
-            'tests': ['csstransforms3d', 'csstransitions', 'mq', 'touch'],
+            'tests': ['csstransforms3d', 'csstransitions', 'mq', 'touch', 'svg'],
 
             // By default, this task will crawl your project for references to Modernizr tests.
             // Set to false to disable.
@@ -134,6 +134,7 @@ module.exports = function(grunt) {
                 dest: '<%= project.dist %>',
                 src: [
                     '**/*.php',
+                    'images/{,*/}*.svg',
                     'css/{,*/}*.*',
                     'fonts/{,*/}*.*',
                     'js/{,*/}*.*',
