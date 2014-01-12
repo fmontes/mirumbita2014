@@ -3,7 +3,7 @@
 @import "nav";
 
 .content-wrapper {
-    @include container;
+    //@include container;
 
     @include at-breakpoint($tablet) {
         @include container;

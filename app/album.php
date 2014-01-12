@@ -39,6 +39,10 @@
                         </div>
 
                         <?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
+
+                    <div class="album-comments">
+                            <div class="fb-comments" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL() ?>" data-width="600px" data-numposts="5" data-colorscheme="light"></div>
+                        </div>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 

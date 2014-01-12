@@ -1,10 +1,11 @@
 .home-latest-albums {
     a {
         color: $red;
+        text-decoration: none;
     }
 
     img {
-        @include border-top-radius($border-radius);
+        //@include border-top-radius($border-radius);
         display: block;
     }
 
@@ -20,7 +21,7 @@
     }
 
     .album-info {
-        @include border-bottom-radius($border-radius);
+        //@include border-bottom-radius($border-radius);
         @include box-shadow(0 2px 2px 0 $gray);
         @include pie-clearfix;
         background-color: $white;

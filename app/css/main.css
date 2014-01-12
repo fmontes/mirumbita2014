@@ -410,6 +410,13 @@ a:hover, a:focus {
 /* line 49, ../scss/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  letter-spacing: -.025em;
+}
+@media (min-width: 40em) {
+  /* line 49, ../scss/_base.scss */
+  h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 0;
+  }
 }
 
 /* line 1, ../scss/_helpers.scss */
@@ -484,20 +491,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.25s ease-out;
 }
 
-/* line 5, ../scss/layout/_main.scss */
-.content-wrapper {
-  *zoom: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.content-wrapper:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 @media (min-width: 40em) {
   /* line 5, ../scss/layout/_main.scss */
   .content-wrapper {
@@ -857,34 +850,23 @@ h1, h2, h3, h4, h5, h6 {
 /* line 2, ../scss/pages/_home.scss */
 .home-latest-albums a {
   color: #e4242e;
+  text-decoration: none;
 }
-/* line 6, ../scss/pages/_home.scss */
+/* line 7, ../scss/pages/_home.scss */
 .home-latest-albums img {
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
   display: block;
 }
-/* line 11, ../scss/pages/_home.scss */
+/* line 12, ../scss/pages/_home.scss */
 .home-latest-albums li {
   margin: 20px 0;
 }
-/* line 16, ../scss/pages/_home.scss */
+/* line 17, ../scss/pages/_home.scss */
 .home-latest-albums .album-image-number:before {
   content: "•";
   margin: 0 5px;
 }
-/* line 22, ../scss/pages/_home.scss */
+/* line 23, ../scss/pages/_home.scss */
 .home-latest-albums .album-info {
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   -webkit-box-shadow: 0 2px 2px 0 #cccccc;
   -moz-box-shadow: 0 2px 2px 0 #cccccc;
   box-shadow: 0 2px 2px 0 #cccccc;
@@ -898,23 +880,23 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
-/* line 30, ../scss/pages/_home.scss */
+/* line 31, ../scss/pages/_home.scss */
 .home-latest-albums .album-meta {
   font-size: 0.875em;
   line-height: 1.71429em;
   color: #aaaaaa;
 }
-/* line 35, ../scss/pages/_home.scss */
+/* line 36, ../scss/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 39, ../scss/pages/_home.scss */
+/* line 40, ../scss/pages/_home.scss */
 .home-latest-albums .album-title {
   font-size: 1.125em;
   line-height: 1.33333em;
   margin: 0;
 }
-/* line 44, ../scss/pages/_home.scss */
+/* line 45, ../scss/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }
@@ -924,7 +906,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
-/* line 48, ../scss/pages/_home.scss */
+/* line 49, ../scss/pages/_home.scss */
 .home-latest-albums .fb-like {
   float: right;
 }
