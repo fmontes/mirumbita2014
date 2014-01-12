@@ -3,7 +3,6 @@
 
 // Plugins
 @import "compass";
-@import "compass/typography/vertical_rhythm";
 @import "susy";
 @import "normalize";
 
@@ -22,5 +21,19 @@
 // Pages
 @import "pages/home";
 
+
+// ---------------------------------------------------------------------------
 // Vertical Rhythm
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+$base-font-size: $font-base;
+$base-line-height: 24px;
+$font-unit: 16px;
+$relative-font-sizing: false;
+
+$text-subscript-bottom: -0.25em;
+$text-subscript-size: 75%;
+$text-superscript-top: -0.5em;
+$text-superscript-size: 75%;
+
 @include establish-baseline(16px);

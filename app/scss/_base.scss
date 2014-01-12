@@ -4,10 +4,9 @@
     @include box-sizing(border-box);
 }
 
-body {
+html {
     background-color: $gray-light;
     font-family: $font-body;
-    font-size: $font-base;
 }
 
 // Images
