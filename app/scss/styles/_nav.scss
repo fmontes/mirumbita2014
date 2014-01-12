@@ -1,5 +1,5 @@
 .side-nav {
-    @include box-shadow(-4px 0 5px -4px $gray-dark inset);
+    @include box-shadow(-4px 0 5px -4px $black inset);
     background-color: $purple;
     font-size: $font-small;
     text-align: center;

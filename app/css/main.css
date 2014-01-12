@@ -741,9 +741,9 @@ a:hover, a:focus {
 
 /* line 1, ../scss/styles/_nav.scss */
 .side-nav {
-  -webkit-box-shadow: -4px 0 5px -4px #aaaaaa inset;
-  -moz-box-shadow: -4px 0 5px -4px #aaaaaa inset;
-  box-shadow: -4px 0 5px -4px #aaaaaa inset;
+  -webkit-box-shadow: -4px 0 5px -4px black inset;
+  -moz-box-shadow: -4px 0 5px -4px black inset;
+  box-shadow: -4px 0 5px -4px black inset;
   background-color: #46084e;
   font-size: 14px;
   text-align: center;
