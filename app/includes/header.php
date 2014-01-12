@@ -3,8 +3,8 @@
 <div class="header-wrapper">
     <header class="header">
         <div class="header-inner">
-            <a href="#" class="btn toggle-menu js-toggle-menu left">Toggle</a>
-            <a href="#" class="btn search-toggle js-toggle-search right">Search</a>
+            <a href="#" class="btn btn-toggle-menu js-toggle-menu left"></a>
+            <a href="#" class="btn btn-toggle-search js-toggle-search right"></a>
             <a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext("Albums Index"); ?>" class="logo">
                 <img src="<?php echo $_zp_themeroot; ?>/images/logo-mirumbita.svg" alt="<?php echo getGalleryTitle();?>">
             </a>

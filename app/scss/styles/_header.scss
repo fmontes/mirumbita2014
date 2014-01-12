@@ -1,3 +1,24 @@
+.btn-toggle-search,
+.btn-toggle-menu {
+    text-decoration: none;
+
+    &:before {
+        @include fontello;
+    }
+}
+
+.btn-toggle-search {
+    &:before {
+        content: '\e802';
+    }
+}
+
+.btn-toggle-menu {
+    &:before {
+        content: '\e800';
+    }
+}
+
 .header-inner {
     background-color: $white;
     position: relative;
@@ -28,10 +49,4 @@
     margin: auto;
     padding: 13px 0;
     width: 150px;
-}
-
-.toggle-menu {
-    @include at-breakpoint($tablet) {
-        display: none;
-    }
 }

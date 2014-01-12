@@ -41,7 +41,6 @@ function toggleSearch() {
     });
 
     $(document).on('click', function() {
-        debugger;
         if ($('.js-header-search').hasClass('search-active')) {
             $('.js-header-search').removeClass('search-active');
         }
