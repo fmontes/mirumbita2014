@@ -1,6 +1,5 @@
 .btn-toggle-search,
 .btn-toggle-menu {
-    text-decoration: none;
 
     &:before {
         @include fontello;
@@ -23,6 +22,7 @@
     background-color: $white;
     position: relative;
     z-index: 2;
+    padding: 0 $grid-padding;
 }
 
 .header-search {

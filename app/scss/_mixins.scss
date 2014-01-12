@@ -1,3 +1,15 @@
+@mixin btn($bgcolor: $gray-lighter) {
+    @include inline-block;
+    background-color: $bgcolor;
+    padding: $pv / 2 $ph;
+    border-radius: $border-radius;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
 @mixin fontello {
     font-family: "fontello";
     font-style: normal;

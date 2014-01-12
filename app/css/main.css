@@ -386,6 +386,24 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+/* line 34, ../scss/_base.scss */
+.btn {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-color: #f6f6f6;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+/* line 8, ../scss/_mixins.scss */
+.btn:hover {
+  text-decoration: none;
+}
+
 /* line 1, ../scss/_helpers.scss */
 .left {
   float: left;
@@ -505,11 +523,10 @@ a:hover, a:focus {
 
 /* line 17, ../scss/layout/_main.scss */
 .inner-wrapper {
-  background-color: white;
   position: relative;
   z-index: 2;
 }
-/* line 22, ../scss/layout/_main.scss */
+/* line 21, ../scss/layout/_main.scss */
 .csstransitions .inner-wrapper {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -517,7 +534,7 @@ a:hover, a:focus {
   transition: all 0.25s ease-out;
 }
 
-/* line 29, ../scss/layout/_main.scss */
+/* line 28, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(70%, 0, 0);
   -moz-transform: perspective(0) translate3d(70%, 0, 0);
@@ -526,12 +543,12 @@ a:hover, a:focus {
   transform: perspective(0) translate3d(70%, 0, 0);
   left: 0;
 }
-/* line 34, ../scss/layout/_main.scss */
+/* line 33, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   left: 70%;
 }
 
-/* line 39, ../scss/layout/_main.scss */
+/* line 38, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;
@@ -600,12 +617,7 @@ a:hover, a:focus {
 }
 
 /* '' */
-/* line 1, ../scss/styles/_header.scss */
-.btn-toggle-search,
-.btn-toggle-menu {
-  text-decoration: none;
-}
-/* line 5, ../scss/styles/_header.scss */
+/* line 4, ../scss/styles/_header.scss */
 .btn-toggle-search:before,
 .btn-toggle-menu:before {
   font-family: "fontello";
@@ -632,21 +644,22 @@ a:hover, a:focus {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 11, ../scss/styles/_header.scss */
+/* line 10, ../scss/styles/_header.scss */
 .btn-toggle-search:before {
   content: '\e802';
 }
 
-/* line 17, ../scss/styles/_header.scss */
+/* line 16, ../scss/styles/_header.scss */
 .btn-toggle-menu:before {
   content: '\e800';
 }
 
-/* line 22, ../scss/styles/_header.scss */
+/* line 21, ../scss/styles/_header.scss */
 .header-inner {
   background-color: white;
   position: relative;
   z-index: 2;
+  padding: 0 10px;
 }
 
 /* line 28, ../scss/styles/_header.scss */
@@ -721,7 +734,7 @@ a:hover, a:focus {
 }
 /* line 20, ../scss/styles/_nav.scss */
 .side-nav .corporate-menu {
-  border-top: solid 1px #eeeeee;
+  border-top: solid 1px #f6f6f6;
   margin-top: 20px;
   padding-top: 20px;
 }

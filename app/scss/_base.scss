@@ -29,3 +29,8 @@ a {
   &:focus {
   }
 }
+
+// Buttons
+.btn {
+  @include btn;
+}

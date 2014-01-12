@@ -23,8 +23,8 @@ $white: #fff;
 
 $gray-dark: #aaa;
 $gray: #ccc;
-$gray-light: #ddd;
-$gray-lighter: #eee;
+$gray-light: #eee;
+$gray-lighter: #f6f6f6;
 
 $green: #51BD1F;
 $orange: #FF6D00;
@@ -49,3 +49,11 @@ $font-head: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", 
 $pg: 10px; // general
 $pv: 10px; // vertical
 $ph: 10px; // horizontal
+
+
+// ---------------------------------------------------------------------------
+// Stuff
+
+$border-radius-s: 3px;
+$border-radius: 5px;
+$border-radius-l: 10px;
