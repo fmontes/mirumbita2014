@@ -1,6 +1,8 @@
 <?php include "includes/head_meta.php"; ?>
 
     <body class="home">
+        <?php include "includes/fb-scripts.php"; ?>
+
         <div class="outer-wrapper">
 
             <nav class="nav side-nav js-side-nav" role="navigation">
@@ -34,6 +36,8 @@
                                     <?php $date = date_create($album->getDateTime()); ?>
 
                                     <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>"><?php echo date_format($date, 'd/m/y'); ?></time>
+
+                                    <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
                                 </li>
                                 <?php } ?>
                             </ul>

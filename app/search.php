@@ -1,6 +1,8 @@
 <?php include "includes/head_meta.php"; ?>
 
     <body class="search">
+        <?php include "includes/fb-scripts.php"; ?>
+
         <div class="outer-wrapper">
 
             <nav class="nav side-nav js-side-nav" role="navigation">
