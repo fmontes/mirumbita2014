@@ -3,7 +3,7 @@
     <body class="home">
         <div class="outer-wrapper">
 
-            <nav class="nav side-nav" role="navigation">
+            <nav class="nav side-nav js-side-nav" role="navigation">
                 <?php include "includes/main-nav.php"; ?>
             </nav>
 

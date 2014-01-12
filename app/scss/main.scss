@@ -3,12 +3,16 @@
 @import "normalize";
 
 // Basic
+@import "variables";
 @import "base";
 @import "mixins";
-@import "variables";
 
 // Layout
 @import "layout/main";
+
+// Styles
+// All the colors, borders, fonts, etc...
+@import "styles/main";
 
 // Pages
 @import "pages/home";

@@ -13,3 +13,39 @@ $tablet: 40em 8;
 $computer: 60em 12;
 
 $show-grid-backgrounds: true;
+
+
+// ---------------------------------------------------------------------------
+// Colors
+
+$black: #000;
+$white: #fff;
+
+$gray-dark: #aaa;
+$gray: #ccc;
+$gray-light: #ddd;
+$gray-lighter: #eee;
+
+$green: #51BD1F;
+$orange: #FF6D00;
+$purple: #46084E;
+$red: #E4242E;
+
+$text-color: #444;
+$link-color: $green;
+$link-color-hover: $orange;
+
+
+// ---------------------------------------------------------------------------
+// Fonts
+
+$font-body: Geneva, Tahoma, Verdana, sans-serif;;
+$font-head: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;;
+
+
+// ---------------------------------------------------------------------------
+// Spacing
+
+$pg: 10px; // general
+$pv: 10px; // vertical
+$ph: 10px; // horizontal

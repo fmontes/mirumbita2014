@@ -8,7 +8,7 @@
             <?php echo getGalleryTitle();?>
         </a>
 
-        <nav class="nav header-nav" role="navigation">
+        <nav class="nav header-nav js-header-nav" role="navigation">
             <?php include "main-nav.php"; ?>
         </nav>
 
