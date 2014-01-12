@@ -14,7 +14,29 @@
                 <div class="content-wrapper">
                     <div class="content" role="main">
                         <div class="item-listing home-latest-albums">
-                            <?php printLatestAlbums(getOption("latest_albums_number_home"), true, true, false, "", "200", "480", false, false); ?>
+                            <ul>
+                                <?php
+                                    // http://www.zenphoto.org/documentation/classes/ThemeObject.html
+                                    $latestalbums = getAlbumStatistic(getOption("latest_albums_number_home"), "latest-date", "", "desc");
+                                    foreach ($latestalbums as $latestalbum) {
+                                        $album = newAlbum($latestalbum[folder]);
+                                ?>
+                                <li>
+                                    <a href="<?php echo $album->getAlbumLink() ?>">
+                                        <img src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>">
+                                    </a>
+                                    <h3>
+                                        <a href="<?php echo $album->getAlbumLink() ?>">
+                                            <?php echo $album->getTitle() ?>
+                                        </a>
+                                    </h3>
+
+                                    <?php $date = date_create($album->getDateTime()); ?>
+
+                                    <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>"><?php echo date_format($date, 'd/m/y'); ?></time>
+                                </li>
+                                <?php } ?>
+                            </ul>
                         </div><!-- // home-latest-albums -->
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
