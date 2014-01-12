@@ -33,7 +33,7 @@ function toggleNav() {
 function toggleSearch() {
     $('.js-toggle-search').on('click', function (e) {
         e.stopPropagation();
-        $('.js-header-search').toggleClass('search-active');
+        $('html').toggleClass('search-active');
     });
 
     $('.js-header-search').on('click', function(e) {
@@ -41,8 +41,8 @@ function toggleSearch() {
     });
 
     $(document).on('click', function() {
-        if ($('.js-header-search').hasClass('search-active')) {
-            $('.js-header-search').removeClass('search-active');
+        if ($('html').hasClass('search-active')) {
+            $('html').removeClass('search-active');
         }
     });
 }

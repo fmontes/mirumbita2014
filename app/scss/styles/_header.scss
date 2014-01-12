@@ -1,5 +1,7 @@
 .btn-toggle-search,
 .btn-toggle-menu {
+    margin: 12px 0 13px;
+    padding: 7px 8px;
 
     &:before {
         @include fontello;
@@ -10,11 +12,27 @@
     &:before {
         content: '\e802';
     }
+
+    .search-active & {
+        background-color: $orange;
+
+        &:before {
+            color: $white;
+        }
+    }
 }
 
 .btn-toggle-menu {
     &:before {
         content: '\e800';
+    }
+
+    .menu-active & {
+        background-color: $orange;
+
+        &:before {
+            color: $white;
+        }
     }
 }
 
@@ -32,11 +50,6 @@
     .csstransforms3d & {
         @include translate3d(0, -60px, 0, 0);
         margin-bottom: -60px;
-
-        &.search-active {
-           @include translate3d(0, 0, 0, 0);
-           margin-bottom: 0;
-        }
     }
 
     .csstransitions & {
@@ -49,4 +62,24 @@
     margin: auto;
     padding: 13px 0;
     width: 150px;
+}
+
+.menu-active {
+    &.csstransforms3d {
+        .side-nav {
+            @include translate3d(0, 0, 0, 0);
+        }
+    }
+    .side-nav {
+        left: 0;
+    }
+}
+
+.search-active {
+    &.csstransforms3d {
+        .header-search {
+            @include translate3d(0, 0, 0, 0);
+            margin-bottom: 0;
+        }
+    }
 }
