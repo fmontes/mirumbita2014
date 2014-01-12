@@ -1,9 +1,13 @@
+// Variables
+@import "variables";
+
+// Plugins
 @import "compass";
+@import "compass/typography/vertical_rhythm";
 @import "susy";
 @import "normalize";
 
 // Basic
-@import "variables";
 @import "mixins";
 @import "base";
 @import "helpers";
@@ -17,3 +21,6 @@
 
 // Pages
 @import "pages/home";
+
+// Vertical Rhythm
+@include establish-baseline(16px);

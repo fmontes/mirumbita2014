@@ -796,10 +796,6 @@ a:hover, a:focus {
   color: #e4242e;
 }
 /* line 6, ../scss/pages/_home.scss */
-.home-latest-albums h3 {
-  margin: 0;
-}
-/* line 10, ../scss/pages/_home.scss */
 .home-latest-albums img {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -809,18 +805,18 @@ a:hover, a:focus {
   border-top-right-radius: 5px;
   display: block;
 }
-/* line 15, ../scss/pages/_home.scss */
+/* line 11, ../scss/pages/_home.scss */
 .home-latest-albums li {
   margin: 20px 0;
 }
-/* line 19, ../scss/pages/_home.scss */
+/* line 15, ../scss/pages/_home.scss */
 .home-latest-albums .album-date {
-  font-size: 0.75em;
-  line-height: 2em;
+  font-size: 12px;
+  line-height: 24px;
   color: #cccccc;
   display: block;
 }
-/* line 25, ../scss/pages/_home.scss */
+/* line 21, ../scss/pages/_home.scss */
 .home-latest-albums .album-info {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -841,11 +837,28 @@ a:hover, a:focus {
   display: table;
   clear: both;
 }
-/* line 33, ../scss/pages/_home.scss */
+/* line 29, ../scss/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 37, ../scss/pages/_home.scss */
+/* line 33, ../scss/pages/_home.scss */
+.home-latest-albums .album-title {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+/* line 38, ../scss/pages/_home.scss */
 .home-latest-albums .fb-like {
   float: right;
+}
+
+/* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 24px;
 }

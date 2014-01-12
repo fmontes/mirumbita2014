@@ -1,4 +1,18 @@
 // ---------------------------------------------------------------------------
+// Vertical Rhythm
+// http://compass-style.org/reference/compass/typography/vertical_rhythm/
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$font-unit: 16px;
+$relative-font-sizing: false;
+
+$text-subscript-bottom: -0.25em;
+$text-subscript-size: 75%;
+$text-superscript-top: -0.5em;
+$text-superscript-size: 75%;
+
+// ---------------------------------------------------------------------------
 // Basic Grid
 
 $container-style: fluid;
@@ -43,7 +57,8 @@ $font-body: Geneva, Tahoma, Verdana, sans-serif;;
 $font-head: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;;
 
 // Font sizes
-$font-base: 16px;
+$font-large: 18px;
+$font-base: $base-font-size;
 $font-small: 14px;
 $font-small-x: 12px;
 

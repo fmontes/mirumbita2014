@@ -3,10 +3,6 @@
         color: $red;
     }
 
-    h3 {
-        margin: 0
-    }
-
     img {
         @include border-top-radius($border-radius);
         display: block;
@@ -17,7 +13,7 @@
     }
 
     .album-date {
-        @include adjust-font-size-to($font-small-x);
+        @include adjust-font-size-to($font-small-x, 1);
         color: $gray;
         display: block;
     }
@@ -32,6 +28,11 @@
 
     .album-thumb {
         display: block;
+    }
+
+    .album-title {
+        @include adjust-font-size-to($font-large);
+        margin: 0
     }
 
     .fb-like {
