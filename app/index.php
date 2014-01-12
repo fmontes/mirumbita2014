@@ -15,7 +15,8 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <div class="item-listing home-latest-albums">
+
+                        <section class="item-listing home-latest-albums">
                             <ul>
                                 <?php
                                     // http://www.zenphoto.org/documentation/classes/ThemeObject.html
@@ -24,24 +25,26 @@
                                         $album = newAlbum($latestalbum[folder]);
                                 ?>
                                 <li>
-                                    <a href="<?php echo $album->getAlbumLink() ?>">
-                                        <img src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>">
-                                    </a>
-                                    <h3>
-                                        <a href="<?php echo $album->getAlbumLink() ?>">
-                                            <?php echo $album->getTitle() ?>
+                                    <article>
+                                        <a href="<?php echo $album->getAlbumLink() ?>" class="album-thumb">
+                                            <img src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>">
                                         </a>
-                                    </h3>
-
-                                    <?php $date = date_create($album->getDateTime()); ?>
-
-                                    <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>"><?php echo date_format($date, 'd/m/y'); ?></time>
-
-                                    <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        <div class="album-info">
+                                            <h3 class="album-title">
+                                                <a href="<?php echo $album->getAlbumLink() ?>">
+                                                    <?php echo $album->getTitle() ?>
+                                                </a>
+                                            </h3>
+                                            <?php $date = date_create($album->getDateTime()); ?>
+                                            <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>" class="album-date"><?php echo date_format($date, 'd/m/y'); ?></time>
+                                            <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                        </div>
+                                    </article>
                                 </li>
                                 <?php } ?>
                             </ul>
-                        </div><!-- // home-latest-albums -->
+                        </section><!-- // home-latest-albums -->
+
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 

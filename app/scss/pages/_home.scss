@@ -1,0 +1,40 @@
+.home-latest-albums {
+    a {
+        color: $red;
+    }
+
+    h3 {
+        margin: 0
+    }
+
+    img {
+        @include border-top-radius($border-radius);
+        display: block;
+    }
+
+    li {
+        margin: $pv * 2 0;
+    }
+
+    .album-date {
+        @include adjust-font-size-to($font-small-x);
+        color: $gray;
+        display: block;
+    }
+
+    .album-info {
+        @include border-bottom-radius($border-radius);
+        @include box-shadow(0 2px 2px 0 $gray);
+        @include pie-clearfix;
+        background-color: $white;
+        padding: $pv $ph;
+    }
+
+    .album-thumb {
+        display: block;
+    }
+
+    .fb-like {
+        float: right;
+    }
+}
