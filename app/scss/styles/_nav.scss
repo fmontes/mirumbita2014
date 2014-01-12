@@ -1,34 +1,36 @@
 .side-nav {
     @include box-shadow(-4px 0 5px -4px $gray-dark inset);
-    background-color: $white;
-    padding: $pg * 2 $pg * 2 0 $pg * 2;
+    background-color: $purple;
+    font-size: $font-small;
     text-align: center;
 
+    li {
+        margin-top: 1px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
     a {
-        @include border-radius(20px);
-        @include inline-block;
-        color: $purple;
-        padding: $pg $pg * 2;
+        background-color: rgba($white, .1);
+        color: $white;
+        display: block;
+        padding: $pg;
         text-decoration: none;
+        text-transform: uppercase;
 
         &:hover {
-            background-color: $purple;
             color: $white;
         }
     }
 
     .corporate-menu {
-        border-top: solid 1px $gray-lighter;
         margin-top: $pg * 2;
         padding-top: $pg * 2;
 
         a {
-            color: $orange;
-
-            &:hover {
-                background-color: $orange;
-                color: $white;
-            }
+            background-color: rgba($black, .1);
         }
     }
 }

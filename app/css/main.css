@@ -744,46 +744,39 @@ a:hover, a:focus {
   -webkit-box-shadow: -4px 0 5px -4px #aaaaaa inset;
   -moz-box-shadow: -4px 0 5px -4px #aaaaaa inset;
   box-shadow: -4px 0 5px -4px #aaaaaa inset;
-  background-color: white;
-  padding: 20px 20px 0 20px;
+  background-color: #46084e;
+  font-size: 14px;
   text-align: center;
 }
 /* line 7, ../scss/styles/_nav.scss */
-.side-nav a {
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  border-radius: 20px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  zoom: 1;
-  *display: inline;
-  color: #46084e;
-  padding: 10px 20px;
-  text-decoration: none;
+.side-nav li {
+  margin-top: 1px;
 }
-/* line 14, ../scss/styles/_nav.scss */
+/* line 10, ../scss/styles/_nav.scss */
+.side-nav li:first-child {
+  margin-top: 0;
+}
+/* line 15, ../scss/styles/_nav.scss */
+.side-nav a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/* line 23, ../scss/styles/_nav.scss */
 .side-nav a:hover {
-  background-color: #46084e;
   color: white;
 }
-/* line 20, ../scss/styles/_nav.scss */
+/* line 28, ../scss/styles/_nav.scss */
 .side-nav .corporate-menu {
-  border-top: solid 1px #f6f6f6;
   margin-top: 20px;
   padding-top: 20px;
 }
-/* line 25, ../scss/styles/_nav.scss */
+/* line 32, ../scss/styles/_nav.scss */
 .side-nav .corporate-menu a {
-  color: #ff6d00;
-}
-/* line 28, ../scss/styles/_nav.scss */
-.side-nav .corporate-menu a:hover {
-  background-color: #ff6d00;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* line 5, ../scss/styles/_main.scss */
