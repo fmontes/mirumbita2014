@@ -1,8 +1,10 @@
-@mixin btn($bgcolor: $gray-lighter) {
+@mixin btn($bgcolor: $gray-lighter, $color: $black) {
     @include inline-block;
     background-color: $bgcolor;
-    padding: $pv / 2 $ph;
     border-radius: $border-radius;
+    border:none;
+    color: $color;
+    padding: $pv / 2 $ph;
     text-decoration: none;
 
     &:hover {

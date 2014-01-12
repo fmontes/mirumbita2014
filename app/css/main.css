@@ -396,11 +396,13 @@ a:hover, a:focus {
   zoom: 1;
   *display: inline;
   background-color: #f6f6f6;
-  padding: 5px 10px;
   border-radius: 5px;
+  border: none;
+  color: black;
+  padding: 5px 10px;
   text-decoration: none;
 }
-/* line 8, ../scss/_mixins.scss */
+/* line 10, ../scss/_mixins.scss */
 .btn:hover {
   text-decoration: none;
 }
@@ -634,10 +636,11 @@ h1, h2, h3, h4, h5, h6 {
 /* line 1, ../scss/styles/_header.scss */
 .btn-toggle-search,
 .btn-toggle-menu {
+  color: #51bd1f;
   margin: 12px 0 13px;
   padding: 7px 8px;
 }
-/* line 6, ../scss/styles/_header.scss */
+/* line 7, ../scss/styles/_header.scss */
 .btn-toggle-search:before,
 .btn-toggle-menu:before {
   font-family: "fontello";
@@ -664,33 +667,33 @@ h1, h2, h3, h4, h5, h6 {
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-/* line 12, ../scss/styles/_header.scss */
+/* line 13, ../scss/styles/_header.scss */
 .btn-toggle-search:before {
   content: '\e802';
 }
-/* line 16, ../scss/styles/_header.scss */
+/* line 17, ../scss/styles/_header.scss */
 .search-active .btn-toggle-search {
   background-color: #ff6d00;
 }
-/* line 19, ../scss/styles/_header.scss */
+/* line 20, ../scss/styles/_header.scss */
 .search-active .btn-toggle-search:before {
   color: white;
 }
 
-/* line 26, ../scss/styles/_header.scss */
+/* line 27, ../scss/styles/_header.scss */
 .btn-toggle-menu:before {
   content: '\e800';
 }
-/* line 30, ../scss/styles/_header.scss */
+/* line 31, ../scss/styles/_header.scss */
 .menu-active .btn-toggle-menu {
   background-color: #ff6d00;
 }
-/* line 33, ../scss/styles/_header.scss */
+/* line 34, ../scss/styles/_header.scss */
 .menu-active .btn-toggle-menu:before {
   color: white;
 }
 
-/* line 39, ../scss/styles/_header.scss */
+/* line 40, ../scss/styles/_header.scss */
 .header-inner {
   background-color: white;
   position: relative;
@@ -698,21 +701,76 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 10px;
 }
 
-/* line 46, ../scss/styles/_header.scss */
+/* line 47, ../scss/styles/_header.scss */
 .header-search {
   background-color: #51bd1f;
   padding: 10px;
 }
-/* line 50, ../scss/styles/_header.scss */
-.csstransforms3d .header-search {
-  -webkit-transform: perspective(0) translate3d(0, -60px, 0);
-  -moz-transform: perspective(0) translate3d(0, -60px, 0);
-  -ms-transform: perspective(0) translate3d(0, -60px, 0);
-  -o-transform: perspective(0) translate3d(0, -60px, 0);
-  transform: perspective(0) translate3d(0, -60px, 0);
-  margin-bottom: -60px;
+/* line 51, ../scss/styles/_header.scss */
+.header-search form {
+  position: relative;
 }
-/* line 55, ../scss/styles/_header.scss */
+/* line 54, ../scss/styles/_header.scss */
+.header-search form a {
+  display: none;
+}
+/* line 59, ../scss/styles/_header.scss */
+.header-search input[type="text"] {
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  border: none;
+  height: 30px;
+  padding: 0 80px 0 10px;
+  width: 100%;
+}
+/* line 67, ../scss/styles/_header.scss */
+.header-search .button {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background-color: #ff6d00;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  -moz-border-radius-topright: 15px;
+  -webkit-border-top-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 6px 15px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 10, ../scss/_mixins.scss */
+.header-search .button:hover {
+  text-decoration: none;
+}
+/* line 77, ../scss/styles/_header.scss */
+.csstransforms3d .header-search {
+  -webkit-transform: perspective(0) translate3d(0, -50px, 0);
+  -moz-transform: perspective(0) translate3d(0, -50px, 0);
+  -ms-transform: perspective(0) translate3d(0, -50px, 0);
+  -o-transform: perspective(0) translate3d(0, -50px, 0);
+  transform: perspective(0) translate3d(0, -50px, 0);
+  margin-bottom: -50px;
+}
+/* line 82, ../scss/styles/_header.scss */
 .csstransitions .header-search {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -720,7 +778,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.25s ease-out;
 }
 
-/* line 60, ../scss/styles/_header.scss */
+/* line 87, ../scss/styles/_header.scss */
 .logo {
   display: block;
   margin: auto;
@@ -728,7 +786,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 150px;
 }
 
-/* line 69, ../scss/styles/_header.scss */
+/* line 96, ../scss/styles/_header.scss */
 .menu-active.csstransforms3d .side-nav {
   -webkit-transform: perspective(0) translate3d(0, 0, 0);
   -moz-transform: perspective(0) translate3d(0, 0, 0);
@@ -736,12 +794,12 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: perspective(0) translate3d(0, 0, 0);
   transform: perspective(0) translate3d(0, 0, 0);
 }
-/* line 73, ../scss/styles/_header.scss */
+/* line 100, ../scss/styles/_header.scss */
 .menu-active .side-nav {
   left: 0;
 }
 
-/* line 80, ../scss/styles/_header.scss */
+/* line 107, ../scss/styles/_header.scss */
 .search-active.csstransforms3d .header-search {
   -webkit-transform: perspective(0) translate3d(0, 0, 0);
   -moz-transform: perspective(0) translate3d(0, 0, 0);

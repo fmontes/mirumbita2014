@@ -1,5 +1,6 @@
 .btn-toggle-search,
 .btn-toggle-menu {
+    color: $green;
     margin: 12px 0 13px;
     padding: 7px 8px;
 
@@ -47,9 +48,35 @@
     background-color: $green;
     padding: $pg;
 
+    form {
+        position: relative;
+
+        a {
+            display: none;
+        }
+    }
+
+    input[type="text"] {
+        @include border-radius(15px);
+        border: none;
+        height: 30px;
+        padding: 0 80px 0 10px;
+        width: 100%;
+    }
+
+    .button {
+        @include btn($orange, $white);
+        @include border-right-radius(15px);
+        @include border-left-radius(0);
+        padding: 6px 15px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
     .csstransforms3d & {
-        @include translate3d(0, -60px, 0, 0);
-        margin-bottom: -60px;
+        @include translate3d(0, -50px, 0, 0);
+        margin-bottom: -50px;
     }
 
     .csstransitions & {
