@@ -498,29 +498,38 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-/* line 3, ../scss/layout/_modules.scss */
+/* line 2, ../scss/layout/_modules.scss */
+.image-listing img {
+  display: block;
+}
+/* line 6, ../scss/layout/_modules.scss */
+.image-listing li {
+  margin-bottom: 20px;
+}
+
+/* line 13, ../scss/layout/_modules.scss */
 .item-listing ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 9, ../scss/layout/_modules.scss */
+/* line 19, ../scss/layout/_modules.scss */
 .item-listing .album-title {
   margin: 0;
 }
-/* line 14, ../scss/layout/_modules.scss */
+/* line 24, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
   display: block;
 }
 
-/* line 21, ../scss/layout/_modules.scss */
+/* line 31, ../scss/layout/_modules.scss */
 ul.pagelist {
   list-style: none;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-/* line 27, ../scss/layout/_modules.scss */
+/* line 37, ../scss/layout/_modules.scss */
 ul.pagelist li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -529,26 +538,26 @@ ul.pagelist li {
   zoom: 1;
   *display: inline;
 }
-/* line 33, ../scss/layout/_modules.scss */
+/* line 43, ../scss/layout/_modules.scss */
 ul.pagelist .next .disabledlink,
 ul.pagelist .prev .disabledlink {
   display: block;
 }
-/* line 38, ../scss/layout/_modules.scss */
+/* line 48, ../scss/layout/_modules.scss */
 ul.pagelist .next a:before,
 ul.pagelist .next .disabledlink:before {
   content: '»';
 }
-/* line 43, ../scss/layout/_modules.scss */
+/* line 53, ../scss/layout/_modules.scss */
 ul.pagelist .prev a:before,
 ul.pagelist .prev .disabledlink:before {
   content: '«';
 }
-/* line 48, ../scss/layout/_modules.scss */
+/* line 58, ../scss/layout/_modules.scss */
 ul.pagelist .next {
   float: right;
 }
-/* line 52, ../scss/layout/_modules.scss */
+/* line 62, ../scss/layout/_modules.scss */
 ul.pagelist .prev {
   float: left;
 }
@@ -1124,6 +1133,20 @@ ul.pagelist .current {
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
+}
+
+/* line 41, ../scss/styles/pages/_album.scss */
+.subalbum .album-intro {
+  -webkit-box-shadow: 0 2px 2px 0 #cccccc;
+  -moz-box-shadow: 0 2px 2px 0 #cccccc;
+  box-shadow: 0 2px 2px 0 #cccccc;
+  background-color: white;
+  margin: 10px 0 20px;
+  padding: 10px 10px;
+}
+/* line 47, ../scss/styles/pages/_album.scss */
+.subalbum .page-title {
+  margin-top: 0;
 }
 
 /* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */

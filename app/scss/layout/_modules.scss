@@ -1,3 +1,13 @@
+.image-listing {
+    img {
+        display: block;
+    }
+
+    li {
+        margin-bottom: $pv * 2;
+    }
+}
+
 // Basic album listing layout
 .item-listing {
     ul {

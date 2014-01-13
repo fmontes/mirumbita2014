@@ -20,8 +20,11 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <h1 class="page-title"><?php printAlbumTitle();?></h1>
-                        <?php printAlbumDesc(); ?>
+
+                        <div class="album-intro">
+                            <h1 class="page-title"><?php printAlbumTitle();?></h1>
+                            <?php printAlbumDesc(); ?>
+                        </div>
 
                         <section class="item-listing album-listing">
                             <ul>

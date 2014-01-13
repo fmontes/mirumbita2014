@@ -36,3 +36,15 @@
         }
     }
 }
+
+.subalbum {
+    .album-intro {
+        @include module-box;
+        margin: $pv 0 $pv * 2;
+        padding: $pv $grid-padding;
+    }
+
+    .page-title {
+        margin-top: 0;
+    }
+}
