@@ -1,8 +1,6 @@
 .btn-toggle-search,
 .btn-toggle-menu {
     color: $green;
-    margin: 12px 0 13px;
-    padding: 7px 8px;
 
     &:before {
         @include fontello;
@@ -37,13 +35,6 @@
     }
 }
 
-.header-inner {
-    background-color: $white;
-    position: relative;
-    z-index: 2;
-    padding: 0 $grid-padding;
-}
-
 .header-search {
     background-color: $green;
     padding: $pg;
@@ -73,22 +64,6 @@
         right: 0;
         top: 0;
     }
-
-    .csstransforms3d & {
-        @include translate3d(0, -50px, 0, 0);
-        margin-bottom: -50px;
-    }
-
-    .csstransitions & {
-        @include transition(all .25s ease-out);
-    }
-}
-
-.logo {
-    display: block;
-    margin: auto;
-    padding: 13px 0;
-    width: 150px;
 }
 
 .menu-active {
@@ -99,14 +74,5 @@
     }
     .side-nav {
         left: 0;
-    }
-}
-
-.search-active {
-    &.csstransforms3d {
-        .header-search {
-            @include translate3d(0, 0, 0, 0);
-            margin-bottom: 0;
-        }
     }
 }

@@ -28,8 +28,14 @@ ul.pagelist { // Specific selector because is html is generated :(
         text-decoration: none;
     }
 
+    li {
+        margin: 0 3px;
+    }
+
     .next,
     .prev {
+        margin: 0;
+
         a,
         .disabledlink {
             @include fontello;

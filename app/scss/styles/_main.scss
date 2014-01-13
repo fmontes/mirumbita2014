@@ -4,6 +4,6 @@
 @import "nav";
 @import "modules";
 
-.inner-wrapper {
-    background-color: $gray-light;
-}
+// Pages
+@import "pages/home";
+@import "pages/albums";

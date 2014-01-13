@@ -35,6 +35,16 @@ ul.pagelist { // Specific selector because is html is generated :(
         }
     }
 
+    .next a:before,
+    .next .disabledlink:before {
+        content: '»';
+    }
+
+    .prev a:before,
+    .prev .disabledlink:before {
+        content: '«';
+    }
+
     .next {
         float: right;
     }
