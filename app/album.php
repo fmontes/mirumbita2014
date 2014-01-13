@@ -1,6 +1,11 @@
 <?php include "includes/head_meta.php"; ?>
 
-    <body class="album">
+    <?php $whatIs = count(getParentAlbums()) ?>
+    <?php if ($whatIs) { ?>
+        <body class="subalbum">
+    <?php } else { ?>
+        <body class="album">
+    <?php } ?>
         <?php include "includes/fb-scripts.php"; ?>
 
         <div class="outer-wrapper">
@@ -16,7 +21,7 @@
                 <div class="content-wrapper">
                     <div class="content" role="main">
                         <h1 class="page-title"><?php printAlbumTitle();?></h1>
-                        <!-- <p><?php printAlbumDesc(); ?></p> -->
+                        <?php printAlbumDesc(); ?>
 
                         <section class="item-listing album-listing">
                             <ul>

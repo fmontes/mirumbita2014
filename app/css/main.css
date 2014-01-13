@@ -1061,7 +1061,7 @@ ul.pagelist .current {
   float: right;
 }
 
-/* line 2, ../scss/styles/pages/_albums.scss */
+/* line 2, ../scss/styles/pages/_album.scss */
 .album .page-title {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -1073,12 +1073,12 @@ ul.pagelist .current {
   text-transform: uppercase;
 }
 
-/* line 13, ../scss/styles/pages/_albums.scss */
+/* line 13, ../scss/styles/pages/_album.scss */
 .album-comments {
   margin-top: 40px;
 }
 
-/* line 18, ../scss/styles/pages/_albums.scss */
+/* line 18, ../scss/styles/pages/_album.scss */
 .album-listing li {
   *zoom: 1;
   padding-left: 10px;
@@ -1105,7 +1105,7 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 26, ../scss/styles/pages/_albums.scss */
+/* line 26, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
   width: 73.68421%;
   float: right;
@@ -1113,14 +1113,14 @@ ul.pagelist .current {
   *margin-left: -1em;
   display: inline;
 }
-/* line 30, ../scss/styles/pages/_albums.scss */
+/* line 30, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
   width: 21.05263%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 33, ../scss/styles/pages/_albums.scss */
+/* line 33, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
