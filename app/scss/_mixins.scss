@@ -42,3 +42,8 @@
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+@mixin module-box {
+    @include box-shadow(0 2px 2px 0 $gray);
+    background-color: $white;
+}

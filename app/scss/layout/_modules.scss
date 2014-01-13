@@ -5,7 +5,13 @@
         padding: 0;
     }
 
-    li {
-        
+    .album-title {
+        margin: 0;
+    }
+
+    .album-thumb {
+        img {
+            display: block;
+        }
     }
 }

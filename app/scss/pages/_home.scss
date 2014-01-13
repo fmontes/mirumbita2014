@@ -1,11 +1,5 @@
 .home-latest-albums {
-    a {
-        color: $red;
-        text-decoration: none;
-    }
-
     img {
-        //@include border-top-radius($border-radius);
         display: block;
     }
 
@@ -13,33 +7,14 @@
         margin: $pv * 2 0;
     }
 
-    .album-image-number {
-        &:before {
-            content: "•";
-            margin: 0 $ph / 2;
-        }
-    }
-
     .album-info {
-        //@include border-bottom-radius($border-radius);
-        @include box-shadow(0 2px 2px 0 $gray);
+        @include module-box;
         @include pie-clearfix;
-        background-color: $white;
         padding: $pv $ph;
-    }
-
-    .album-meta {
-        @include adjust-font-size-to($font-small);
-        color: $gray-dark;
     }
 
     .album-thumb {
         display: block;
-    }
-
-    .album-title {
-        @include adjust-font-size-to($font-large);
-        margin: 0
     }
 
     .album-social {

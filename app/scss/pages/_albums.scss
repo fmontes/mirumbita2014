@@ -1,3 +1,34 @@
-.album-comments {
-    //@include container;
+.album {
+    .page-title {
+        @include adjust-font-size-to(20px);
+        background-color: $orange;
+        color: $white;
+        font-weight: normal;
+        margin: 0;
+        padding: $pv / 2 $grid-padding;
+        text-transform: uppercase;
+    }
+}
+
+.album-listing {
+    li {
+        @include container;
+        @include pie-clearfix;
+        @include module-box;
+        margin: 0 0 $pv;
+        padding: $pg;
+    }
+
+    .album-info {
+        @include span-columns(3 omega);
+    }
+
+    .album-thumb {
+        @include span-columns(1);
+
+        img {
+            display: block;
+            width: 70px;
+        }
+    }
 }

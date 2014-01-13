@@ -445,6 +445,14 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
+/* line 8, ../scss/layout/_modules.scss */
+.item-listing .album-title {
+  margin: 0;
+}
+/* line 13, ../scss/layout/_modules.scss */
+.item-listing .album-thumb img {
+  display: block;
+}
 
 /* line 3, ../scss/layout/_nav.scss */
 .menu-active.csstransforms3d .side-nav {
@@ -842,36 +850,48 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 6, ../scss/styles/_main.scss */
+/* line 2, ../scss/styles/_modules.scss */
+.item-listing a {
+  color: #ff6d00;
+  text-decoration: none;
+}
+/* line 8, ../scss/styles/_modules.scss */
+.item-listing .album-image-number:before {
+  content: "•";
+  margin: 0 5px;
+}
+/* line 14, ../scss/styles/_modules.scss */
+.item-listing .album-meta {
+  font-size: 0.875em;
+  line-height: 1.71429em;
+  color: #aaaaaa;
+}
+/* line 19, ../scss/styles/_modules.scss */
+.item-listing .album-title {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+}
+
+/* line 7, ../scss/styles/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
 }
 
 /* line 2, ../scss/pages/_home.scss */
-.home-latest-albums a {
-  color: #e4242e;
-  text-decoration: none;
-}
-/* line 7, ../scss/pages/_home.scss */
 .home-latest-albums img {
   display: block;
 }
-/* line 12, ../scss/pages/_home.scss */
+/* line 6, ../scss/pages/_home.scss */
 .home-latest-albums li {
   margin: 20px 0;
 }
-/* line 17, ../scss/pages/_home.scss */
-.home-latest-albums .album-image-number:before {
-  content: "•";
-  margin: 0 5px;
-}
-/* line 23, ../scss/pages/_home.scss */
+/* line 10, ../scss/pages/_home.scss */
 .home-latest-albums .album-info {
   -webkit-box-shadow: 0 2px 2px 0 #cccccc;
   -moz-box-shadow: 0 2px 2px 0 #cccccc;
   box-shadow: 0 2px 2px 0 #cccccc;
-  *zoom: 1;
   background-color: white;
+  *zoom: 1;
   padding: 10px 10px;
 }
 /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
@@ -880,23 +900,11 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
-/* line 31, ../scss/pages/_home.scss */
-.home-latest-albums .album-meta {
-  font-size: 0.875em;
-  line-height: 1.71429em;
-  color: #aaaaaa;
-}
-/* line 36, ../scss/pages/_home.scss */
+/* line 16, ../scss/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 40, ../scss/pages/_home.scss */
-.home-latest-albums .album-title {
-  font-size: 1.125em;
-  line-height: 1.33333em;
-  margin: 0;
-}
-/* line 45, ../scss/pages/_home.scss */
+/* line 20, ../scss/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }
@@ -906,9 +914,69 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
-/* line 49, ../scss/pages/_home.scss */
+/* line 24, ../scss/pages/_home.scss */
 .home-latest-albums .fb-like {
   float: right;
+}
+
+/* line 2, ../scss/pages/_albums.scss */
+.album .page-title {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  background-color: #ff6d00;
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+
+/* line 14, ../scss/pages/_albums.scss */
+.album-listing li {
+  *zoom: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  *zoom: 1;
+  -webkit-box-shadow: 0 2px 2px 0 #cccccc;
+  -moz-box-shadow: 0 2px 2px 0 #cccccc;
+  box-shadow: 0 2px 2px 0 #cccccc;
+  background-color: white;
+  margin: 0 0 10px;
+  padding: 10px;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.album-listing li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.album-listing li:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 22, ../scss/pages/_albums.scss */
+.album-listing .album-info {
+  width: 73.68421%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1em;
+  display: inline;
+}
+/* line 26, ../scss/pages/_albums.scss */
+.album-listing .album-thumb {
+  width: 21.05263%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+/* line 29, ../scss/pages/_albums.scss */
+.album-listing .album-thumb img {
+  display: block;
+  width: 70px;
 }
 
 /* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */

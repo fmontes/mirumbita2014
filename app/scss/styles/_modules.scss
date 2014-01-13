@@ -1,0 +1,22 @@
+.item-listing {
+    a {
+        color: $orange;
+        text-decoration: none;
+    }
+
+    .album-image-number {
+        &:before {
+            content: "•";
+            margin: 0 $ph / 2;
+        }
+    }
+
+    .album-meta {
+        @include adjust-font-size-to($font-small);
+        color: $gray-dark;
+    }
+
+    .album-title {
+        @include adjust-font-size-to($font-large);
+    }
+}

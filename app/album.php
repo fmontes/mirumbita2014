@@ -16,7 +16,7 @@
                 <div class="content-wrapper">
                     <div class="content" role="main">
                         <h1 class="page-title"><?php printAlbumTitle();?></h1>
-                        <p><?php printAlbumDesc(); ?></p>
+                        <!-- <p><?php printAlbumDesc(); ?></p> -->
 
                         <section class="item-listing album-listing">
                             <ul>
