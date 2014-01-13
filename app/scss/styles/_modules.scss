@@ -1,3 +1,4 @@
+// Basic album listing styles
 .item-listing {
     a {
         color: $orange;
@@ -18,5 +19,55 @@
 
     .album-title {
         @include adjust-font-size-to($font-large);
+    }
+}
+
+// Pagination
+ul.pagelist { // Specific selector because is html is generated :(
+    a {
+        text-decoration: none;
+    }
+
+    .next,
+    .prev {
+        a,
+        .disabledlink {
+            @include fontello;
+            background-color: $green;
+            margin: 0;
+            padding: 7px 17px;
+            width: auto;
+
+            &:before {
+                color: $white;
+            }
+        }
+    }
+
+    .next,
+    .prev {
+        .disabledlink {
+            background-color: $gray;
+
+            &:before {
+                color: $gray-dark;
+            }
+        }
+    }
+
+    .next a:before,
+    .next .disabledlink:before {
+        content: '\e803';
+    }
+
+    .prev a:before,
+    .prev .disabledlink:before {
+        content: '\e804';
+    }
+
+    .current {
+        background-color: $orange;
+        color: $white;
+        padding: 3px 5px;
     }
 }

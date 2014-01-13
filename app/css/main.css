@@ -439,19 +439,49 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-/* line 2, ../scss/layout/_modules.scss */
+/* line 3, ../scss/layout/_modules.scss */
 .item-listing ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 8, ../scss/layout/_modules.scss */
+/* line 9, ../scss/layout/_modules.scss */
 .item-listing .album-title {
   margin: 0;
 }
-/* line 13, ../scss/layout/_modules.scss */
+/* line 14, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
   display: block;
+}
+
+/* line 21, ../scss/layout/_modules.scss */
+ul.pagelist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+/* line 27, ../scss/layout/_modules.scss */
+ul.pagelist li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/* line 33, ../scss/layout/_modules.scss */
+ul.pagelist .next .disabledlink,
+ul.pagelist .prev .disabledlink {
+  display: block;
+}
+/* line 38, ../scss/layout/_modules.scss */
+ul.pagelist .next {
+  float: right;
+}
+/* line 42, ../scss/layout/_modules.scss */
+ul.pagelist .prev {
+  float: left;
 }
 
 /* line 3, ../scss/layout/_nav.scss */
@@ -626,6 +656,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* '' */
+/* line 29, ../scss/styles/_fonticons.scss */
+.icon-angle-left:before {
+  content: '\e804';
+}
+
+/* '' */
+/* line 30, ../scss/styles/_fonticons.scss */
+.icon-angle-right:before {
+  content: '\e803';
+}
+
+/* '' */
 @font-face {
   font-family: 'FiraSans';
   src: url("../fonts/firasansot-regular-webfont.eot");
@@ -850,26 +892,96 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* line 2, ../scss/styles/_modules.scss */
+/* line 3, ../scss/styles/_modules.scss */
 .item-listing a {
   color: #ff6d00;
   text-decoration: none;
 }
-/* line 8, ../scss/styles/_modules.scss */
+/* line 9, ../scss/styles/_modules.scss */
 .item-listing .album-image-number:before {
   content: "•";
   margin: 0 5px;
 }
-/* line 14, ../scss/styles/_modules.scss */
+/* line 15, ../scss/styles/_modules.scss */
 .item-listing .album-meta {
   font-size: 0.875em;
   line-height: 1.71429em;
   color: #aaaaaa;
 }
-/* line 19, ../scss/styles/_modules.scss */
+/* line 20, ../scss/styles/_modules.scss */
 .item-listing .album-title {
   font-size: 1.125em;
   line-height: 1.33333em;
+}
+
+/* line 27, ../scss/styles/_modules.scss */
+ul.pagelist a {
+  text-decoration: none;
+}
+/* line 33, ../scss/styles/_modules.scss */
+ul.pagelist .next a,
+ul.pagelist .next .disabledlink,
+ul.pagelist .prev a,
+ul.pagelist .prev .disabledlink {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+  background-color: #51bd1f;
+  margin: 0;
+  padding: 7px 17px;
+  width: auto;
+}
+/* line 41, ../scss/styles/_modules.scss */
+ul.pagelist .next a:before,
+ul.pagelist .next .disabledlink:before,
+ul.pagelist .prev a:before,
+ul.pagelist .prev .disabledlink:before {
+  color: white;
+}
+/* line 49, ../scss/styles/_modules.scss */
+ul.pagelist .next .disabledlink,
+ul.pagelist .prev .disabledlink {
+  background-color: #cccccc;
+}
+/* line 52, ../scss/styles/_modules.scss */
+ul.pagelist .next .disabledlink:before,
+ul.pagelist .prev .disabledlink:before {
+  color: #aaaaaa;
+}
+/* line 58, ../scss/styles/_modules.scss */
+ul.pagelist .next a:before,
+ul.pagelist .next .disabledlink:before {
+  content: '\e803';
+}
+/* line 63, ../scss/styles/_modules.scss */
+ul.pagelist .prev a:before,
+ul.pagelist .prev .disabledlink:before {
+  content: '\e804';
+}
+/* line 68, ../scss/styles/_modules.scss */
+ul.pagelist .current {
+  background-color: #ff6d00;
+  color: white;
+  padding: 3px 5px;
 }
 
 /* line 7, ../scss/styles/_main.scss */
@@ -931,7 +1043,12 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-/* line 14, ../scss/pages/_albums.scss */
+/* line 13, ../scss/pages/_albums.scss */
+.album-comments {
+  margin-top: 40px;
+}
+
+/* line 18, ../scss/pages/_albums.scss */
 .album-listing li {
   *zoom: 1;
   padding-left: 10px;
@@ -958,7 +1075,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   clear: both;
 }
-/* line 22, ../scss/pages/_albums.scss */
+/* line 26, ../scss/pages/_albums.scss */
 .album-listing .album-info {
   width: 73.68421%;
   float: right;
@@ -966,14 +1083,14 @@ h1, h2, h3, h4, h5, h6 {
   *margin-left: -1em;
   display: inline;
 }
-/* line 26, ../scss/pages/_albums.scss */
+/* line 30, ../scss/pages/_albums.scss */
 .album-listing .album-thumb {
   width: 21.05263%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 29, ../scss/pages/_albums.scss */
+/* line 33, ../scss/pages/_albums.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;

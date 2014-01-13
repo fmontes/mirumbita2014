@@ -1,3 +1,4 @@
+// Basic album listing layout
 .item-listing {
     ul {
         @include reset-list-style;
@@ -13,5 +14,32 @@
         img {
             display: block;
         }
+    }
+}
+
+// Pagination
+ul.pagelist { // Specific selector because is html is generated :(
+    @include reset-list-style;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    li {
+        @include inline-block;
+    }
+
+    .next,
+    .prev {
+        .disabledlink {
+            display: block;
+        }
+    }
+
+    .next {
+        float: right;
+    }
+
+    .prev {
+        float: left;
     }
 }
