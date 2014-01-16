@@ -1,11 +1,12 @@
 <?php include "includes/head_meta.php"; ?>
 
-    <?php $whatIs = count(getParentAlbums()) ?>
-    <?php if ($whatIs) { ?>
+    <?php $isSubalbum = count(getParentAlbums()) ?>
+    <?php if ($isSubalbum) { ?>
         <body class="subalbum">
     <?php } else { ?>
         <body class="album">
     <?php } ?>
+
         <?php include "includes/fb-scripts.php"; ?>
 
         <div class="outer-wrapper">
@@ -48,9 +49,11 @@
 
                         <?php printPageListWithNav("", ""); ?>
 
-                    <div class="album-comments">
-                            <div class="fb-comments" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL() ?>" data-width="600px" data-numposts="5" data-colorscheme="light"></div>
-                        </div>
+                        <?php if ($isSubalbum) { ?>
+                            <div class="album-comments">
+                                <div class="fb-comments" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL() ?>" data-width="600px" data-numposts="5" data-colorscheme="light"></div>
+                            </div>
+                        <?php } ?>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 
