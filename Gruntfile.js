@@ -64,7 +64,8 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= project.app %>',
-                    src: '**/*.{png,jpg,gif}',
+                    //@TODO: not copy sprites source files/folders
+                    src: 'images/*.{png,jpg,gif}',
                     dest: '<%= project.dist %>'
                 }]
             }

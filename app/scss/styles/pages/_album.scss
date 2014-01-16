@@ -27,6 +27,12 @@
         @include span-columns(3 omega);
     }
 
+    .album-meta,
+    .album-title {
+        margin: 0;
+        padding: 0;
+    }
+
     .album-thumb {
         @include span-columns(1);
 
@@ -41,10 +47,15 @@
     .album-intro {
         @include module-box;
         margin: $pv 0 $pv * 2;
-        padding: $pv $grid-padding;
+        padding-top: 1px;
+    }
+
+    p,
+    .page-title {
+        padding: 0 $ph * 2;
     }
 
     .page-title {
-        margin-top: 0;
+        color: $orange;
     }
 }

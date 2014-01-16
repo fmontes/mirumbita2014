@@ -10,7 +10,10 @@
     .album-info {
         @include module-box;
         @include pie-clearfix;
-        padding: $pv $ph;
+    }
+
+    .album-title {
+        margin: $pv 0 0;
     }
 
     .album-thumb {
@@ -19,9 +22,5 @@
 
     .album-social {
         @include pie-clearfix;
-    }
-
-    .fb-like {
-        float: right;
     }
 }

@@ -31,6 +31,8 @@ $orange: #FF6D00;
 $purple: #46084E;
 $red: #E4242E;
 
+$fb-blue: #6378A9;
+
 $text-color: #444;
 $link-color: $green;
 $link-color-hover: $orange;
@@ -63,3 +65,10 @@ $ph: 10px; // horizontal
 $border-radius-s: 3px;
 $border-radius: 5px;
 $border-radius-l: 10px;
+
+
+// ---------------------------------------------------------------------------
+// Sprites
+
+$normal: sprite-map("icon-24/*.png");
+$retina: sprite-map("icon-48/*.png");

@@ -1,3 +1,27 @@
+.album-social {
+    border-top: solid 1px $gray-light;
+    margin-top: $pv;
+    padding: $pv $ph;
+
+    .album-comments-icons,
+    .fb-like,
+    .twitter-share-button {
+        @include inline-block(top);
+    }
+    .album-comments-icons {
+        @include icon-24('icn-fbcomments');
+        color: $fb-blue;
+        margin: 0 $ph;
+        position: relative;
+        text-decoration: none;
+        top: -4px;
+
+        &:before {
+            top: 2px;
+        }
+    }
+}
+
 .image-listing {
     img {
         display: block;
@@ -16,8 +40,13 @@
         padding: 0;
     }
 
+    .album-info {
+        padding-top: 1px;
+    }
+
+    .album-meta,
     .album-title {
-        margin: 0;
+        padding: 0 $grid-padding;
     }
 
     .album-thumb {

@@ -42,6 +42,11 @@
                                             </div>
                                             <div class="album-social">
                                                 <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                                <a href="#album-comments" class="album-comments-icons">
+                                                    <fb:comments-count href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>"></fb:comments-count>
+                                                </a>
+                                                <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-text="Que lindas las fotos de <?php echo $album->getTitle() ?>" data-via="mirumbita" data-lang="es">Twittear</a>
+                                                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                                             </div>
                                         </div>
                                     </article>
