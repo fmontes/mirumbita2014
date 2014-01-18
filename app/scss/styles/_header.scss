@@ -1,6 +1,6 @@
 .btn-toggle-search,
 .btn-toggle-menu {
-    color: $green;
+    @include btn-style($gray-lighter, $green);
 
     &:before {
         @include fontello;
@@ -49,6 +49,7 @@
 
     input[type="text"] {
         @include border-radius(15px);
+        @include inline-block;
         border: none;
         height: 30px;
         padding: 0 80px 0 10px;
@@ -56,7 +57,8 @@
     }
 
     .button {
-        @include btn($orange, $white);
+        @include btn;
+        @include btn-style($orange, $white);
         @include border-right-radius(15px);
         @include border-left-radius(0);
         padding: 6px 15px;

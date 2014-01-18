@@ -1,6 +1,6 @@
 <?php include "includes/head_meta.php"; ?>
 
-    <body class="album">
+    <body class="page">
         <?php include "includes/fb-scripts.php"; ?>
 
         <div class="outer-wrapper">
