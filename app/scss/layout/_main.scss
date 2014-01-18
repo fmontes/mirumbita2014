@@ -17,6 +17,7 @@
 .inner-wrapper {
     // Just because the off-canvas menu
     background-color: $gray-light;
+    height: 100%;
     position: relative;
     z-index: 2;
 
@@ -38,7 +39,8 @@
 }
 
 .outer-wrapper {
-    position: relative;
+    height: 100%;
     overflow: hidden;
+    position: relative;
     width: 100%;
 }
