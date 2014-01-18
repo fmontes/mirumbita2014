@@ -1,3 +1,8 @@
+.active-item {
+    background-color: $green;
+    color: $white;
+}
+
 .side-nav {
     @include box-shadow(-4px 0 5px -4px $black inset);
     background-color: $purple;
@@ -13,9 +18,10 @@
     }
 
     a {
-        background-color: rgba($white, .1);
+        background-color: $purple-light;
         color: $white;
         display: block;
+        line-height: 24px;
         padding: $pg;
         text-decoration: none;
         text-transform: uppercase;
@@ -30,7 +36,21 @@
         padding-top: $pg * 2;
 
         a {
-            background-color: rgba($black, .1);
+            background-color: $purple-dark;
         }
+
+        .menu-active {
+            @extend .active-item;
+        }
+    }
+
+    .menu-active,
+    .menu_custompage {
+        @extend .active-item;
+        text-transform: uppercase;
+    }
+
+    .menu_custompage {
+        line-height: 44px;
     }
 }

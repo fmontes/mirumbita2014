@@ -1000,6 +1000,13 @@ ul.pagelist .prev {
 }
 
 /* line 1, ../scss/styles/_nav.scss */
+.active-item, .side-nav .corporate-menu .menu-active, .side-nav .menu-active,
+.side-nav .menu_custompage {
+  background-color: #51bd1f;
+  color: white;
+}
+
+/* line 6, ../scss/styles/_nav.scss */
 .side-nav {
   -webkit-box-shadow: -4px 0 5px -4px black inset;
   -moz-box-shadow: -4px 0 5px -4px black inset;
@@ -1008,35 +1015,45 @@ ul.pagelist .prev {
   font-size: 14px;
   text-align: center;
 }
-/* line 7, ../scss/styles/_nav.scss */
+/* line 12, ../scss/styles/_nav.scss */
 .side-nav li {
   margin-top: 1px;
 }
-/* line 10, ../scss/styles/_nav.scss */
+/* line 15, ../scss/styles/_nav.scss */
 .side-nav li:first-child {
   margin-top: 0;
 }
-/* line 15, ../scss/styles/_nav.scss */
+/* line 20, ../scss/styles/_nav.scss */
 .side-nav a {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #57205f;
   color: white;
   display: block;
+  line-height: 24px;
   padding: 10px;
   text-decoration: none;
   text-transform: uppercase;
 }
-/* line 23, ../scss/styles/_nav.scss */
+/* line 29, ../scss/styles/_nav.scss */
 .side-nav a:hover {
   color: white;
 }
-/* line 28, ../scss/styles/_nav.scss */
+/* line 34, ../scss/styles/_nav.scss */
 .side-nav .corporate-menu {
   margin-top: 20px;
   padding-top: 20px;
 }
-/* line 32, ../scss/styles/_nav.scss */
+/* line 38, ../scss/styles/_nav.scss */
 .side-nav .corporate-menu a {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #3e0746;
+}
+/* line 47, ../scss/styles/_nav.scss */
+.side-nav .menu-active,
+.side-nav .menu_custompage {
+  text-transform: uppercase;
+}
+/* line 53, ../scss/styles/_nav.scss */
+.side-nav .menu_custompage {
+  line-height: 44px;
 }
 
 /* line 3, ../scss/styles/_modules.scss */
