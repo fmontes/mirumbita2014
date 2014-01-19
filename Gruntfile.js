@@ -71,6 +71,21 @@ module.exports = function(grunt) {
             }
         },
 
+        useminPrepare: {
+            options: {
+                dest: '<%= project.dist %>'
+            },
+            html: '<%= project.app %>/includes/scripts.php'
+        },
+
+        usemin: {
+            options: {
+                basedir: '<%= project.dist %>',
+                dirs: ['<%= project.dist %>/**/*']
+            },
+            html: ['<%= project.dist %>/**/*.php'],
+        },
+
         // Modernizr builder for your project.
         // It is based on the Modernizr team's Modulizr tool.
         // https://github.com/Modernizr/grunt-modernizr
@@ -139,9 +154,7 @@ module.exports = function(grunt) {
                     'css/{,*/}*.*',
                     'fonts/{,*/}*.*',
                     'js/{,*/}*.*',
-                    '!js/vendor/modernizr.dev.js',
-                    // Bower componets
-                    'bower_components/jquery/jquery.min.js',
+                    '!js/vendor/modernizr.dev.js'
                 ]
             },
             css: {
@@ -162,6 +175,21 @@ module.exports = function(grunt) {
                 dest: '<%= project.dist %>',
                 src: '**/*.php'
             }
+        },
+
+        replace: {
+            js: {
+                src: ['<%= project.dist %>/includes/scripts.php'],
+                overwrite: true,
+                replacements: [{
+                    from:   '<script src="/js/',
+                    to:     '<script src="<?php echo $_zp_themeroot; ?>/js/',
+                },
+                {
+                    from:   '/js/jquery.js"></script>',
+                    to:     '/js/jquery.js"><\\/script>'
+                }]
+            }
         }
     });
 
@@ -169,8 +197,13 @@ module.exports = function(grunt) {
         'compass',
         'jshint',
         'imagemin',
+        'useminPrepare',
+        'concat',
+        'uglify',
         'modernizr',
-        'copy:dist'
+        'copy:dist',
+        'usemin',
+        'replace:js'
     ]);
 
 };
