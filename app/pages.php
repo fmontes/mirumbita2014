@@ -1,6 +1,6 @@
 <?php include "includes/head-meta.php"; ?>
 
-    <body class="page">
+    <body class="page page-<?php echo getPageTitleLink(); ?>">
         <?php include "includes/fb-scripts.php"; ?>
 
         <div class="outer-wrapper">
