@@ -51,10 +51,10 @@ function requestServiceForm() {
     // Displaying other address if no room is selected
     $('.js-room').on('change', function() {
         var selected = $(this).val();
-        if (selected == 'Otra direccion') {
+        if (selected === 'Otra direccion') {
             $('.js-address-group').show();
         }
-    })
+    });
 
     $('.js-date').pickadate({
         monthsFull: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
@@ -66,8 +66,8 @@ function requestServiceForm() {
     });
 
     $('.js-time').pickatime({
-        min: [7,00],
-        max: [00,00],
+        min: [7,0],
+        max: [0,0],
         clear: 'Borrar',
     });
 
@@ -125,7 +125,7 @@ function requestServiceForm() {
                 $('.js-alert').addClass('alert-success').text('Formulario enviado');
             },
             error: function(e) {
-                console.log(e)
+                console.log(e);
             }
         });
     });
