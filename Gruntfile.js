@@ -154,7 +154,8 @@ module.exports = function(grunt) {
                     'css/{,*/}*.*',
                     'fonts/{,*/}*.*',
                     'js/{,*/}*.*',
-                    '!js/vendor/modernizr.dev.js'
+                    '!js/vendor/modernizr.dev.js',
+                    'locale/{,*/}/{,*/}*.*'
                 ]
             },
             bower: {

@@ -15,35 +15,35 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
-                        <h1 class="page-title"><?php echo gettext("Request Service"); ?></h1>
+                        <h1 class="page-title"><?php echo gettext_th("Request Service", "mirumbita"); ?></h1>
                         <form action="themes/mirumbita/request-service-send.php" method="post" class="form request-service js-request-service">
                             <div class="form-group name-group">
-                                <label for="name"><?php echo gettext("Name"); ?></label>
+                                <label for="name"><?php echo gettext_th("Name", "mirumbita"); ?></label>
                                 <input type="text" id="name" name="name" tabindex="1">
                             </div>
                             <div class="form-group kidname-group">
-                                <label for="kidname"><?php echo gettext("Kid Name"); ?></label>
+                                <label for="kidname"><?php echo gettext_th("Kid Name", "mirumbita"); ?></label>
                                 <input type="text" id="kidname" name="kidname" tabindex="2">
                             </div>
                             <div class="form-group mobile-group">
-                                <label for="mobile"><?php echo gettext("Mobile"); ?></label>
+                                <label for="mobile"><?php echo gettext_th("Mobile", "mirumbita"); ?></label>
                                 <input type="tel" id="mobile" name="mobile" tabindex="3">
                             </div>
                             <div class="form-group email-group">
-                                <label for="email"><?php echo gettext("Email"); ?></label>
+                                <label for="email"><?php echo gettext_th("Email", "mirumbita"); ?></label>
                                 <input type="text" id="email" name="email" class="email" tabindex="4">
                             </div>
                             <div class="form-group date-time-group">
-                                <label for="date"><?php echo gettext("Event Date"); ?></label>
+                                <label for="date"><?php echo gettext_th("Event Date", "mirumbita"); ?></label>
                                 <div class="date-group">
-                                    <input type="text" id="date" name="date" class="date js-date" tabindex="5" placeholder="<?php echo gettext('Date'); ?>">
+                                    <input type="text" id="date" name="date" class="date js-date" tabindex="5" placeholder="<?php echo gettext_th('Date'); ?>">
                                 </div>
                                 <div class="time-group">
-                                    <input type="text" id="time" name="time" class="time js-time" tabindex="6" placeholder="<?php echo gettext('Time'); ?>">
+                                    <input type="text" id="time" name="time" class="time js-time" tabindex="6" placeholder="<?php echo gettext_th('Time'); ?>">
                                 </div>
                             </div>
                             <div class="form-group city-group">
-                                <label for="city"><?php echo gettext("City"); ?></label>
+                                <label for="city"><?php echo gettext_th("City", "mirumbita"); ?></label>
                                 <select name="city" id="city" name="city" tabindex="7">
                                     <option value="Maracaibo" selected="selected">Maracaibo</option>
                                     <option value="Ciudad Ojeda">Ciudad Ojeda</option>
@@ -53,7 +53,7 @@
                                 </select>
                             </div>
                             <div class="form-group room-group">
-                                <label for="room"><?php echo gettext("Party Room"); ?></label>
+                                <label for="room"><?php echo gettext_th("Party Room", "mirumbita"); ?></label>
                                 <select name="room" id="room" name="room" tabindex="8" class="js-room">
                                     <option value="" selected="selected"></option>
                                     <option value="Aquamania">Aquamania</option>
@@ -118,12 +118,12 @@
                                 </select>
                             </div>
                             <div class="form-group address-group js-address-group hidden">
-                                <label for="address"><?php echo gettext("Other Address"); ?></label>
+                                <label for="address"><?php echo gettext_th("Other Address", "mirumbita"); ?></label>
                                 <!-- @TODO: validate this field -->
                                 <textarea name="address" id="address" name="address" cols="30" rows="5" tabindex="9"></textarea>
                             </div>
                             <div class="form-group button-group">
-                                <button type="submit" class="btn btn-submit js-btn-submit" tabindex="10"><?php echo gettext("Submit"); ?></button>
+                                <button type="submit" class="btn btn-submit js-btn-submit" tabindex="10"><?php echo gettext_th("Submit", "mirumbita"); ?></button>
                             </div>
                         </form>
                     </div><!-- // content -->

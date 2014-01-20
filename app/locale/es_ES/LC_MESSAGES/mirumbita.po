@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mirumbita Zenphoto Theme\n"
-"POT-Creation-Date: 2014-01-20 00:09-0600\n"
-"PO-Revision-Date: 2014-01-20 00:12-0600\n"
+"POT-Creation-Date: 2014-01-20 00:32-0600\n"
+"PO-Revision-Date: 2014-01-20 00:32-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_VE\n"
@@ -12,6 +12,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: gettext_th\n"
 "X-Poedit-SearchPath-0: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/"
 "themes-dev/mirumbita-dev/app\n"
 
@@ -39,7 +40,7 @@ msgstr "Siguiente imagen"
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:27
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:69
 msgid "next"
-msgstr "siguiente"
+msgstr "sig"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/index.php:41
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/album-item.php:10
@@ -88,11 +89,11 @@ msgstr "Salón de fiesta"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:121
 msgid "Other Address"
-msgstr "Otra dirección "
+msgstr "Otra dirección"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:126
 msgid "Submit"
-msgstr "Envisar"
+msgstr "Enviar"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:40
 #, php-format
@@ -112,27 +113,29 @@ msgstr "<strong>Etiquetas:</strong>"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/theme_description.php:7
 msgid "Flat, simple and responsive theme"
-msgstr ""
+msgstr "Flat, simple and responsive theme"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/themeoptions.php:60
 msgid "Number of albums"
-msgstr ""
+msgstr "Número de álbumes"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/themeoptions.php:64
 msgid ""
 "This theme display the latest albums in the homepage, you can set how many "
 "albums you want to display"
 msgstr ""
+"Este tema muestra los últimos álbumes de la página de inicio, se puede "
+"establecer el número de albums que desea mostrar"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/album-item.php:3
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/album-item.php:7
 msgid "View album:"
-msgstr "Ver album"
+msgstr "Ver álbum"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:8
 msgid "Albums Index"
-msgstr ""
+msgstr "Indice de albums"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:19
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
