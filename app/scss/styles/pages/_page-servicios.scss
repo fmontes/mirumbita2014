@@ -1,0 +1,54 @@
+.page-servicios {
+    .package-item {
+        background-color: $white;
+        margin: $pv * 2 0;
+        padding-bottom: 1px;
+
+        ul {
+            margin-left: 0;
+        }
+
+        h3 {
+            margin: 0;
+            padding: $pv $ph * 2;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .btn {
+            @include btn-style($orange, $white);
+        }
+    }
+
+    .package-additional {
+        background-color: $white;
+        padding: $pv $ph * 2;
+
+        h4 {
+            border-bottom: solid 1px $gray;
+            margin: 0;
+            padding-bottom: $pv;
+        }
+
+        ul {
+            margin-left: 0;
+            padding-left: $ph * 2;
+        }
+    }
+
+    .package-basic {
+        h3 {
+            background-color: $gray-dark;
+            color: $white;
+        }
+    }
+
+    .package-special {
+        h3 {
+            background-color: $green;
+            color: $white;
+        }
+    }
+}

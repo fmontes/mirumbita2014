@@ -1389,6 +1389,57 @@ ul.pagelist .current {
   display: inline;
 }
 
+/* line 2, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-item {
+  background-color: white;
+  margin: 20px 0;
+  padding-bottom: 1px;
+}
+/* line 7, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-item ul {
+  margin-left: 0;
+}
+/* line 11, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-item h3 {
+  margin: 0;
+  padding: 10px 20px;
+}
+/* line 16, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-item p {
+  text-align: center;
+}
+/* line 20, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-item .btn {
+  background-color: #ff6d00;
+  color: white;
+}
+/* line 25, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-additional {
+  background-color: white;
+  padding: 10px 20px;
+}
+/* line 29, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-additional h4 {
+  border-bottom: solid 1px #cccccc;
+  margin: 0;
+  padding-bottom: 10px;
+}
+/* line 35, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-additional ul {
+  margin-left: 0;
+  padding-left: 20px;
+}
+/* line 42, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-basic h3 {
+  background-color: #aaaaaa;
+  color: white;
+}
+/* line 49, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-special h3 {
+  background-color: #51bd1f;
+  color: white;
+}
+
 /* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
 * html {
   font-size: 100%;
