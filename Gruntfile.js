@@ -21,7 +21,7 @@ module.exports = function(grunt) {
             },
             compass: {
                 files: ['<%= project.app %>/scss/**/*.{scss,sass}'],
-                tasks: ['compass', 'copy:css']
+                tasks: ['compass', 'useminPrepare', 'concat', 'cssmin', 'usemin']
             },
             js: {
                 files: '<%= jshint.all %>',
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
             options: {
                 dest: '<%= project.dist %>'
             },
-            html: '<%= project.app %>/includes/scripts.php'
+            html: ['<%= project.app %>/includes/head-meta.php', '<%= project.app %>/includes/scripts.php']
         },
 
         usemin: {
@@ -188,11 +188,15 @@ module.exports = function(grunt) {
 
         replace: {
             js: {
-                src: ['<%= project.dist %>/includes/scripts.php'],
+                src: ['<%= project.dist %>/includes/scripts.php', '<%= project.dist %>/includes/head-meta.php'],
                 overwrite: true,
                 replacements: [{
                     from:   '<script src="/js/',
                     to:     '<script src="<?php echo $_zp_themeroot; ?>/js/',
+                },
+                {
+                    from:   'href="/css/',
+                    to:     'href="<?php echo $_zp_themeroot; ?>/css/'
                 },
                 {
                     from:   '<script src="<?php echo $_zp_themeroot; ?>/js/jquery.js"></script>',
@@ -205,6 +209,9 @@ module.exports = function(grunt) {
     grunt.registerTask('watching', [
         'copy:php',
         'useminPrepare',
+        'concat',
+        'uglify',
+        'cssmin',
         'usemin',
         'replace:js'
     ]);
@@ -216,6 +223,7 @@ module.exports = function(grunt) {
         'useminPrepare',
         'concat',
         'uglify',
+        'cssmin',
         'modernizr',
         'copy:dist',
         'usemin',

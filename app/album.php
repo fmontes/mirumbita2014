@@ -1,4 +1,4 @@
-<?php include "includes/head_meta.php"; ?>
+<?php include "includes/head-meta.php"; ?>
 
     <?php $isSubalbum = count(getParentAlbums()) ?>
     <?php if ($isSubalbum) { ?>

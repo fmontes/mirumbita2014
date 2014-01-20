@@ -77,3 +77,28 @@ ul.pagelist { // Specific selector because is html is generated :(
         padding: 3px 5px;
     }
 }
+
+// Alerts
+.alert {
+    background-color: $white;
+    border: solid 1px $gray;
+    margin: $pv * 2 0;
+    padding: $pv $ph * 2;
+}
+
+.alert-success {
+    background-color: lighten($green, 50%);
+    border-color: $green;
+    color: $green;
+}
+
+
+// ---------------------------------------------------------------------------
+// Plugins
+
+
+// Happyjs: form validator
+.unhappyMessage {
+    @include adjust-font-size-to($font-small-x, 1);
+    color: $red;
+}

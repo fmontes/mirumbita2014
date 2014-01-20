@@ -26,8 +26,18 @@ input[type="color"] {
     background-color: $white;
     background-image: none;
     border: 1px solid $gray;
+
+    &[disabled] {
+        background-color: $gray;
+        border: solid 1px $gray-dark;
+    }
+}
+
+textarea {
+    height: auto;
 }
 
 .form-group {
+    @include pie-clearfix;
     margin: $pv * 2 0;
 }

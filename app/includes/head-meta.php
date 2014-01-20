@@ -14,7 +14,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="">
-        <link rel="stylesheet" href="<?php echo $_zp_themeroot; ?>/css/main.css" type="text/css" />
+
+        <!-- build:css(app) /css/main.css -->
+        <link rel="stylesheet" href="css/main.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.date.css" type="text/css" />
+        <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.time.css" type="text/css" />
+        <!-- endbuild -->
 
         <?php zp_apply_filter('theme_head'); ?>
 

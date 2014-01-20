@@ -5,11 +5,15 @@
 <!-- endbuild -->
 
 <!-- build:js(app) /js/plugins.js -->
+<script src="bower_components/pickadate/lib/picker.js"></script>
+<script src="bower_components/pickadate/lib/picker.date.js"></script>
+<script src="bower_components/pickadate/lib/picker.time.js"></script>
 <script src="bower_components/happyjs/happy.js"></script>
+<script src="bower_components/happyjs/happy.methods.js"></script>
 <!-- endbuild -->
 
 <!-- build:js(app) /js/main.js -->
-<script src="<?php echo $_zp_themeroot; ?>/js/main.js"></script>
+<script src="/js/main.js"></script>
 <!-- endbuild -->
 
 <!-- Google Analytics -->
