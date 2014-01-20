@@ -1,12 +1,8 @@
 <!-- Loading jQuery from CDN or local if not available -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-<script>
-    window.jQuery || document.write('
-        <!-- build:js(app) /js/jquery.js -->
-        <script src="bower_components/jquery/jquery.min.js"></script>
-        <!-- endbuild -->
-    ');
-</script>
+<!-- build:js(app) /js/jquery.js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+<!-- endbuild -->
 
 <!-- build:js(app) /js/plugins.js -->
 <script src="bower_components/happyjs/happy.js"></script>

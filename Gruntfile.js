@@ -29,7 +29,7 @@ module.exports = function(grunt) {
             },
             php: {
                 files: '<%= project.app %>/**/*.php',
-                tasks: ['copy:php']
+                tasks: ['watching']
             },
         },
 
@@ -157,6 +157,15 @@ module.exports = function(grunt) {
                     '!js/vendor/modernizr.dev.js'
                 ]
             },
+            bower: {
+                expand: true,
+                dot: true,
+                cwd: '<%= project.app %>',
+                dest: '<%= project.dist %>',
+                src: [
+                    'bower_components'
+                ]
+            },
             css: {
                 expand: true,
                 cwd: '<%= project.app %>',
@@ -186,12 +195,19 @@ module.exports = function(grunt) {
                     to:     '<script src="<?php echo $_zp_themeroot; ?>/js/',
                 },
                 {
-                    from:   '/js/jquery.js"></script>',
-                    to:     '/js/jquery.js"><\\/script>'
+                    from:   '<script src="<?php echo $_zp_themeroot; ?>/js/jquery.js"></script>',
+                    to:     '<script>window.jQuery || document.write(\'<script src="<?php echo $_zp_themeroot; ?>/js/jquery.js"><\\/script>\');</script>'
                 }]
             }
         }
     });
+
+    grunt.registerTask('watching', [
+        'copy:php',
+        'useminPrepare',
+        'usemin',
+        'replace:js'
+    ]);
 
     grunt.registerTask('default', [
         'compass',

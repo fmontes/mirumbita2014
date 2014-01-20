@@ -16,7 +16,7 @@
                 <div class="content-wrapper">
                     <div class="content" role="main">
                         <h1 class="page-title"><?php echo gettext("Request Service"); ?></h1>
-                        <form action="" class="form request-service">
+                        <form action="" class="form request-service js-request-service">
                             <div class="form-group">
                                 <label for="name"><?php echo gettext("Name"); ?></label>
                                 <input type="text" id="name" tabindex="1">
