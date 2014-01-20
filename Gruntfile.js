@@ -223,10 +223,10 @@ module.exports = function(grunt) {
         'useminPrepare',
         'concat',
         'uglify',
-        'cssmin',
         'modernizr',
         'copy:dist',
         'usemin',
+        'cssmin',
         'replace:js'
     ]);
 
