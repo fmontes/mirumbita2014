@@ -1,0 +1,7 @@
+.search {
+    .page-title,
+    .search-results,
+    .no-results {
+        @include container;
+    }
+}

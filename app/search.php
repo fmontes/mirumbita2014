@@ -15,6 +15,7 @@
 
                 <div class="content-wrapper">
                     <div class="content" role="main">
+                        <h1 class="page-title"><?php echo gettext_th("Search Results", "mirumbita") ?></h1>
 
                         <?php
                             $c = 0;
@@ -36,12 +37,13 @@
                         ?>
 
                         <?php if ($total > 0 ) { ?>
-                            <h4 class="search results">
-                                <?php printf(ngettext('We found %1$u result for <em>%2$s</em>','We found %1$u results for <em>%2$s</em>',$total), $total, html_encode($searchwords)); ?>
-                            </h4>
+                            <p class="search-results">
+                                <?php //@TODO: translate this //printf(ngettext('We found <b>%1$u</b> albums for « <b>%2$s</b> »', 'We found <b>%1$u</b> images for « <b>%2$s</b> »', $total), $total, html_encode($searchwords)); ?>
+                                <?php printf(ngettext('Encontramos <b>%1$u</b> albums con « <b>%2$s</b> »', 'Enontramos <b>%1$u</b> imagenes con « <b>%2$s</b> »', $total), $total, html_encode($searchwords)); ?>
+                            </p>
                         <?php } ?>
 
-                        <section class="item-listing">
+                        <section class="item-listing album-listing">
                             <ul>
                                 <?php
                                     while (next_album()): $c++;
@@ -51,7 +53,7 @@
                             </ul>
                         </section>
 
-                        <div class="item-listing">
+                        <div class="item-listing image-listing">
                             <ul>
                                 <?php
                                     while (next_image()): $c++;
@@ -63,11 +65,10 @@
 
                         <?php
                             if ($c == 0) {
-                                echo gettext("Sorry, no image matches found. Try refining your search.");
+                                echo gettext_th("<p class='no-results'>Sorry, no image matches found. Try refining your search.</p>", "mirumbita");
                             }
                         ?>
-                        <?php printPageListWithNav("« ".gettext("prev"), gettext("next")." »"); ?>
-                        <?php printTags("links", gettext("<strong>Tags:</strong>")." ", "taglist", ""); ?>
+                        <?php printPageListWithNav(); ?>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 

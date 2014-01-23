@@ -59,7 +59,7 @@
 // Pagination
 ul.pagelist { // Specific selector because is html is generated :(
     @include reset-list-style;
-    margin: 0;
+    margin: $pv * 2 0 0;
     padding: 0;
     text-align: center;
 

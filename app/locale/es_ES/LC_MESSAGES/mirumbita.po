@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mirumbita Zenphoto Theme\n"
-"POT-Creation-Date: 2014-01-22 20:36-0600\n"
-"PO-Revision-Date: 2014-01-22 20:41-0600\n"
+"POT-Creation-Date: 2014-01-22 21:35-0600\n"
+"PO-Revision-Date: 2014-01-22 21:42-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_VE\n"
@@ -12,7 +12,7 @@ msgstr ""
 "X-Generator: Poedit 1.6.3\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Poedit-KeywordsList: gettext_th\n"
+"X-Poedit-KeywordsList: gettext_th;ngettext\n"
 "X-Poedit-SearchPath-0: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/"
 "themes-dev/mirumbita-dev/app\n"
 
@@ -24,12 +24,16 @@ msgstr "¡La fiesta no es aquí!"
 msgid "Error 404: Page not found"
 msgstr "Error 404: página no encontrada"
 
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:22
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:19
+msgid "Search"
+msgstr "Buscar"
+
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:25
 msgid "Previous Image"
 msgstr "Imagen anterior"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:25
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:69
 msgid "prev"
 msgstr "ant"
 
@@ -38,7 +42,6 @@ msgid "Next Image"
 msgstr "Siguiente imagen"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:27
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:69
 msgid "next"
 msgstr "sig"
 
@@ -95,21 +98,17 @@ msgstr "Otra dirección"
 msgid "Submit"
 msgstr "Enviar"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:40
-#, php-format
-msgid "We found %1$u result for <em>%2$s</em>"
-msgid_plural "We found %1$u results for <em>%2$s</em>"
-msgstr[0] ""
-msgstr[1] ""
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:18
+msgid "Search Results"
+msgstr "Resultados"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:66
-msgid "Sorry, no image matches found. Try refining your search."
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:67
+msgid ""
+"<p class='no-results'>Sorry, no image matches found. Try refining your "
+"search.</p>"
 msgstr ""
-"Lo sentimos, no se encontraron imágenes. Intente con una nueva búsqueda"
-
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:70
-msgid "<strong>Tags:</strong>"
-msgstr "<strong>Etiquetas:</strong>"
+"<p class=no-results>Lo sentimos, no se encontraron imágenes. Intenta con "
+"otras palabras claves.</p>"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/theme_description.php:7
 msgid "Flat, simple and responsive theme"
@@ -136,6 +135,5 @@ msgstr "Ver álbum"
 msgid "Albums Index"
 msgstr "Indice de albums"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:19
-msgid "Search"
-msgstr "Buscar"
+#~ msgid "<strong>Tags:</strong>"
+#~ msgstr "<strong>Etiquetas:</strong>"

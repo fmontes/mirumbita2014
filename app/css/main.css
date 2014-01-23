@@ -667,7 +667,7 @@ textarea {
 /* line 60, ../scss/layout/_modules.scss */
 ul.pagelist {
   list-style: none;
-  margin: 0;
+  margin: 20px 0 0;
   padding: 0;
   text-align: center;
 }
@@ -1364,6 +1364,25 @@ ul.pagelist .current {
 }
 /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .page .content-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 2, ../scss/styles/pages/_search.scss */
+.search .page-title,
+.search .search-results,
+.search .no-results {
+  *zoom: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.search .page-title:after,
+.search .search-results:after,
+.search .no-results:after {
   content: "";
   display: table;
   clear: both;
