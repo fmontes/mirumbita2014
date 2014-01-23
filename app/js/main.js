@@ -131,9 +131,22 @@ function requestServiceForm() {
     });
 }
 
+// Return false if the viewport is >= 640px (40em);
+function isMobile() {
+    return !Modernizr.mq('only screen and (min-width: 40em)');
+}
+
 $(document).on('ready', function() {
     svgFallback();
     toggleNav();
     toggleSearch();
     requestServiceForm();
+
+
+    if(isMobile()) {
+        $('.js-image-link').on('click', function(e) {
+            e.preventDefault();
+        })
+    }
+
 });
