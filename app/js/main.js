@@ -32,6 +32,7 @@ function toggleSearch() {
     $('.js-toggle-search').on('click', function (e) {
         e.stopPropagation();
         $('html').toggleClass('search-active');
+        $('.js-header-search #search_input').focus();
     });
 
     $('.js-header-search').on('click', function(e) {
