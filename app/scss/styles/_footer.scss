@@ -1,0 +1,13 @@
+.footer {
+    background-color: $white;
+    border-top: solid 1px $gray;
+    font-size: $font-small-x;
+    margin-top: $pv * 4;
+    padding: $pv 0;
+
+    .copyright {
+        color: $gray-dark;
+        margin: 0;
+        text-align: center;
+    }
+}

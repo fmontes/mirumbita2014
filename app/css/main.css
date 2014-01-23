@@ -1038,6 +1038,21 @@ ul.pagelist .prev {
   left: 0;
 }
 
+/* line 1, ../scss/styles/_footer.scss */
+.footer {
+  background-color: white;
+  border-top: solid 1px #cccccc;
+  font-size: 12px;
+  margin-top: 40px;
+  padding: 10px 0;
+}
+/* line 8, ../scss/styles/_footer.scss */
+.footer .copyright {
+  color: #aaaaaa;
+  margin: 0;
+  text-align: center;
+}
+
 /* line 1, ../scss/styles/_nav.scss */
 .active-item, .side-nav .corporate-menu .menu-active, .side-nav .menu-active,
 .side-nav .menu_custompage {
