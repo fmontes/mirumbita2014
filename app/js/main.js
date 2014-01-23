@@ -146,7 +146,7 @@ $(document).on('ready', function() {
     if(isMobile()) {
         $('.js-image-link').on('click', function(e) {
             e.preventDefault();
-        })
+        });
     }
 
 });

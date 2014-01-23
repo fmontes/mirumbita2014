@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: '<%= jshint.all %>',
-                tasks: ['copy:js']
+                tasks: ['jshint', 'copy:js']
             },
             php: {
                 files: '<%= project.app %>/**/*.php',
