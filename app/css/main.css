@@ -1210,6 +1210,11 @@ ul.pagelist .current {
 }
 
 /* line 101, ../scss/styles/_modules.scss */
+.unhappy {
+  border-color: #e4242e;
+}
+
+/* line 104, ../scss/styles/_modules.scss */
 .unhappyMessage {
   font-size: 0.75em;
   line-height: 2em;
@@ -1438,6 +1443,19 @@ ul.pagelist .current {
 .page-servicios .package-special h3 {
   background-color: #51bd1f;
   color: white;
+}
+
+/* line 2, ../scss/styles/pages/_page-quienes-somos.scss */
+.page-quienes-somos .servicios {
+  -webkit-box-shadow: 0 2px 2px 0 #cccccc;
+  -moz-box-shadow: 0 2px 2px 0 #cccccc;
+  box-shadow: 0 2px 2px 0 #cccccc;
+  background-color: white;
+  padding: 20px;
+}
+/* line 6, ../scss/styles/pages/_page-quienes-somos.scss */
+.page-quienes-somos .servicios p {
+  margin: 0;
 }
 
 /* line 61, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */

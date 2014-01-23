@@ -1,0 +1,10 @@
+.page-quienes-somos {
+    .servicios {
+        @include module-box;
+        padding: $pg * 2;
+
+        p {
+            margin: 0;
+        }
+    }
+}

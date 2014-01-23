@@ -98,6 +98,9 @@ ul.pagelist { // Specific selector because is html is generated :(
 
 
 // Happyjs: form validator
+.unhappy {
+    border-color: $red;
+}
 .unhappyMessage {
     @include adjust-font-size-to($font-small-x, 1);
     color: $red;
