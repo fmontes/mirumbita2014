@@ -12,6 +12,7 @@
 
 @mixin btn-style($bgcolor: $gray, $color: $black) {
     background-color: $bgcolor;
+    border: solid 1px $bgcolor;
     color: $color;
 }
 

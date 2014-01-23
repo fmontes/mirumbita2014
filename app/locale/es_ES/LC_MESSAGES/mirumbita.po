@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Mirumbita Zenphoto Theme\n"
 "POT-Creation-Date: 2014-01-22 20:36-0600\n"
-"PO-Revision-Date: 2014-01-22 20:37-0600\n"
+"PO-Revision-Date: 2014-01-22 20:41-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_VE\n"
@@ -18,11 +18,11 @@ msgstr ""
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:18
 msgid "Party is not here"
-msgstr "La fiesta no es por aquí!"
+msgstr "¡La fiesta no es aquí!"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:19
 msgid "Error 404: Page not found"
-msgstr "Error 404: la pagina que estas buscando no ha sido encontrada"
+msgstr "Error 404: página no encontrada"
 
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:25
 msgid "Previous Image"

@@ -1,0 +1,23 @@
+.page-404 {
+    .search {
+        form {
+            position: relative;
+            a, br {
+                display: none;
+            }
+        }
+
+        input[type="text"] {
+            padding-right: 100px;
+        }
+
+        .button {
+            @include btn;
+            @include btn-style($orange, $white);
+            @include border-left-radius(0);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}
