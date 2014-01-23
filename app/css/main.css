@@ -749,6 +749,10 @@ ul.pagelist .prev {
   transition: all 0.25s ease-out;
 }
 
+/* line 5, ../scss/layout/_main.scss */
+.content-wrapper {
+  min-height: 350px;
+}
 @media (min-width: 40em) {
   /* line 5, ../scss/layout/_main.scss */
   .content-wrapper {
@@ -756,6 +760,7 @@ ul.pagelist .prev {
     padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
+    min-height: auto;
   }
   /* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
   .content-wrapper:after {
@@ -780,13 +785,13 @@ ul.pagelist .prev {
   }
 }
 
-/* line 17, ../scss/layout/_main.scss */
+/* line 18, ../scss/layout/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
   position: relative;
   z-index: 2;
 }
-/* line 23, ../scss/layout/_main.scss */
+/* line 24, ../scss/layout/_main.scss */
 .csstransitions .inner-wrapper {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -794,7 +799,7 @@ ul.pagelist .prev {
   transition: all 0.25s ease-out;
 }
 
-/* line 30, ../scss/layout/_main.scss */
+/* line 31, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(70%, 0, 0);
   -moz-transform: perspective(0) translate3d(70%, 0, 0);
@@ -803,12 +808,12 @@ ul.pagelist .prev {
   transform: perspective(0) translate3d(70%, 0, 0);
   left: 0;
 }
-/* line 35, ../scss/layout/_main.scss */
+/* line 36, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   left: 70%;
 }
 
-/* line 40, ../scss/layout/_main.scss */
+/* line 41, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;

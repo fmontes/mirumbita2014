@@ -3,10 +3,11 @@
 @import "nav";
 
 .content-wrapper {
-    //@include container;
+    min-height: 350px;
 
     @include at-breakpoint($tablet) {
         @include container;
+        min-height: auto;
     }
 
     @include at-breakpoint($computer) {
