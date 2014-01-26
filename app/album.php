@@ -11,7 +11,7 @@
 
         <div class="outer-wrapper">
 
-            <nav class="nav side-nav js-side-nav" role="navigation">
+            <nav class="nav off-canvas-nav js-off-canvas-nav" role="navigation">
                 <?php include "includes/main-nav.php"; ?>
             </nav>
 
@@ -20,8 +20,11 @@
                 <?php include "includes/header.php"; ?>
 
                 <div class="content-wrapper">
-                    <div class="content" role="main">
+                    <nav class="nav side-nav js-side-nav" role="navigation">
+                        <?php include "includes/main-nav.php"; ?>
+                    </nav>
 
+                    <div class="content" role="main">
                         <div class="album-intro">
                             <h1 class="page-title"><?php printAlbumTitle();?></h1>
                             <?php printAlbumDesc(); ?>

@@ -2,16 +2,27 @@
 @import "modules";
 @import "nav";
 
+.content {
+    @include at-breakpoint($tablet) {
+        @include span-columns(6 omega);
+        padding-right: $grid-padding;
+    }
+
+    @include at-breakpoint($computer) {
+        @include span-columns(10 omega);
+        padding-right: $grid-padding;
+    }
+}
+
 .content-wrapper {
+    @include pie-clearfix;
     min-height: 350px;
 
     @include at-breakpoint($tablet) {
-        @include container;
         min-height: auto;
     }
 
     @include at-breakpoint($computer) {
-        @include container;
     }
 }
 

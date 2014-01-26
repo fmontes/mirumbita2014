@@ -16,7 +16,7 @@ function toggleNav() {
         $('html').toggleClass('menu-active');
     });
 
-    $('.js-side-nav').on('click', function(e) {
+    $('.off-canvas-nav').on('click', function(e) {
         e.stopPropagation();
     });
 

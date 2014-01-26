@@ -1,3 +1,11 @@
+.header-nav {
+    display: none; // hide for mobile and show for table and up
+
+    @include at-breakpoint($tablet) {
+        display: block;
+    }
+}
+
 .menu-active {
     &.csstransforms3d {
         .side-nav {
@@ -16,15 +24,7 @@
     }
 }
 
-.header-nav {
-    display: none; // hide for mobile and show for table and up
-
-    @include at-breakpoint($tablet) {
-        display: block;
-    }
-}
-
-.side-nav {
+.off-canvas-nav {
     height: 100%;
     position: absolute;
     width: 70%;
@@ -36,5 +36,18 @@
 
     .csstransitions & {
         @include transition(all .25s ease-out);
+    }
+}
+
+.side-nav {
+    display: none;
+
+    @include at-breakpoint($tablet) {
+        @include span-columns(2);
+        display: block;
+    }
+
+    @include at-breakpoint($computer) {
+        @include span-columns(2);
     }
 }

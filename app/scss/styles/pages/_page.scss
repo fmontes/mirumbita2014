@@ -1,5 +1,9 @@
 .page {
     .content-wrapper {
         @include container;
+
+        @include at-breakpoint($tablet) {
+            padding: 0;
+        }
     }
 }

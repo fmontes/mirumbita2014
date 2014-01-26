@@ -1,13 +1,28 @@
 .active-item {
     background-color: $green;
     color: $white;
+
+    @include at-breakpoint($tablet) {
+        background-color: $gray-light;
+        color: $text-color;
+
+        &:hover {
+            color: $text-color;
+        }
+    }
 }
 
-.side-nav {
+.nav {
     @include box-shadow(-4px 0 5px -4px $black inset);
     background-color: $purple;
     font-size: $font-small;
     text-align: center;
+    text-transform: uppercase;
+
+    @include at-breakpoint($tablet) {
+        text-align: left;
+        text-transform: none;
+    }
 
     li {
         margin-top: 1px;
@@ -22,9 +37,8 @@
         color: $white;
         display: block;
         line-height: 24px;
-        padding: 8px $pg;
+        padding: 8px $ph;
         text-decoration: none;
-        text-transform: uppercase;
 
         &:hover {
             color: $white;
@@ -47,7 +61,6 @@
     .menu-active,
     .menu_custompage {
         @extend .active-item;
-        text-transform: uppercase;
     }
 
     .menu_custompage {

@@ -5,6 +5,10 @@
     margin-top: $pv * 4;
     padding: $pv 0;
 
+    @include at-breakpoint($tablet) {
+        margin-top: 0;
+    }
+
     .copyright {
         color: $gray-dark;
         margin: 0;
