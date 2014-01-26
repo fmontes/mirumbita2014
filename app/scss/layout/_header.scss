@@ -1,3 +1,13 @@
+.btn-request-service {
+    display: none;
+
+    @include at-breakpoint($tablet) {
+        display: block;
+        float: right;
+        margin-top: $pv * 2;
+    }
+}
+
 .btn-toggle-search,
 .btn-toggle-menu {
     margin: 12px 0 13px;
@@ -5,6 +15,10 @@
 
     &:before {
         content: "search";
+    }
+
+    @include at-breakpoint($tablet) {
+        display: none;
     }
 }
 
@@ -14,19 +28,41 @@
     }
 }
 
+.header {
+    @include at-breakpoint($tablet) {
+        @include pie-clearfix;
+    }
+}
+
 .header-inner {
     background-color: $white;
     padding: 0 $grid-padding;
     position: relative;
     z-index: 2;
+
+    @include at-breakpoint($tablet) {
+        @include pie-clearfix;
+        position: static;
+        z-index: 1;
+    }
 }
 
 .header-search {
     width: 100%;
 
+    @include at-breakpoint($tablet) {
+        margin: -55px auto 0;
+        width: 250px;
+    }
+
     .csstransforms3d & {
         @include translate3d(0, -50px, 0, 0);
         margin-bottom: -50px;
+
+        @include at-breakpoint($tablet) {
+            @include translate3d(0, 0, 0, 0);
+            margin-bottom: 0;
+        }
     }
 
     .csstransitions & {
@@ -41,8 +77,15 @@
 .logo {
     display: block;
     margin: auto;
-    padding: 13px 0;
+    padding: 13px 0 14px;
     width: 150px;
+
+    @include at-breakpoint($tablet) {
+        float: left;
+        margin: 0;
+        padding: 17px 0 18px;
+        width: 200px;
+    }
 }
 
 .search-active {

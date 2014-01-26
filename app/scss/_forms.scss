@@ -31,6 +31,10 @@ input[type="color"] {
         background-color: $gray;
         border: solid 1px $gray-dark;
     }
+
+    &:focus {
+        outline: 0;
+    }
 }
 
 textarea {

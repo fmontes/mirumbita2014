@@ -1,3 +1,7 @@
+.btn-request-service {
+    @include btn-style($green, $white);
+}
+
 .btn-toggle-search,
 .btn-toggle-menu {
     @include btn-style($gray-lighter, $green);
@@ -35,9 +39,20 @@
     }
 }
 
+.header {
+    @include at-breakpoint($tablet) {
+        box-shadow: 0 2px 0 0 $gray;
+    }
+}
+
 .header-search {
     background-color: $green;
     padding: $pg;
+
+    @include at-breakpoint($tablet) {
+        background: none;
+        padding: 0;
+    }
 
     form {
         position: relative;
@@ -54,6 +69,10 @@
         height: 30px;
         padding: 0 80px 0 10px;
         width: 100%;
+
+        @include at-breakpoint($tablet) {
+            border: solid 1px $gray;
+        }
     }
 
     .button {
@@ -61,7 +80,7 @@
         @include btn-style($orange, $white);
         @include border-right-radius(15px);
         @include border-left-radius(0);
-        padding: 6px 15px;
+        padding: 5px 15px;
         position: absolute;
         right: 0;
         top: 0;
