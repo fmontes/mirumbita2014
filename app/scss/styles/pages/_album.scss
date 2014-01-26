@@ -25,6 +25,7 @@
 
     .album-info {
         @include span-columns(3 omega);
+        padding-left: $ph;
     }
 
     .album-meta,

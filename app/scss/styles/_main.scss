@@ -17,9 +17,9 @@
 
 .content-wrapper {
     @include at-breakpoint($tablet) {
-        @include background-image(linear-gradient(left, #46084e 0%, #46084e 23.07692%, $gray-light 23.07692%, $gray-light 100%));
+        @include background-image(linear-gradient(left, #46084e 0%, #46084e 25%, $gray-light 25%, $gray-light 100%));
     }
     @include at-breakpoint($computer) {
-        @include background-image(linear-gradient(left, #46084e 0%, #46084e 15.25424%, $gray-light 15.25424%, $gray-light 100%));
+        @include background-image(linear-gradient(left, #46084e 0%, #46084e 16.66667%, $gray-light 16.66667%, $gray-light 100%));
     }
 }

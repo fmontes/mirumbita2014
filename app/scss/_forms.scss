@@ -18,14 +18,15 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-    display: block;
-    width: 100%;
-    height: $input-height-base;
-    padding: $pv $ph;
-    font-size: $font-base;
+    @include border-radius(0);
     background-color: $white;
     background-image: none;
     border: 1px solid $gray;
+    display: block;
+    font-size: $font-base;
+    height: $input-height-base;
+    padding: $pv $ph;
+    width: 100%;
 
     &[disabled] {
         background-color: $gray;

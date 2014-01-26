@@ -456,16 +456,21 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  display: block;
-  width: 100%;
-  height: 40px;
-  padding: 10px 10px;
-  font-size: 16px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
   background-color: white;
   background-image: none;
   border: 1px solid #cccccc;
+  display: block;
+  font-size: 16px;
+  height: 40px;
+  padding: 10px 10px;
+  width: 100%;
 }
-/* line 30, ../scss/_forms.scss */
+/* line 31, ../scss/_forms.scss */
 select[disabled],
 textarea[disabled],
 input[type="text"][disabled],
@@ -485,7 +490,7 @@ input[type="color"][disabled] {
   background-color: #cccccc;
   border: solid 1px #aaaaaa;
 }
-/* line 35, ../scss/_forms.scss */
+/* line 36, ../scss/_forms.scss */
 select:focus,
 textarea:focus,
 input[type="text"]:focus,
@@ -505,12 +510,12 @@ input[type="color"]:focus {
   outline: 0;
 }
 
-/* line 40, ../scss/_forms.scss */
+/* line 41, ../scss/_forms.scss */
 textarea {
   height: auto;
 }
 
-/* line 44, ../scss/_forms.scss */
+/* line 45, ../scss/_forms.scss */
 .form-group {
   *zoom: 1;
   margin: 20px 0;
@@ -845,25 +850,25 @@ ul.pagelist .prev {
 @media (min-width: 40em) {
   /* line 42, ../scss/layout/_nav.scss */
   .side-nav {
-    width: 23.07692%;
+    width: 25%;
     float: left;
-    margin-right: 2.5641%;
+    margin-right: 0%;
     display: block;
   }
 }
 @media (min-width: 60em) {
   /* line 42, ../scss/layout/_nav.scss */
   .side-nav {
-    width: 15.25424%;
+    width: 16.66667%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 0%;
   }
 }
 
 @media (min-width: 40em) {
   /* line 5, ../scss/layout/_main.scss */
   .content {
-    width: 74.35897%;
+    width: 75%;
     float: right;
     margin-right: 0;
     padding-right: 10px;
@@ -872,7 +877,7 @@ ul.pagelist .prev {
 @media (min-width: 60em) {
   /* line 5, ../scss/layout/_main.scss */
   .content {
-    width: 83.05085%;
+    width: 83.33333%;
     float: right;
     margin-right: 0;
     padding-right: 10px;
@@ -1462,32 +1467,33 @@ ul.pagelist .current {
 }
 /* line 26, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
-  width: 73.68421%;
+  width: 75%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: 0em;
   display: inline;
+  padding-left: 10px;
 }
-/* line 30, ../scss/styles/pages/_album.scss */
+/* line 31, ../scss/styles/pages/_album.scss */
 .album-listing .album-meta,
 .album-listing .album-title {
   margin: 0;
   padding: 0;
 }
-/* line 36, ../scss/styles/pages/_album.scss */
+/* line 37, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
-  width: 21.05263%;
+  width: 25%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 0%;
   display: inline;
 }
-/* line 39, ../scss/styles/pages/_album.scss */
+/* line 40, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
 }
 
-/* line 47, ../scss/styles/pages/_album.scss */
+/* line 48, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #cccccc;
   -moz-box-shadow: 0 2px 2px 0 #cccccc;
@@ -1496,12 +1502,12 @@ ul.pagelist .current {
   margin: 10px 0 20px;
   padding-top: 1px;
 }
-/* line 53, ../scss/styles/pages/_album.scss */
+/* line 54, ../scss/styles/pages/_album.scss */
 .subalbum p,
 .subalbum .page-title {
   padding: 0 20px;
 }
-/* line 58, ../scss/styles/pages/_album.scss */
+/* line 59, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   color: #ff6d00;
 }
@@ -1606,16 +1612,16 @@ ul.pagelist .current {
 /* line 12, ../scss/styles/pages/_request-service.scss */
 .date-time-group .date-group,
 .date-time-group .time-group {
-  width: 47.36842%;
+  width: 50%;
   float: left;
-  margin-right: 5.26316%;
+  margin-right: 0%;
   display: inline;
 }
 /* line 17, ../scss/styles/pages/_request-service.scss */
 .date-time-group .time-group {
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: 0em;
   display: inline;
 }
 
@@ -1737,21 +1743,21 @@ ul.pagelist .current {
 @media (min-width: 40em) {
   /* line 18, ../scss/styles/_main.scss */
   .content-wrapper {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(23.07692%, #46084e), color-stop(23.07692%, #eeeeee), color-stop(100%, #eeeeee));
-    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 23.07692%, #eeeeee 23.07692%, #eeeeee 100%);
-    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 23.07692%, #eeeeee 23.07692%, #eeeeee 100%);
-    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 23.07692%, #eeeeee 23.07692%, #eeeeee 100%);
-    background-image: linear-gradient(left, #46084e 0%, #46084e 23.07692%, #eeeeee 23.07692%, #eeeeee 100%);
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(25%, #46084e), color-stop(25%, #eeeeee), color-stop(100%, #eeeeee));
+    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
+    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
+    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
+    background-image: linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
   }
 }
 @media (min-width: 60em) {
   /* line 18, ../scss/styles/_main.scss */
   .content-wrapper {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(15.25424%, #46084e), color-stop(15.25424%, #eeeeee), color-stop(100%, #eeeeee));
-    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 15.25424%, #eeeeee 15.25424%, #eeeeee 100%);
-    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 15.25424%, #eeeeee 15.25424%, #eeeeee 100%);
-    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 15.25424%, #eeeeee 15.25424%, #eeeeee 100%);
-    background-image: linear-gradient(left, #46084e 0%, #46084e 15.25424%, #eeeeee 15.25424%, #eeeeee 100%);
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(16.66667%, #46084e), color-stop(16.66667%, #eeeeee), color-stop(100%, #eeeeee));
+    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
+    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
+    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
+    background-image: linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
   }
 }
 
