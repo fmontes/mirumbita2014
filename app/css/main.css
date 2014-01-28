@@ -856,7 +856,7 @@ ul.pagelist .prev {
     display: block;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 70em) {
   /* line 42, ../scss/layout/_nav.scss */
   .side-nav {
     width: 16.66667%;
@@ -871,20 +871,18 @@ ul.pagelist .prev {
     width: 75%;
     float: right;
     margin-right: 0;
-    padding-right: 10px;
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 70em) {
   /* line 5, ../scss/layout/_main.scss */
   .content {
     width: 83.33333%;
     float: right;
     margin-right: 0;
-    padding-right: 10px;
   }
 }
 
-/* line 17, ../scss/layout/_main.scss */
+/* line 15, ../scss/layout/_main.scss */
 .content-wrapper {
   *zoom: 1;
   min-height: 350px;
@@ -896,19 +894,19 @@ ul.pagelist .prev {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 17, ../scss/layout/_main.scss */
+  /* line 15, ../scss/layout/_main.scss */
   .content-wrapper {
     min-height: auto;
   }
 }
 
-/* line 29, ../scss/layout/_main.scss */
+/* line 27, ../scss/layout/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
   position: relative;
   z-index: 2;
 }
-/* line 35, ../scss/layout/_main.scss */
+/* line 33, ../scss/layout/_main.scss */
 .csstransitions .inner-wrapper {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -916,7 +914,7 @@ ul.pagelist .prev {
   transition: all 0.25s ease-out;
 }
 
-/* line 42, ../scss/layout/_main.scss */
+/* line 40, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(70%, 0, 0);
   -moz-transform: perspective(0) translate3d(70%, 0, 0);
@@ -925,12 +923,12 @@ ul.pagelist .prev {
   transform: perspective(0) translate3d(70%, 0, 0);
   left: 0;
 }
-/* line 47, ../scss/layout/_main.scss */
+/* line 45, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   left: 70%;
 }
 
-/* line 52, ../scss/layout/_main.scss */
+/* line 50, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;
@@ -1516,17 +1514,51 @@ ul.pagelist .current {
 .home-latest-albums img {
   display: block;
 }
-/* line 6, ../scss/styles/pages/_home.scss */
+@media (min-width: 40em) {
+  /* line 1, ../scss/styles/pages/_home.scss */
+  .home-latest-albums {
+    padding: 10px;
+  }
+}
+@media (min-width: 70em) {
+  /* line 1, ../scss/styles/pages/_home.scss */
+  .home-latest-albums {
+    padding: 20px;
+  }
+}
+/* line 14, ../scss/styles/pages/_home.scss */
 .home-latest-albums li {
   margin: 20px 0;
 }
 @media (min-width: 40em) {
-  /* line 6, ../scss/styles/pages/_home.scss */
+  /* line 14, ../scss/styles/pages/_home.scss */
   .home-latest-albums li {
-    width: 33%;
+    width: 50%;
+    float: left;
+    margin-right: 0%;
+    margin: 0;
+    padding: 10px;
+  }
+  /* line 22, ../scss/styles/pages/_home.scss */
+  .home-latest-albums li:nth-child(2n) {
+    float: right;
+    margin-right: 0;
   }
 }
-/* line 14, ../scss/styles/pages/_home.scss */
+@media (min-width: 70em) {
+  /* line 14, ../scss/styles/pages/_home.scss */
+  .home-latest-albums li {
+    width: 33.33333%;
+    float: left;
+    margin-right: 0%;
+  }
+  /* line 31, ../scss/styles/pages/_home.scss */
+  .home-latest-albums li:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 37, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-info {
   -webkit-box-shadow: 0 2px 2px 0 #cccccc;
   -moz-box-shadow: 0 2px 2px 0 #cccccc;
@@ -1540,15 +1572,15 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 19, ../scss/styles/pages/_home.scss */
+/* line 42, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-title {
   margin: 10px 0 0;
 }
-/* line 23, ../scss/styles/pages/_home.scss */
+/* line 46, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 27, ../scss/styles/pages/_home.scss */
+/* line 50, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }
@@ -1756,7 +1788,7 @@ ul.pagelist .current {
     background-image: linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
   }
 }
-@media (min-width: 60em) {
+@media (min-width: 70em) {
   /* line 18, ../scss/styles/_main.scss */
   .content-wrapper {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(16.66667%, #46084e), color-stop(16.66667%, #eeeeee), color-stop(100%, #eeeeee));

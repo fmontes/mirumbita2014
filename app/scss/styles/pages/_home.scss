@@ -3,11 +3,34 @@
         display: block;
     }
 
+    @include at-breakpoint($tablet) {
+        padding: $pg;
+    }
+
+    @include at-breakpoint($computer) {
+        padding: $pg * 2;
+    }
+
     li {
         margin: $pv * 2 0;
 
         @include at-breakpoint($tablet) {
-            width: 33%;
+            @include span-columns(4);
+            margin: 0;
+            padding: $pg;
+
+            &:nth-child(2n) {
+                @include omega;
+            }
+        }
+
+        @include at-breakpoint($computer) {
+            @include span-columns(4);
+            //padding: $pg * 2;
+
+            &:nth-child(3n) {
+                @include omega;
+            }
         }
     }
 

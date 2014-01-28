@@ -5,12 +5,10 @@
 .content {
     @include at-breakpoint($tablet) {
         @include span-columns(6 omega);
-        padding-right: $grid-padding;
     }
 
     @include at-breakpoint($computer) {
         @include span-columns(10 omega);
-        padding-right: $grid-padding;
     }
 }
 
