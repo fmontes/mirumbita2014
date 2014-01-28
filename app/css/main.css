@@ -1520,7 +1520,13 @@ ul.pagelist .current {
 .home-latest-albums li {
   margin: 20px 0;
 }
-/* line 10, ../scss/styles/pages/_home.scss */
+@media (min-width: 40em) {
+  /* line 6, ../scss/styles/pages/_home.scss */
+  .home-latest-albums li {
+    width: 33%;
+  }
+}
+/* line 14, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-info {
   -webkit-box-shadow: 0 2px 2px 0 #cccccc;
   -moz-box-shadow: 0 2px 2px 0 #cccccc;
@@ -1534,15 +1540,15 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 15, ../scss/styles/pages/_home.scss */
+/* line 19, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-title {
   margin: 10px 0 0;
 }
-/* line 19, ../scss/styles/pages/_home.scss */
+/* line 23, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 23, ../scss/styles/pages/_home.scss */
+/* line 27, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }

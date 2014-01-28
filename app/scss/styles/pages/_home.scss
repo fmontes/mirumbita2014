@@ -5,6 +5,10 @@
 
     li {
         margin: $pv * 2 0;
+
+        @include at-breakpoint($tablet) {
+            width: 33%;
+        }
     }
 
     .album-info {

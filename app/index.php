@@ -19,7 +19,7 @@
                     </nav>
 
                     <div class="content" role="main">
-                        <section class="item-listing home-latest-albums">
+                        <section class="item-listing home-latest-albums js-home-latest-albums">
                             <ul>
                                 <?php
                                     // http://www.zenphoto.org/documentation/classes/ThemeObject.html
@@ -27,7 +27,7 @@
                                     foreach ($latestalbums as $latestalbum) {
                                         $album = newAlbum($latestalbum[folder]);
                                 ?>
-                                <li>
+                                <li class="js-album-item">
                                     <article>
                                         <a href="<?php echo $album->getAlbumLink() ?>" class="album-thumb">
                                             <img src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>">
