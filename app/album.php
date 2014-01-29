@@ -2,9 +2,9 @@
 
     <?php $isSubalbum = count(getParentAlbums()) ?>
     <?php if ($isSubalbum) { ?>
-        <body class="subalbum">
+        <body class="subalbum js-subalbum">
     <?php } else { ?>
-        <body class="album">
+        <body class="album js-album">
     <?php } ?>
 
         <?php include "includes/fb-scripts.php"; ?>
@@ -51,7 +51,7 @@
                             </ul>
                         </section>
 
-                        <div class="item-listing image-listing">
+                        <div class="item-listing image-listing js-image-listing">
                             <ul>
                                 <?php
                                     while (next_image()):
@@ -65,6 +65,7 @@
 
                         <?php if ($isSubalbum) { ?>
                             <div id="album-comments" class="album-comments">
+                                <h3 class="album-comments-title"><?php echo gettext_th("Like the pics? Leave a comment and share it with your family", "mirumbita"); ?></h3>
                                 <div class="fb-comments" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL() ?>" data-width="600px" data-numposts="5" data-colorscheme="light"></div>
                             </div>
                         <?php } ?>

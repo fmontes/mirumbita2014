@@ -10,6 +10,10 @@
 <script src="bower_components/pickadate/lib/picker.time.js"></script>
 <script src="bower_components/happyjs/happy.js"></script>
 <script src="bower_components/happyjs/happy.methods.js"></script>
+<script src="bower_components/eventEmitter/EventEmitter.js"></script>
+<script src="bower_components/eventie/eventie.js"></script>
+<script src="bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="js/vendor/packery.pkgd.min.js"></script>
 <!-- endbuild -->
 
 <!-- build:js(app) /js/main.js -->

@@ -29,6 +29,15 @@
 
     li {
         margin-bottom: $pv * 2;
+
+        @include at-breakpoint($tablet) {
+            margin-bottom: 0;
+            width: 43%;
+        }
+
+        @include at-breakpoint($computer) {
+            width: 29%;
+        }
     }
 }
 

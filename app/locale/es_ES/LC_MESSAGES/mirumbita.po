@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Mirumbita Zenphoto Theme\n"
-"POT-Creation-Date: 2014-01-22 21:35-0600\n"
-"PO-Revision-Date: 2014-01-22 21:42-0600\n"
+"POT-Creation-Date: 2014-01-28 22:44-0600\n"
+"PO-Revision-Date: 2014-01-28 22:44-0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_VE\n"
@@ -16,93 +16,97 @@ msgstr ""
 "X-Poedit-SearchPath-0: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/"
 "themes-dev/mirumbita-dev/app\n"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:18
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:22
 msgid "Party is not here"
 msgstr "¡La fiesta no es aquí!"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:19
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:23
 msgid "Error 404: Page not found"
 msgstr "Error 404: página no encontrada"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:22
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:19
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/404.php:26
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:20
 msgid "Search"
 msgstr "Buscar"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:25
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/album.php:68
+msgid "Like the pics? Leave a comment and share it with your family"
+msgstr "¿Te gustaron las fotos? Comenta y compártelo con tu familia"
+
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:29
 msgid "Previous Image"
 msgstr "Imagen anterior"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:25
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:29
 msgid "prev"
 msgstr "ant"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:27
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:31
 msgid "Next Image"
 msgstr "Siguiente imagen"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:27
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/image.php:31
 msgid "next"
 msgstr "sig"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/index.php:41
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/index.php:44
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/album-item.php:10
 msgid "photos"
 msgstr "Fotos"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:18
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:22
 msgid "Request Service"
 msgstr "Solicitar servicio"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:21
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:25
 msgid "Name"
 msgstr "Nombre"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:25
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:29
 msgid "Kid Name"
 msgstr "Nombre del niño"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:29
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:33
 msgid "Mobile"
 msgstr "Celular"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:33
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:37
 msgid "Email"
 msgstr "Email"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:37
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:41
 msgid "Event Date"
 msgstr "Fecha del evento"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:39
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:43
 msgid "Date"
 msgstr "Fecha"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:42
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:46
 msgid "Time"
 msgstr "Hora"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:46
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:50
 msgid "City"
 msgstr "Ciudad"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:56
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:60
 msgid "Party Room"
 msgstr "Salón de fiesta"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:121
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:125
 msgid "Other Address"
 msgstr "Otra dirección"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:126
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/request-service.php:130
 msgid "Submit"
 msgstr "Enviar"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:18
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:22
 msgid "Search Results"
 msgstr "Resultados"
 
-#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:67
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/search.php:72
 msgid ""
 "<p class='no-results'>Sorry, no image matches found. Try refining your "
 "search.</p>"
@@ -134,6 +138,10 @@ msgstr "Ver álbum"
 #: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:8
 msgid "Albums Index"
 msgstr "Indice de albums"
+
+#: /Volumes/Secondary/Users/fmontes/htdocs/mirumbita/themes-dev/mirumbita-dev/app/includes/header.php:11
+msgid "Contract Service"
+msgstr "Contratar Servicio"
 
 #~ msgid "<strong>Tags:</strong>"
 #~ msgstr "<strong>Etiquetas:</strong>"

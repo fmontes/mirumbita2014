@@ -21,6 +21,25 @@
 
 .album-comments {
     margin-top: $pv * 4;
+
+    @include at-breakpoint($tablet) {
+        background: white;
+        margin: $pv * 4 auto $pv * 4;
+        padding: $pv * 2 $pv * 2 0;
+        text-align: center;
+        width: 640px;
+    }
+
+    .album-comments-title {
+        display: none;
+
+        @include at-breakpoint($tablet) {
+            color: $orange;
+            display: block;
+            font-weight: normal;
+            margin-top: 0;
+        }
+    }
 }
 
 .album-listing {
@@ -37,18 +56,10 @@
             @include span-columns(4);
             margin: 0;
             padding: $pg;
-
-            &:nth-child(2n) {
-                @include omega;
-            }
         }
 
         @include at-breakpoint($computer) {
             @include span-columns(4);
-
-            &:nth-child(4n) {
-                @include omega;
-            }
         }
 
         article {
@@ -70,6 +81,10 @@
         padding: 0;
     }
 
+    .album-title {
+        font-weight: normal;
+    }
+
     .album-thumb {
         @include span-columns(1);
 
@@ -85,6 +100,25 @@
         @include module-box;
         margin: $pv 0 $pv * 2;
         padding-top: 1px;
+
+        @include at-breakpoint($tablet) {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    .album-social {
+        @include at-breakpoint($tablet) {
+            border: none;
+            margin-top: 0;
+            padding: 15px $ph * 3 $pv;
+        }
+    }
+
+    .image-listing {
+        @include at-breakpoint($tablet) {
+            padding: 0 $ph * 3;
+        }
     }
 
     p,
@@ -94,5 +128,14 @@
 
     .page-title {
         color: $orange;
+
+        @include at-breakpoint($tablet) {
+            @include adjust-font-size-to($font-large-xxx);
+            background-color: $gray-dark;
+            color: $text-color;
+            font-weight: normal;
+            margin: 0;
+            padding: $pv $ph * 3;
+        }
     }
 }

@@ -737,47 +737,60 @@ textarea {
 .image-listing li {
   margin-bottom: 20px;
 }
+@media (min-width: 40em) {
+  /* line 30, ../scss/layout/_modules.scss */
+  .image-listing li {
+    margin-bottom: 0;
+    width: 43%;
+  }
+}
+@media (min-width: 70em) {
+  /* line 30, ../scss/layout/_modules.scss */
+  .image-listing li {
+    width: 29%;
+  }
+}
 
-/* line 37, ../scss/layout/_modules.scss */
+/* line 46, ../scss/layout/_modules.scss */
 .item-listing ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 43, ../scss/layout/_modules.scss */
+/* line 52, ../scss/layout/_modules.scss */
 .item-listing .album-info {
   padding-top: 1px;
 }
-/* line 47, ../scss/layout/_modules.scss */
+/* line 56, ../scss/layout/_modules.scss */
 .item-listing .album-meta,
 .item-listing .album-title {
   padding: 0 10px;
 }
-/* line 53, ../scss/layout/_modules.scss */
+/* line 62, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
   display: block;
 }
 
 @media (min-width: 40em) {
-  /* line 60, ../scss/layout/_modules.scss */
+  /* line 69, ../scss/layout/_modules.scss */
   div.pagelist {
     text-align: center;
   }
 }
 
-/* line 66, ../scss/layout/_modules.scss */
+/* line 75, ../scss/layout/_modules.scss */
 ul.pagelist {
   list-style: none;
   margin: 20px 0 0;
   padding: 0;
   text-align: center;
 }
-/* line 72, ../scss/layout/_modules.scss */
+/* line 81, ../scss/layout/_modules.scss */
 ul.pagelist.disabled_nav {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 76, ../scss/layout/_modules.scss */
+/* line 85, ../scss/layout/_modules.scss */
 ul.pagelist li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -786,44 +799,44 @@ ul.pagelist li {
   zoom: 1;
   *display: inline;
 }
-/* line 82, ../scss/layout/_modules.scss */
+/* line 91, ../scss/layout/_modules.scss */
 ul.pagelist .next .disabledlink,
 ul.pagelist .prev .disabledlink {
   display: block;
 }
 @media (min-width: 40em) {
-  /* line 80, ../scss/layout/_modules.scss */
+  /* line 89, ../scss/layout/_modules.scss */
   ul.pagelist .next,
   ul.pagelist .prev {
     display: inline-block;
   }
 }
-/* line 91, ../scss/layout/_modules.scss */
+/* line 100, ../scss/layout/_modules.scss */
 ul.pagelist .next {
   float: right;
 }
 @media (min-width: 40em) {
-  /* line 91, ../scss/layout/_modules.scss */
+  /* line 100, ../scss/layout/_modules.scss */
   ul.pagelist .next {
     float: none;
   }
 }
-/* line 98, ../scss/layout/_modules.scss */
+/* line 107, ../scss/layout/_modules.scss */
 ul.pagelist .next a:before,
 ul.pagelist .next .disabledlink:before {
   content: '»';
 }
-/* line 104, ../scss/layout/_modules.scss */
+/* line 113, ../scss/layout/_modules.scss */
 ul.pagelist .prev {
   float: left;
 }
 @media (min-width: 40em) {
-  /* line 104, ../scss/layout/_modules.scss */
+  /* line 113, ../scss/layout/_modules.scss */
   ul.pagelist .prev {
     float: none;
   }
 }
-/* line 112, ../scss/layout/_modules.scss */
+/* line 121, ../scss/layout/_modules.scss */
 ul.pagelist .prev a:before,
 ul.pagelist .prev .disabledlink:before {
   content: '«';
@@ -1478,8 +1491,31 @@ ul.pagelist .current {
 .album-comments {
   margin-top: 40px;
 }
+@media (min-width: 40em) {
+  /* line 22, ../scss/styles/pages/_album.scss */
+  .album-comments {
+    background: white;
+    margin: 40px auto 40px;
+    padding: 20px 20px 0;
+    text-align: center;
+    width: 640px;
+  }
+}
+/* line 33, ../scss/styles/pages/_album.scss */
+.album-comments .album-comments-title {
+  display: none;
+}
+@media (min-width: 40em) {
+  /* line 33, ../scss/styles/pages/_album.scss */
+  .album-comments .album-comments-title {
+    color: #ff6d00;
+    display: block;
+    font-weight: normal;
+    margin-top: 0;
+  }
+}
 
-/* line 26, ../scss/styles/pages/_album.scss */
+/* line 45, ../scss/styles/pages/_album.scss */
 .album-listing {
   *zoom: 1;
 }
@@ -1490,17 +1526,17 @@ ul.pagelist .current {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 26, ../scss/styles/pages/_album.scss */
+  /* line 45, ../scss/styles/pages/_album.scss */
   .album-listing {
     padding: 0 20px 20px;
   }
 }
-/* line 33, ../scss/styles/pages/_album.scss */
+/* line 52, ../scss/styles/pages/_album.scss */
 .album-listing li {
   margin: 0 0 10px;
 }
 @media (min-width: 40em) {
-  /* line 33, ../scss/styles/pages/_album.scss */
+  /* line 52, ../scss/styles/pages/_album.scss */
   .album-listing li {
     width: 50%;
     float: left;
@@ -1508,26 +1544,16 @@ ul.pagelist .current {
     margin: 0;
     padding: 10px;
   }
-  /* line 41, ../scss/styles/pages/_album.scss */
-  .album-listing li:nth-child(2n) {
-    float: right;
-    margin-right: 0;
-  }
 }
 @media (min-width: 70em) {
-  /* line 33, ../scss/styles/pages/_album.scss */
+  /* line 52, ../scss/styles/pages/_album.scss */
   .album-listing li {
     width: 33.33333%;
     float: left;
     margin-right: 0%;
   }
-  /* line 49, ../scss/styles/pages/_album.scss */
-  .album-listing li:nth-child(4n) {
-    float: right;
-    margin-right: 0;
-  }
 }
-/* line 54, ../scss/styles/pages/_album.scss */
+/* line 65, ../scss/styles/pages/_album.scss */
 .album-listing li article {
   *zoom: 1;
   padding-left: 10px;
@@ -1553,7 +1579,7 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 62, ../scss/styles/pages/_album.scss */
+/* line 73, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
   width: 75%;
   float: right;
@@ -1562,26 +1588,30 @@ ul.pagelist .current {
   display: inline;
   padding-left: 10px;
 }
-/* line 67, ../scss/styles/pages/_album.scss */
+/* line 78, ../scss/styles/pages/_album.scss */
 .album-listing .album-meta,
 .album-listing .album-title {
   margin: 0;
   padding: 0;
 }
-/* line 73, ../scss/styles/pages/_album.scss */
+/* line 84, ../scss/styles/pages/_album.scss */
+.album-listing .album-title {
+  font-weight: normal;
+}
+/* line 88, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
   width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 76, ../scss/styles/pages/_album.scss */
+/* line 91, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
 }
 
-/* line 84, ../scss/styles/pages/_album.scss */
+/* line 99, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1590,14 +1620,47 @@ ul.pagelist .current {
   margin: 10px 0 20px;
   padding-top: 1px;
 }
-/* line 90, ../scss/styles/pages/_album.scss */
+@media (min-width: 40em) {
+  /* line 99, ../scss/styles/pages/_album.scss */
+  .subalbum .album-intro {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 40em) {
+  /* line 110, ../scss/styles/pages/_album.scss */
+  .subalbum .album-social {
+    border: none;
+    margin-top: 0;
+    padding: 15px 30px 10px;
+  }
+}
+@media (min-width: 40em) {
+  /* line 118, ../scss/styles/pages/_album.scss */
+  .subalbum .image-listing {
+    padding: 0 30px;
+  }
+}
+/* line 124, ../scss/styles/pages/_album.scss */
 .subalbum p,
 .subalbum .page-title {
   padding: 0 20px;
 }
-/* line 95, ../scss/styles/pages/_album.scss */
+/* line 129, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   color: #ff6d00;
+}
+@media (min-width: 40em) {
+  /* line 129, ../scss/styles/pages/_album.scss */
+  .subalbum .page-title {
+    font-size: 2.25em;
+    line-height: 1.33333em;
+    background-color: #cccccc;
+    color: #444444;
+    font-weight: normal;
+    margin: 0;
+    padding: 10px 30px;
+  }
 }
 
 /* line 2, ../scss/styles/pages/_home.scss */
