@@ -33,7 +33,7 @@
 
     h3 {
         @include adjust-font-size-to($font-small);
-        background-color: $gray;
+        background-color: $gray-dark;
         margin: 0;
         padding: 0 $ph;
 
@@ -46,7 +46,7 @@
 
 #admin_data {
     background-color: $white;
-    border: solid 1px $gray;
+    border: solid 1px $gray-dark;
     font-size: $font-small-x;
     padding: $pv $ph * 2;
     position: absolute;

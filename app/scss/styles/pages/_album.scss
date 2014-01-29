@@ -7,6 +7,15 @@
         margin: 0;
         padding: $pv / 2 $grid-padding;
         text-transform: uppercase;
+
+        @include at-breakpoint($tablet) {
+            @include adjust-font-size-to($font-large-xxx);
+            background-color: $gray-dark;
+            color: $text-color;
+            margin-bottom: $pv * 2;
+            padding: $pv $ph * 3;
+            text-transform: none;
+        }
     }
 }
 
@@ -15,12 +24,39 @@
 }
 
 .album-listing {
+    @include pie-clearfix;
+
+    @include at-breakpoint($tablet) {
+        padding: 0 $pg * 2 $pg * 2;
+    }
+
     li {
-        @include container;
-        @include pie-clearfix;
-        @include module-box;
         margin: 0 0 $pv;
-        padding: $pg;
+
+        @include at-breakpoint($tablet) {
+            @include span-columns(4);
+            margin: 0;
+            padding: $pg;
+
+            &:nth-child(2n) {
+                @include omega;
+            }
+        }
+
+        @include at-breakpoint($computer) {
+            @include span-columns(4);
+
+            &:nth-child(4n) {
+                @include omega;
+            }
+        }
+
+        article {
+            @include container;
+            @include pie-clearfix;
+            @include module-box;
+            padding: $pg;
+        }
     }
 
     .album-info {

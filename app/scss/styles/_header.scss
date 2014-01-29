@@ -41,7 +41,7 @@
 
 .header {
     @include at-breakpoint($tablet) {
-        box-shadow: 0 2px 0 0 $gray;
+        box-shadow: 0 2px 0 0 $gray-dark;
     }
 }
 
@@ -71,7 +71,7 @@
         width: 100%;
 
         @include at-breakpoint($tablet) {
-            border: solid 1px $gray;
+            border: solid 1px $gray-dark;
         }
     }
 

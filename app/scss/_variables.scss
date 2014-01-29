@@ -21,8 +21,9 @@ $show-grid-backgrounds: true;
 $black: #000;
 $white: #fff;
 
-$gray-dark: #aaa;
-$gray: #ccc;
+$gray-darker: #aaa;
+$gray-dark: #ccc;
+$gray: #dedede;
 $gray-light: #eee;
 $gray-lighter: #f6f6f6;
 
@@ -47,6 +48,9 @@ $font-body: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Hel
 $font-head: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Font sizes
+$font-large-xxx: 36px;
+$font-large-xx: 24px;
+$font-large-x: 20px;
 $font-large: 18px;
 $font-base: 16px;
 $font-small: 14px;

@@ -27,7 +27,7 @@
         padding: $pv $ph * 2;
 
         h4 {
-            border-bottom: solid 1px $gray;
+            border-bottom: solid 1px $gray-dark;
             margin: 0;
             padding-bottom: $pv;
         }
@@ -40,7 +40,7 @@
 
     .package-basic {
         h3 {
-            background-color: $gray-dark;
+            background-color: $gray-darker;
             color: $white;
         }
     }

@@ -14,7 +14,7 @@
 
     .album-meta {
         @include adjust-font-size-to($font-small);
-        color: $gray-dark;
+        color: $gray-darker;
     }
 
     .album-title {
@@ -53,10 +53,10 @@ ul.pagelist { // Specific selector because is html is generated :(
     .next,
     .prev {
         .disabledlink {
-            background-color: $gray;
+            background-color: $gray-dark;
 
             &:before {
-                color: $gray-dark;
+                color: $gray-darker;
             }
         }
     }
@@ -81,7 +81,7 @@ ul.pagelist { // Specific selector because is html is generated :(
 // Alerts
 .alert {
     background-color: $white;
-    border: solid 1px $gray;
+    border: solid 1px $gray-dark;
     margin: $pv * 2 0;
     padding: $pv $ph * 2;
 }

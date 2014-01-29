@@ -57,11 +57,21 @@
 }
 
 // Pagination
+div.pagelist {
+    @include at-breakpoint($tablet) {
+        text-align: center;
+    }
+}
+
 ul.pagelist { // Specific selector because is html is generated :(
     @include reset-list-style;
     margin: $pv * 2 0 0;
     padding: 0;
     text-align: center;
+
+    &.disabled_nav {
+        @include opacity(.5);
+    }
 
     li {
         @include inline-block;
@@ -72,23 +82,36 @@ ul.pagelist { // Specific selector because is html is generated :(
         .disabledlink {
             display: block;
         }
-    }
 
-    .next a:before,
-    .next .disabledlink:before {
-        content: '»';
-    }
-
-    .prev a:before,
-    .prev .disabledlink:before {
-        content: '«';
+        @include at-breakpoint($tablet) {
+            display: inline-block;
+        }
     }
 
     .next {
         float: right;
+
+        @include at-breakpoint($tablet) {
+            float: none;
+        }
+
+        a:before,
+        .disabledlink:before {
+            content: '»';
+        }
     }
 
     .prev {
         float: left;
+
+        @include at-breakpoint($tablet) {
+            float: none;
+        }
+
+
+        a:before,
+        .disabledlink:before {
+            content: '«';
+        }
     }
 }
