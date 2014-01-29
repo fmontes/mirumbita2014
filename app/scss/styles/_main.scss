@@ -23,3 +23,43 @@
         @include background-image(linear-gradient(left, #46084e 0%, #46084e 16.66667%, $gray-light 16.66667%, $gray-light 100%));
     }
 }
+
+
+// This is the admin logged menu
+#admin {
+    position: absolute;
+    right: $grid-padding;
+    top: 0;
+
+    h3 {
+        @include adjust-font-size-to($font-small);
+        background-color: $gray;
+        margin: 0;
+        padding: 0 $ph;
+
+        a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}
+
+#admin_data {
+    background-color: $white;
+    border: solid 1px $gray;
+    font-size: $font-small-x;
+    padding: $pv $ph * 2;
+    position: absolute;
+    right: $grid-padding;
+    top: 24px;
+    width: 123px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        line-height: 1.5;
+    }
+}
