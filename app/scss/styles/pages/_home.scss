@@ -16,21 +16,15 @@
 
         @include at-breakpoint($tablet) {
             @include span-columns(4);
+            @include nth-omega(2n);
             margin: 0;
             padding: $pg;
-
-            &:nth-child(2n) {
-                @include omega;
-            }
         }
 
         @include at-breakpoint($computer) {
-            @include span-columns(4);
-            //padding: $pg * 2;
-
-            &:nth-child(3n) {
-                @include omega;
-            }
+            @include span-columns(3, 9);
+            @include remove-nth-omega(2n);
+            @include nth-omega(3n)
         }
     }
 

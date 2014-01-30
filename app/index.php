@@ -35,7 +35,11 @@
                                         <div class="album-info">
                                             <h3 class="album-title">
                                                 <a href="<?php echo $album->getAlbumLink() ?>">
-                                                    <?php echo $album->getTitle() ?>
+                                                    <?php
+                                                        $temp = $album->getTitle();
+                                                        $title = (strlen($temp) > 29) ? substr($temp, 0, 29).'…' : $temp;
+                                                        echo $title;
+                                                    ?>
                                                 </a>
                                             </h3>
                                             <div class="album-meta">
