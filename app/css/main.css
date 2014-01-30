@@ -1591,7 +1591,13 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 73, ../scss/styles/pages/_album.scss */
+@media (min-width: 40em) {
+  /* line 65, ../scss/styles/pages/_album.scss */
+  .album-listing li article {
+    min-height: 92px;
+  }
+}
+/* line 77, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
   width: 75%;
   float: right;
@@ -1600,30 +1606,30 @@ ul.pagelist .current {
   display: inline;
   padding-left: 10px;
 }
-/* line 78, ../scss/styles/pages/_album.scss */
+/* line 82, ../scss/styles/pages/_album.scss */
 .album-listing .album-meta,
 .album-listing .album-title {
   margin: 0;
   padding: 0;
 }
-/* line 84, ../scss/styles/pages/_album.scss */
+/* line 88, ../scss/styles/pages/_album.scss */
 .album-listing .album-title {
   font-weight: normal;
 }
-/* line 88, ../scss/styles/pages/_album.scss */
+/* line 92, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
   width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 91, ../scss/styles/pages/_album.scss */
+/* line 95, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
 }
 
-/* line 99, ../scss/styles/pages/_album.scss */
+/* line 103, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1633,14 +1639,14 @@ ul.pagelist .current {
   padding-top: 1px;
 }
 @media (min-width: 40em) {
-  /* line 99, ../scss/styles/pages/_album.scss */
+  /* line 103, ../scss/styles/pages/_album.scss */
   .subalbum .album-intro {
     margin: 0;
     padding: 0;
   }
 }
 @media (min-width: 40em) {
-  /* line 110, ../scss/styles/pages/_album.scss */
+  /* line 114, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
     margin-top: 0;
@@ -1648,11 +1654,11 @@ ul.pagelist .current {
   }
 }
 @media (min-width: 40em) {
-  /* line 118, ../scss/styles/pages/_album.scss */
+  /* line 122, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 122, ../scss/styles/pages/_album.scss */
+  /* line 126, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1660,22 +1666,22 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 126, ../scss/styles/pages/_album.scss */
+  /* line 130, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 133, ../scss/styles/pages/_album.scss */
+/* line 137, ../scss/styles/pages/_album.scss */
 .subalbum p,
 .subalbum .page-title {
   padding: 0 20px;
 }
-/* line 138, ../scss/styles/pages/_album.scss */
+/* line 142, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   color: #ff6d00;
 }
 @media (min-width: 40em) {
-  /* line 138, ../scss/styles/pages/_album.scss */
+  /* line 142, ../scss/styles/pages/_album.scss */
   .subalbum .page-title {
     font-size: 2.25em;
     line-height: 1.33333em;

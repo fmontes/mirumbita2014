@@ -67,6 +67,10 @@
             @include pie-clearfix;
             @include module-box;
             padding: $pg;
+
+            @include at-breakpoint($tablet) {
+                min-height: 92px;
+            }
         }
     }
 
