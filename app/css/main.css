@@ -1767,6 +1767,28 @@ ul.pagelist .current {
   clear: both;
 }
 
+@media (min-width: 40em) {
+  /* line 3, ../scss/styles/pages/_image.scss */
+  .image .content-wrapper {
+    text-align: center;
+  }
+  /* line 7, ../scss/styles/pages/_image.scss */
+  .image .main-image {
+    background-color: white;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+  }
+  /* line 14, ../scss/styles/pages/_image.scss */
+  .image .main-image img {
+    display: block;
+  }
+  /* line 19, ../scss/styles/pages/_image.scss */
+  .image div.pagelist {
+    margin-bottom: 30px;
+  }
+}
 /* line 2, ../scss/styles/pages/_page.scss */
 .page .content-wrapper {
   *zoom: 1;
@@ -1955,7 +1977,7 @@ ul.pagelist .current {
 }
 
 @media (min-width: 40em) {
-  /* line 18, ../scss/styles/_main.scss */
+  /* line 19, ../scss/styles/_main.scss */
   .content-wrapper {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(25%, #46084e), color-stop(25%, #eeeeee), color-stop(100%, #eeeeee));
     background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
@@ -1965,7 +1987,7 @@ ul.pagelist .current {
   }
 }
 @media (min-width: 70em) {
-  /* line 18, ../scss/styles/_main.scss */
+  /* line 19, ../scss/styles/_main.scss */
   .content-wrapper {
     background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(16.66667%, #46084e), color-stop(16.66667%, #eeeeee), color-stop(100%, #eeeeee));
     background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
@@ -1975,13 +1997,13 @@ ul.pagelist .current {
   }
 }
 
-/* line 29, ../scss/styles/_main.scss */
+/* line 30, ../scss/styles/_main.scss */
 #admin {
   position: absolute;
   right: 10px;
   top: 0;
 }
-/* line 34, ../scss/styles/_main.scss */
+/* line 35, ../scss/styles/_main.scss */
 #admin h3 {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -1989,13 +2011,13 @@ ul.pagelist .current {
   margin: 0;
   padding: 0 10px;
 }
-/* line 40, ../scss/styles/_main.scss */
+/* line 41, ../scss/styles/_main.scss */
 #admin h3 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 47, ../scss/styles/_main.scss */
+/* line 48, ../scss/styles/_main.scss */
 #admin_data {
   background-color: white;
   border: solid 1px #cccccc;
@@ -2006,12 +2028,12 @@ ul.pagelist .current {
   top: 24px;
   width: 123px;
 }
-/* line 57, ../scss/styles/_main.scss */
+/* line 58, ../scss/styles/_main.scss */
 #admin_data ul {
   margin: 0;
   padding: 0;
 }
-/* line 62, ../scss/styles/_main.scss */
+/* line 63, ../scss/styles/_main.scss */
 #admin_data li {
   line-height: 1.5;
 }

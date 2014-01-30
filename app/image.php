@@ -19,17 +19,29 @@
                     </nav>
 
                     <div class="content" role="main">
-                        <?php printParentBreadcrumb("", " | ", " | "); printAlbumBreadcrumb("", " | "); ?><?php printImageTitle(true); ?>
 
                         <a href="<?php echo getFullImageURL(); ?>" title="<?php echo getBareImageTitle();?>" class="main-image">
                             <img src="<?php echo getDefaultSizedImage(); ?>" alt="<?php echo getBareImageTitle();?>">
                         </a>
 
-                        <?php if (hasPrevImage()) { ?>
-                            <a href="<?php echo html_encode(getPrevImageURL());?>" title="<?php echo gettext("Previous Image"); ?>"><?php echo gettext("prev"); ?></a>
-                        <?php } if (hasNextImage()) { ?>
-                            <a href="<?php echo html_encode(getNextImageURL());?>" title="<?php echo gettext("Next Image"); ?>"><?php echo gettext("next"); ?></a>
-                        <?php } ?>
+                        <div class="pagelist">
+                            <ul class="pagelist">
+                                <li class="prev">
+                                    <?php if (hasPrevImage()) { ?>
+                                        <a href="<?php echo html_encode(getPrevImageURL());?>" title="<?php echo gettext("Previous Image"); ?>"></a>
+                                    <?php } else { ?>
+                                        <span class="disabledlink"></span>
+                                    <?php } ?>
+                                </li>
+                                <li class="next">
+                                    <?php if (hasNextImage()) { ?>
+                                        <a href="<?php echo html_encode(getNextImageURL());?>" title="<?php echo gettext("Next Image"); ?>"></a>
+                                    <?php } else { ?>
+                                    <span class="disabledlink"></span>
+                                <?php } ?>
+                                </li>
+                            </ul>
+                        </div>
                     </div><!-- // content -->
                 </div><!-- // content-wrapper -->
 
