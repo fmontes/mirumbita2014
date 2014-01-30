@@ -1215,7 +1215,7 @@ ul.pagelist .prev .disabledlink:before {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding: 5px 15px;
+  padding: 4px 15px;
   position: absolute;
   right: 0;
   top: 0;
