@@ -1,14 +1,14 @@
 .home-latest-albums {
-    img {
-        display: block;
-    }
-
     @include at-breakpoint($tablet) {
         padding: $pg;
     }
 
     @include at-breakpoint($computer) {
         padding: $pg * 2;
+    }
+
+    img {
+        display: block;
     }
 
     li {

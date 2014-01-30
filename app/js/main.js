@@ -135,9 +135,22 @@ function isMobile() {
     return !Modernizr.mq('only screen and (min-width: 40em)');
 }
 
+function packery(imagelist, imageItem) {
+    if(!isMobile()) {
+        var $imageList = $(imagelist);
+        $imageList.imagesLoaded(function() {
+            $imageList.packery({
+                itemSelector: imageItem,
+                gutter: 20,
+            }).addClass('ready');
+        });
+    }
+}
+
 $(document).on('ready', function() {
     svgFallback();
     requestServiceForm();
+    packery('.js-subalbum .js-image-listing', '.js-image-listing-item');
 
 
     if(isMobile()) {
@@ -148,13 +161,3 @@ $(document).on('ready', function() {
         });
     }
 });
-
-if(!isMobile()) {
-    var $imageList = $('.js-subalbum .js-image-listing');
-    $imageList.imagesLoaded(function() {
-        $imageList.packery({
-            itemSelector: '.js-image-listing-item',
-            gutter: 20,
-        }).addClass('ready');
-    });
-}

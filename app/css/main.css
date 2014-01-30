@@ -1687,10 +1687,6 @@ ul.pagelist .current {
   }
 }
 
-/* line 2, ../scss/styles/pages/_home.scss */
-.home-latest-albums img {
-  display: block;
-}
 @media (min-width: 40em) {
   /* line 1, ../scss/styles/pages/_home.scss */
   .home-latest-albums {
@@ -1702,6 +1698,10 @@ ul.pagelist .current {
   .home-latest-albums {
     padding: 20px;
   }
+}
+/* line 10, ../scss/styles/pages/_home.scss */
+.home-latest-albums img {
+  display: block;
 }
 /* line 14, ../scss/styles/pages/_home.scss */
 .home-latest-albums li {
