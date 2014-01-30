@@ -29,6 +29,25 @@
     }
 }
 
+.page-title {
+    @include adjust-font-size-to(20px);
+    background-color: $orange;
+    color: $white;
+    font-weight: normal;
+    margin: 0;
+    padding: $pv / 2 $grid-padding;
+    text-transform: uppercase;
+
+    @include at-breakpoint($tablet) {
+        @include adjust-font-size-to($font-large-xxx);
+        background-color: $gray-dark;
+        color: $text-color;
+        margin-bottom: $pv * 2;
+        padding: $pv $ph * 3;
+        text-transform: none;
+    }
+}
+
 
 // This is the admin logged menu
 #admin {

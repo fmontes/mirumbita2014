@@ -4,6 +4,19 @@
 
         @include at-breakpoint($tablet) {
             padding: 0;
+
+            .content {
+                padding: 0 $ph * 3 $pv * 3;
+            }
         }
     }
+
+    .page-title {
+        margin: 0 (-$grid-padding) $pv;
+
+        @include at-breakpoint($tablet) {
+            margin: 0 $ph * -3;
+        }
+    }
+
 }

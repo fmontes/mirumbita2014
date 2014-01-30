@@ -1475,36 +1475,12 @@ ul.pagelist .current {
   color: #e4242e;
 }
 
-/* line 2, ../scss/styles/pages/_album.scss */
-.album .page-title {
-  font-size: 1.25em;
-  line-height: 1.2em;
-  background-color: #ff6d00;
-  color: white;
-  font-weight: normal;
-  margin: 0;
-  padding: 5px 10px;
-  text-transform: uppercase;
-}
-@media (min-width: 40em) {
-  /* line 2, ../scss/styles/pages/_album.scss */
-  .album .page-title {
-    font-size: 2.25em;
-    line-height: 1.33333em;
-    background-color: #cccccc;
-    color: #444444;
-    margin-bottom: 20px;
-    padding: 10px 30px;
-    text-transform: none;
-  }
-}
-
-/* line 22, ../scss/styles/pages/_album.scss */
+/* line 1, ../scss/styles/pages/_album.scss */
 .album-comments {
   margin-top: 40px;
 }
 @media (min-width: 40em) {
-  /* line 22, ../scss/styles/pages/_album.scss */
+  /* line 1, ../scss/styles/pages/_album.scss */
   .album-comments {
     background: white;
     margin: 40px auto 40px;
@@ -1513,12 +1489,12 @@ ul.pagelist .current {
     width: 640px;
   }
 }
-/* line 33, ../scss/styles/pages/_album.scss */
+/* line 12, ../scss/styles/pages/_album.scss */
 .album-comments .album-comments-title {
   display: none;
 }
 @media (min-width: 40em) {
-  /* line 33, ../scss/styles/pages/_album.scss */
+  /* line 12, ../scss/styles/pages/_album.scss */
   .album-comments .album-comments-title {
     color: #ff6d00;
     display: block;
@@ -1527,7 +1503,7 @@ ul.pagelist .current {
   }
 }
 
-/* line 45, ../scss/styles/pages/_album.scss */
+/* line 24, ../scss/styles/pages/_album.scss */
 .album-listing {
   *zoom: 1;
 }
@@ -1538,17 +1514,17 @@ ul.pagelist .current {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 45, ../scss/styles/pages/_album.scss */
+  /* line 24, ../scss/styles/pages/_album.scss */
   .album-listing {
     padding: 0 20px 20px;
   }
 }
-/* line 52, ../scss/styles/pages/_album.scss */
+/* line 31, ../scss/styles/pages/_album.scss */
 .album-listing li {
   margin: 0 0 10px;
 }
 @media (min-width: 40em) {
-  /* line 52, ../scss/styles/pages/_album.scss */
+  /* line 31, ../scss/styles/pages/_album.scss */
   .album-listing li {
     width: 50%;
     float: left;
@@ -1558,14 +1534,14 @@ ul.pagelist .current {
   }
 }
 @media (min-width: 70em) {
-  /* line 52, ../scss/styles/pages/_album.scss */
+  /* line 31, ../scss/styles/pages/_album.scss */
   .album-listing li {
     width: 33.33333%;
     float: left;
     margin-right: 0%;
   }
 }
-/* line 65, ../scss/styles/pages/_album.scss */
+/* line 44, ../scss/styles/pages/_album.scss */
 .album-listing li article {
   *zoom: 1;
   padding-left: 10px;
@@ -1592,12 +1568,12 @@ ul.pagelist .current {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 65, ../scss/styles/pages/_album.scss */
+  /* line 44, ../scss/styles/pages/_album.scss */
   .album-listing li article {
     min-height: 92px;
   }
 }
-/* line 77, ../scss/styles/pages/_album.scss */
+/* line 56, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
   width: 75%;
   float: right;
@@ -1606,30 +1582,30 @@ ul.pagelist .current {
   display: inline;
   padding-left: 10px;
 }
-/* line 82, ../scss/styles/pages/_album.scss */
+/* line 61, ../scss/styles/pages/_album.scss */
 .album-listing .album-meta,
 .album-listing .album-title {
   margin: 0;
   padding: 0;
 }
-/* line 88, ../scss/styles/pages/_album.scss */
+/* line 67, ../scss/styles/pages/_album.scss */
 .album-listing .album-title {
   font-weight: normal;
 }
-/* line 92, ../scss/styles/pages/_album.scss */
+/* line 71, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
   width: 25%;
   float: left;
   margin-right: 0%;
   display: inline;
 }
-/* line 95, ../scss/styles/pages/_album.scss */
+/* line 74, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
 }
 
-/* line 103, ../scss/styles/pages/_album.scss */
+/* line 82, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1639,14 +1615,14 @@ ul.pagelist .current {
   padding-top: 1px;
 }
 @media (min-width: 40em) {
-  /* line 103, ../scss/styles/pages/_album.scss */
+  /* line 82, ../scss/styles/pages/_album.scss */
   .subalbum .album-intro {
     margin: 0;
     padding: 0;
   }
 }
 @media (min-width: 40em) {
-  /* line 114, ../scss/styles/pages/_album.scss */
+  /* line 93, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
     margin-top: 0;
@@ -1654,11 +1630,11 @@ ul.pagelist .current {
   }
 }
 @media (min-width: 40em) {
-  /* line 122, ../scss/styles/pages/_album.scss */
+  /* line 101, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 126, ../scss/styles/pages/_album.scss */
+  /* line 105, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1666,31 +1642,19 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 130, ../scss/styles/pages/_album.scss */
+  /* line 109, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 137, ../scss/styles/pages/_album.scss */
+/* line 116, ../scss/styles/pages/_album.scss */
 .subalbum p,
 .subalbum .page-title {
   padding: 0 20px;
 }
-/* line 142, ../scss/styles/pages/_album.scss */
+/* line 121, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   color: #ff6d00;
-}
-@media (min-width: 40em) {
-  /* line 142, ../scss/styles/pages/_album.scss */
-  .subalbum .page-title {
-    font-size: 2.25em;
-    line-height: 1.33333em;
-    background-color: #cccccc;
-    color: #444444;
-    font-weight: normal;
-    margin: 0;
-    padding: 10px 30px;
-  }
 }
 
 @media (min-width: 40em) {
@@ -1816,6 +1780,20 @@ ul.pagelist .current {
   .page .content-wrapper {
     padding: 0;
   }
+  /* line 8, ../scss/styles/pages/_page.scss */
+  .page .content-wrapper .content {
+    padding: 0 30px 30px;
+  }
+}
+/* line 14, ../scss/styles/pages/_page.scss */
+.page .page-title {
+  margin: 0 -10px 10px;
+}
+@media (min-width: 40em) {
+  /* line 14, ../scss/styles/pages/_page.scss */
+  .page .page-title {
+    margin: 0 -30px;
+  }
 }
 
 /* line 2, ../scss/styles/pages/_search.scss */
@@ -1870,25 +1848,48 @@ ul.pagelist .current {
 }
 
 /* line 2, ../scss/styles/pages/_page-servicios.scss */
+.page-servicios .package-container {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page-servicios .package-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 6, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item {
   background-color: white;
   margin: 20px 0;
   padding-bottom: 1px;
 }
-/* line 7, ../scss/styles/pages/_page-servicios.scss */
+@media (min-width: 40em) {
+  /* line 6, ../scss/styles/pages/_page-servicios.scss */
+  .page-servicios .package-item {
+    width: 48.71795%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+  /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .page-servicios .package-item:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 18, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item ul {
   margin-left: 0;
 }
-/* line 11, ../scss/styles/pages/_page-servicios.scss */
+/* line 22, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item h3 {
   margin: 0;
   padding: 10px 20px;
 }
-/* line 16, ../scss/styles/pages/_page-servicios.scss */
+/* line 27, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item p {
   text-align: center;
 }
-/* line 20, ../scss/styles/pages/_page-servicios.scss */
+/* line 31, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item .btn {
   background-color: #ff6d00;
   border: solid 1px #ff6d00;
@@ -1898,28 +1899,36 @@ ul.pagelist .current {
 .page-servicios .package-item .btn:hover {
   color: white;
 }
-/* line 25, ../scss/styles/pages/_page-servicios.scss */
+/* line 36, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-additional {
   background-color: white;
-  padding: 10px 20px;
+  padding: 20px 20px;
 }
-/* line 29, ../scss/styles/pages/_page-servicios.scss */
+@media (min-width: 40em) {
+  /* line 36, ../scss/styles/pages/_page-servicios.scss */
+  .page-servicios .package-additional {
+    clear: both;
+    margin-top: 20px;
+  }
+}
+/* line 45, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-additional h4 {
   border-bottom: solid 1px #cccccc;
+  font-weight: bold;
   margin: 0;
   padding-bottom: 10px;
 }
-/* line 35, ../scss/styles/pages/_page-servicios.scss */
+/* line 52, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-additional ul {
   margin-left: 0;
   padding-left: 20px;
 }
-/* line 42, ../scss/styles/pages/_page-servicios.scss */
+/* line 59, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-basic h3 {
   background-color: #aaaaaa;
   color: white;
 }
-/* line 49, ../scss/styles/pages/_page-servicios.scss */
+/* line 66, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-special h3 {
   background-color: #51bd1f;
   color: white;
@@ -2009,13 +2018,37 @@ ul.pagelist .current {
   padding-bottom: 30px;
 }
 
-/* line 34, ../scss/styles/_main.scss */
+/* line 32, ../scss/styles/_main.scss */
+.page-title {
+  font-size: 1.25em;
+  line-height: 1.2em;
+  background-color: #ff6d00;
+  color: white;
+  font-weight: normal;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+}
+@media (min-width: 40em) {
+  /* line 32, ../scss/styles/_main.scss */
+  .page-title {
+    font-size: 2.25em;
+    line-height: 1.33333em;
+    background-color: #cccccc;
+    color: #444444;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    text-transform: none;
+  }
+}
+
+/* line 53, ../scss/styles/_main.scss */
 #admin {
   position: absolute;
   right: 10px;
   top: 0;
 }
-/* line 39, ../scss/styles/_main.scss */
+/* line 58, ../scss/styles/_main.scss */
 #admin h3 {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -2023,13 +2056,13 @@ ul.pagelist .current {
   margin: 0;
   padding: 0 10px;
 }
-/* line 45, ../scss/styles/_main.scss */
+/* line 64, ../scss/styles/_main.scss */
 #admin h3 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 52, ../scss/styles/_main.scss */
+/* line 71, ../scss/styles/_main.scss */
 #admin_data {
   background-color: white;
   border: solid 1px #cccccc;
@@ -2040,12 +2073,12 @@ ul.pagelist .current {
   top: 24px;
   width: 123px;
 }
-/* line 62, ../scss/styles/_main.scss */
+/* line 81, ../scss/styles/_main.scss */
 #admin_data ul {
   margin: 0;
   padding: 0;
 }
-/* line 67, ../scss/styles/_main.scss */
+/* line 86, ../scss/styles/_main.scss */
 #admin_data li {
   line-height: 1.5;
 }
