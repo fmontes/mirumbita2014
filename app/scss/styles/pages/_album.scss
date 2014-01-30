@@ -118,6 +118,15 @@
     .image-listing {
         @include at-breakpoint($tablet) {
             padding: 0 $ph * 3;
+
+            .csstransitions & {
+                @include transition(opacity .5s ease-out);
+                @include opacity(0);
+
+                &.ready {
+                   @include opacity(1);
+                }
+            }
         }
     }
 

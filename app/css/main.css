@@ -1646,18 +1646,30 @@ ul.pagelist .current {
   .subalbum .image-listing {
     padding: 0 30px;
   }
+  /* line 122, ../scss/styles/pages/_album.scss */
+  .csstransitions .subalbum .image-listing {
+    -webkit-transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+    opacity: 0;
+  }
+  /* line 126, ../scss/styles/pages/_album.scss */
+  .csstransitions .subalbum .image-listing.ready {
+    opacity: 1;
+  }
 }
-/* line 124, ../scss/styles/pages/_album.scss */
+/* line 133, ../scss/styles/pages/_album.scss */
 .subalbum p,
 .subalbum .page-title {
   padding: 0 20px;
 }
-/* line 129, ../scss/styles/pages/_album.scss */
+/* line 138, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   color: #ff6d00;
 }
 @media (min-width: 40em) {
-  /* line 129, ../scss/styles/pages/_album.scss */
+  /* line 138, ../scss/styles/pages/_album.scss */
   .subalbum .page-title {
     font-size: 2.25em;
     line-height: 1.33333em;

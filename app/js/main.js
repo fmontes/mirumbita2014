@@ -150,11 +150,11 @@ $(document).on('ready', function() {
 });
 
 if(!isMobile()) {
-    $('.js-subalbum .js-image-listing').imagesLoaded( function() {
-        // images have loaded
-        $('.js-subalbum .js-image-listing').packery({
+    var $imageList = $('.js-subalbum .js-image-listing');
+    $imageList.imagesLoaded(function() {
+        $imageList.packery({
             itemSelector: '.js-image-listing-item',
-            gutter: 20
-        });
+            gutter: 20,
+        }).addClass('ready');
     });
 }
