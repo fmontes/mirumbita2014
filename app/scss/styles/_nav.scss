@@ -40,6 +40,10 @@
         padding: 8px $ph;
         text-decoration: none;
 
+        @include at-breakpoint($tablet) {
+            padding: 5px $ph;
+        }
+
         &:hover {
             color: $white;
         }

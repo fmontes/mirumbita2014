@@ -1323,20 +1323,26 @@ ul.pagelist .prev .disabledlink:before {
   padding: 8px 10px;
   text-decoration: none;
 }
-/* line 43, ../scss/styles/_nav.scss */
+@media (min-width: 40em) {
+  /* line 35, ../scss/styles/_nav.scss */
+  .nav a {
+    padding: 5px 10px;
+  }
+}
+/* line 47, ../scss/styles/_nav.scss */
 .nav a:hover {
   color: white;
 }
-/* line 48, ../scss/styles/_nav.scss */
+/* line 52, ../scss/styles/_nav.scss */
 .nav .corporate-menu {
   margin-top: 20px;
   padding-top: 20px;
 }
-/* line 52, ../scss/styles/_nav.scss */
+/* line 56, ../scss/styles/_nav.scss */
 .nav .corporate-menu a {
   background-color: #3e0746;
 }
-/* line 66, ../scss/styles/_nav.scss */
+/* line 70, ../scss/styles/_nav.scss */
 .nav .menu_custompage {
   line-height: 44px;
 }
@@ -1784,10 +1790,6 @@ ul.pagelist .current {
   .image .main-image img {
     display: block;
   }
-  /* line 19, ../scss/styles/pages/_image.scss */
-  .image div.pagelist {
-    margin-bottom: 30px;
-  }
 }
 /* line 2, ../scss/styles/pages/_page.scss */
 .page .content-wrapper {
@@ -1996,14 +1998,18 @@ ul.pagelist .current {
     background-image: linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
   }
 }
+/* line 27, ../scss/styles/_main.scss */
+.content-wrapper .content {
+  padding-bottom: 30px;
+}
 
-/* line 30, ../scss/styles/_main.scss */
+/* line 34, ../scss/styles/_main.scss */
 #admin {
   position: absolute;
   right: 10px;
   top: 0;
 }
-/* line 35, ../scss/styles/_main.scss */
+/* line 39, ../scss/styles/_main.scss */
 #admin h3 {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -2011,13 +2017,13 @@ ul.pagelist .current {
   margin: 0;
   padding: 0 10px;
 }
-/* line 41, ../scss/styles/_main.scss */
+/* line 45, ../scss/styles/_main.scss */
 #admin h3 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 48, ../scss/styles/_main.scss */
+/* line 52, ../scss/styles/_main.scss */
 #admin_data {
   background-color: white;
   border: solid 1px #cccccc;
@@ -2028,12 +2034,12 @@ ul.pagelist .current {
   top: 24px;
   width: 123px;
 }
-/* line 58, ../scss/styles/_main.scss */
+/* line 62, ../scss/styles/_main.scss */
 #admin_data ul {
   margin: 0;
   padding: 0;
 }
-/* line 63, ../scss/styles/_main.scss */
+/* line 67, ../scss/styles/_main.scss */
 #admin_data li {
   line-height: 1.5;
 }
