@@ -23,7 +23,7 @@
                             <ul>
                                 <?php
                                     // http://www.zenphoto.org/documentation/classes/ThemeObject.html
-                                    $latestalbums = getAlbumStatistic(getOption("latest_albums_number_home"), "latest-date", "", "desc");
+                                    $latestalbums = getAlbumStatistic(getOption("latest_albums_number_home"), "latestupdated", "", "desc");
                                     foreach ($latestalbums as $latestalbum) {
                                         $album = newAlbum($latestalbum[folder]);
                                 ?>
