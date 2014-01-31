@@ -937,6 +937,7 @@ ul.pagelist .prev .disabledlink:before {
     width: 75%;
     float: right;
     margin-right: 0;
+    min-height: 420px;
   }
 }
 @media (min-width: 70em) {
@@ -948,7 +949,7 @@ ul.pagelist .prev .disabledlink:before {
   }
 }
 
-/* line 18, ../scss/layout/_main.scss */
+/* line 19, ../scss/layout/_main.scss */
 .content-wrapper {
   *zoom: 1;
   min-height: 350px;
@@ -960,19 +961,19 @@ ul.pagelist .prev .disabledlink:before {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 18, ../scss/layout/_main.scss */
+  /* line 19, ../scss/layout/_main.scss */
   .content-wrapper {
     min-height: auto;
   }
 }
 
-/* line 30, ../scss/layout/_main.scss */
+/* line 31, ../scss/layout/_main.scss */
 .inner-wrapper {
   background-color: #eeeeee;
   position: relative;
   z-index: 2;
 }
-/* line 36, ../scss/layout/_main.scss */
+/* line 37, ../scss/layout/_main.scss */
 .csstransitions .inner-wrapper {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -980,7 +981,7 @@ ul.pagelist .prev .disabledlink:before {
   transition: all 0.25s ease-out;
 }
 
-/* line 43, ../scss/layout/_main.scss */
+/* line 44, ../scss/layout/_main.scss */
 .menu-active.csstransforms3d .inner-wrapper {
   -webkit-transform: perspective(0) translate3d(70%, 0, 0);
   -moz-transform: perspective(0) translate3d(70%, 0, 0);
@@ -989,19 +990,19 @@ ul.pagelist .prev .disabledlink:before {
   transform: perspective(0) translate3d(70%, 0, 0);
   left: 0;
 }
-/* line 48, ../scss/layout/_main.scss */
+/* line 49, ../scss/layout/_main.scss */
 .menu-active .inner-wrapper {
   left: 70%;
 }
 
-/* line 53, ../scss/layout/_main.scss */
+/* line 54, ../scss/layout/_main.scss */
 .outer-wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
 }
 
-/* line 59, ../scss/layout/_main.scss */
+/* line 60, ../scss/layout/_main.scss */
 .twitter-share-button {
   width: 100px !important;
 }

@@ -7,6 +7,7 @@
     .content {
         @include at-breakpoint($tablet) {
             @include span-columns(6 omega);
+            min-height: 420px;
         }
 
         @include at-breakpoint($computer) {
