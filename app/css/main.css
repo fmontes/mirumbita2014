@@ -670,7 +670,7 @@ textarea {
 .album-social {
   border-top: solid 1px #eeeeee;
   margin-top: 10px;
-  padding: 10px 10px;
+  padding: 10px 10px 7px;
 }
 /* line 6, ../scss/layout/_modules.scss */
 .album-social .album-comments-icons,
@@ -1611,8 +1611,6 @@ ul.pagelist .current {
   -moz-box-shadow: 0 2px 2px 0 #dedede;
   box-shadow: 0 2px 2px 0 #dedede;
   background-color: white;
-  margin: 10px 0 20px;
-  padding-top: 1px;
 }
 @media (min-width: 40em) {
   /* line 82, ../scss/styles/pages/_album.scss */
@@ -1621,20 +1619,23 @@ ul.pagelist .current {
     padding: 0;
   }
 }
+/* line 91, ../scss/styles/pages/_album.scss */
+.subalbum .album-social {
+  margin-top: 0;
+}
 @media (min-width: 40em) {
-  /* line 93, ../scss/styles/pages/_album.scss */
+  /* line 91, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
-    margin-top: 0;
     padding: 15px 30px 10px;
   }
 }
 @media (min-width: 40em) {
-  /* line 101, ../scss/styles/pages/_album.scss */
+  /* line 99, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 105, ../scss/styles/pages/_album.scss */
+  /* line 103, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1642,19 +1643,14 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 109, ../scss/styles/pages/_album.scss */
+  /* line 107, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 116, ../scss/styles/pages/_album.scss */
-.subalbum p,
+/* line 119, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
-  padding: 0 20px;
-}
-/* line 121, ../scss/styles/pages/_album.scss */
-.subalbum .page-title {
-  color: #ff6d00;
+  margin-bottom: 0;
 }
 
 @media (min-width: 40em) {

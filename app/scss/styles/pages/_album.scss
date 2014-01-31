@@ -81,8 +81,6 @@
 .subalbum {
     .album-intro {
         @include module-box;
-        margin: $pv 0 $pv * 2;
-        padding-top: 1px;
 
         @include at-breakpoint($tablet) {
             margin: 0;
@@ -91,9 +89,9 @@
     }
 
     .album-social {
+        margin-top: 0;
         @include at-breakpoint($tablet) {
             border: none;
-            margin-top: 0;
             padding: 15px $ph * 3 $pv;
         }
     }
@@ -115,10 +113,10 @@
 
     p,
     .page-title {
-        padding: 0 $ph * 2;
+        //padding: 0 $ph * 2;
     }
 
     .page-title {
-        color: $orange;
+        margin-bottom: 0;
     }
 }

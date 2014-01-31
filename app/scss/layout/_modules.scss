@@ -1,7 +1,7 @@
 .album-social {
     border-top: solid 1px $gray-light;
     margin-top: $pv;
-    padding: $pv $ph;
+    padding: $pv $ph $pv - 3;
 
     .album-comments-icons,
     .fb-like,
