@@ -68,6 +68,11 @@
     }
 
     .menu_custompage {
-        line-height: 44px;
+        line-height: 34px;
+        text-indent: $grid-padding;
+
+        a {
+            text-indent: 0;
+        }
     }
 }

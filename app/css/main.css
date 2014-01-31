@@ -1344,7 +1344,12 @@ ul.pagelist .prev .disabledlink:before {
 }
 /* line 70, ../scss/styles/_nav.scss */
 .nav .menu_custompage {
-  line-height: 44px;
+  line-height: 34px;
+  text-indent: 10px;
+}
+/* line 74, ../scss/styles/_nav.scss */
+.nav .menu_custompage a {
+  text-indent: 0;
 }
 
 /* line 3, ../scss/styles/_modules.scss */
