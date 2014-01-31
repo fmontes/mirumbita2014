@@ -36,6 +36,11 @@ input[type="color"] {
     &:focus {
         outline: 0;
     }
+
+    // Form validation plugin
+    &.unhappy {
+        border-color: $red;
+    }
 }
 
 textarea {

@@ -1,5 +1,10 @@
 .btn-submit {
     @include btn-style($orange, $white);
+    width: 100%;
+
+    @include at-breakpoint($tablet) {
+        width: auto;
+    }
 }
 
 .button-group {
@@ -16,5 +21,15 @@
 
     .time-group {
         @include omega;
+    }
+}
+
+.form-request-service {
+    @include at-breakpoint($tablet) {
+        margin: auto;
+        width: 70%;
+    }
+    @include at-breakpoint($computer) {
+        width: 60%
     }
 }

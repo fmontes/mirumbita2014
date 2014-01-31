@@ -510,13 +510,32 @@ input[type="tel"]:focus,
 input[type="color"]:focus {
   outline: 0;
 }
-
 /* line 41, ../scss/_forms.scss */
+select.unhappy,
+textarea.unhappy,
+input[type="text"].unhappy,
+input[type="password"].unhappy,
+input[type="datetime"].unhappy,
+input[type="datetime-local"].unhappy,
+input[type="date"].unhappy,
+input[type="month"].unhappy,
+input[type="time"].unhappy,
+input[type="week"].unhappy,
+input[type="number"].unhappy,
+input[type="email"].unhappy,
+input[type="url"].unhappy,
+input[type="search"].unhappy,
+input[type="tel"].unhappy,
+input[type="color"].unhappy {
+  border-color: #e4242e;
+}
+
+/* line 46, ../scss/_forms.scss */
 textarea {
   height: auto;
 }
 
-/* line 45, ../scss/_forms.scss */
+/* line 50, ../scss/_forms.scss */
 .form-group {
   *zoom: 1;
   margin: 20px 0;
@@ -1824,18 +1843,25 @@ ul.pagelist .current {
   background-color: #ff6d00;
   border: solid 1px #ff6d00;
   color: white;
+  width: 100%;
 }
 /* line 18, ../scss/_mixins.scss */
 .btn-submit:hover {
   color: white;
 }
+@media (min-width: 40em) {
+  /* line 1, ../scss/styles/pages/_request-service.scss */
+  .btn-submit {
+    width: auto;
+  }
+}
 
-/* line 6, ../scss/styles/pages/_request-service.scss */
+/* line 11, ../scss/styles/pages/_request-service.scss */
 .button-group .alert {
   margin-bottom: 0;
 }
 
-/* line 12, ../scss/styles/pages/_request-service.scss */
+/* line 17, ../scss/styles/pages/_request-service.scss */
 .date-time-group .date-group,
 .date-time-group .time-group {
   width: 47.36842%;
@@ -1843,12 +1869,26 @@ ul.pagelist .current {
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 17, ../scss/styles/pages/_request-service.scss */
+/* line 22, ../scss/styles/pages/_request-service.scss */
 .date-time-group .time-group {
   float: right;
   margin-right: 0;
   *margin-left: -1em;
   display: inline;
+}
+
+@media (min-width: 40em) {
+  /* line 27, ../scss/styles/pages/_request-service.scss */
+  .form-request-service {
+    margin: auto;
+    width: 70%;
+  }
+}
+@media (min-width: 70em) {
+  /* line 27, ../scss/styles/pages/_request-service.scss */
+  .form-request-service {
+    width: 60%;
+  }
 }
 
 /* line 2, ../scss/styles/pages/_page-servicios.scss */

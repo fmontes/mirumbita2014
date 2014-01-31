@@ -20,7 +20,7 @@
 
                     <div class="content" role="main">
                         <h1 class="page-title"><?php echo gettext_th("Request Service", "mirumbita"); ?></h1>
-                        <form action="themes/mirumbita/request-service-send.php" method="post" class="form request-service js-request-service">
+                        <form action="themes/mirumbita/request-service-send.php" method="post" class="form-request-service js-request-service">
                             <div class="form-group name-group">
                                 <label for="name"><?php echo gettext_th("Name", "mirumbita"); ?></label>
                                 <input type="text" id="name" name="name" tabindex="1">
@@ -109,6 +109,7 @@
                                     <option value="Mundo De Fiestas">Mundo De Fiestas</option>
                                     <option value="Mundo Divertido">Mundo Divertido</option>
                                     <option value="Mundo Magico">Mundo Magico</option>
+                                    <option value="Papa´s Bowling">Papa´s Bowling</option>
                                     <option value="Pizza Hut Delicias">Pizza Hut Delicias</option>
                                     <option value="Pizza Hut Sambil">Pizza Hut Sambil</option>
                                     <option value="Postre Gourmet">Postre Gourmet</option>
