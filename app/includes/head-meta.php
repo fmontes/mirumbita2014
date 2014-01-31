@@ -28,4 +28,10 @@
         <script src="//localhost:35729/livereload.js"></script>
 
         <script src="<?php echo $_zp_themeroot; ?>/js/vendor/modernizr.custom.js"></script>
+
+        <!--[if lt IE 9]>
+        <!-- build:js(app) /js/respond.js -->
+        <script src="bower_components/respond/src/respond.js"></script>
+        <!-- endbuild -->
+        <![endif]-->
     </head>
