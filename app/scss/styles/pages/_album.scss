@@ -49,16 +49,11 @@
             @include pie-clearfix;
             @include module-box;
             padding: $pg;
-
-            @include at-breakpoint($tablet) {
-                min-height: 92px;
-            }
         }
     }
 
     .album-info {
-        @include span-columns(3 omega);
-        padding-left: $ph;
+        margin-left: 90px;
     }
 
     .album-meta,
@@ -72,11 +67,11 @@
     }
 
     .album-thumb {
-        @include span-columns(1);
+        float: left;
 
         img {
             display: block;
-            width: 70px;
+            width: 80px;
         }
     }
 }
