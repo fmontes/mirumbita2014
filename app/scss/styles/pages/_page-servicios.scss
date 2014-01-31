@@ -5,7 +5,7 @@
 
     .package-item {
         background-color: $white;
-        margin: $pv * 2 0;
+        margin: $pv * 2 0 0;
         padding-bottom: 1px;
 
         @include at-breakpoint($tablet) {

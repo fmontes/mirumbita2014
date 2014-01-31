@@ -33,12 +33,15 @@
 
         @include at-breakpoint($tablet) {
             @include span-columns(4);
+            @include nth-omega(2n);
             margin: 0;
-            padding: $pg;
+            padding: $pv 0;
         }
 
         @include at-breakpoint($computer) {
             @include span-columns(4);
+            @include remove-nth-omega(2n);
+            @include nth-omega(3n);
         }
 
         article {

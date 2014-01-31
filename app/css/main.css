@@ -1554,7 +1554,12 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.5641%;
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
+  }
+  /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .album-listing li:nth-child(2n) {
+    float: right;
+    margin-right: 0;
   }
 }
 @media (min-width: 70em) {
@@ -1564,8 +1569,18 @@ ul.pagelist .current {
     float: left;
     margin-right: 1.69492%;
   }
+  /* line 251, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .album-listing li:nth-child(2n) {
+    float: left;
+    margin-right: 1.69492%;
+  }
+  /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .album-listing li:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+  }
 }
-/* line 44, ../scss/styles/pages/_album.scss */
+/* line 47, ../scss/styles/pages/_album.scss */
 .album-listing li article {
   *zoom: 1;
   padding-left: 10px;
@@ -1592,12 +1607,12 @@ ul.pagelist .current {
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 44, ../scss/styles/pages/_album.scss */
+  /* line 47, ../scss/styles/pages/_album.scss */
   .album-listing li article {
     min-height: 92px;
   }
 }
-/* line 56, ../scss/styles/pages/_album.scss */
+/* line 59, ../scss/styles/pages/_album.scss */
 .album-listing .album-info {
   width: 73.68421%;
   float: right;
@@ -1606,30 +1621,30 @@ ul.pagelist .current {
   display: inline;
   padding-left: 10px;
 }
-/* line 61, ../scss/styles/pages/_album.scss */
+/* line 64, ../scss/styles/pages/_album.scss */
 .album-listing .album-meta,
 .album-listing .album-title {
   margin: 0;
   padding: 0;
 }
-/* line 67, ../scss/styles/pages/_album.scss */
+/* line 70, ../scss/styles/pages/_album.scss */
 .album-listing .album-title {
   font-weight: normal;
 }
-/* line 71, ../scss/styles/pages/_album.scss */
+/* line 74, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb {
   width: 21.05263%;
   float: left;
   margin-right: 5.26316%;
   display: inline;
 }
-/* line 74, ../scss/styles/pages/_album.scss */
+/* line 77, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
   width: 70px;
 }
 
-/* line 82, ../scss/styles/pages/_album.scss */
+/* line 85, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1637,29 +1652,29 @@ ul.pagelist .current {
   background-color: white;
 }
 @media (min-width: 40em) {
-  /* line 82, ../scss/styles/pages/_album.scss */
+  /* line 85, ../scss/styles/pages/_album.scss */
   .subalbum .album-intro {
     margin: 0;
     padding: 0;
   }
 }
-/* line 91, ../scss/styles/pages/_album.scss */
+/* line 94, ../scss/styles/pages/_album.scss */
 .subalbum .album-social {
   margin-top: 0;
 }
 @media (min-width: 40em) {
-  /* line 91, ../scss/styles/pages/_album.scss */
+  /* line 94, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
     padding: 15px 30px 10px;
   }
 }
 @media (min-width: 40em) {
-  /* line 99, ../scss/styles/pages/_album.scss */
+  /* line 102, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 103, ../scss/styles/pages/_album.scss */
+  /* line 106, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1667,12 +1682,12 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 107, ../scss/styles/pages/_album.scss */
+  /* line 110, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 119, ../scss/styles/pages/_album.scss */
+/* line 122, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   margin-bottom: 0;
 }
@@ -1704,7 +1719,7 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.5641%;
     margin: 0;
-    padding: 10px;
+    padding: 10px 0;
   }
   /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
   .home-latest-albums li:nth-child(2n) {
@@ -1904,7 +1919,7 @@ ul.pagelist .current {
 /* line 6, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-item {
   background-color: white;
-  margin: 20px 0;
+  margin: 20px 0 0;
   padding-bottom: 1px;
 }
 @media (min-width: 40em) {
