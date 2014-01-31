@@ -39,15 +39,17 @@
     }
 }
 
-.side-nav {
-    display: none;
+@include with-grid-settings(8, 4em, 0em, 10px) {
+    .side-nav {
+        display: none;
 
-    @include at-breakpoint($tablet) {
-        @include span-columns(2);
-        display: block;
-    }
+        @include at-breakpoint($tablet) {
+            @include span-columns(2);
+            display: block;
+        }
 
-    @include at-breakpoint($computer) {
-        @include span-columns(2);
+        @include at-breakpoint($computer) {
+            @include span-columns(2);
+        }
     }
 }

@@ -9,10 +9,8 @@
         padding-bottom: 1px;
 
         @include at-breakpoint($tablet) {
-            @include with-grid-settings(8, 4em, 1em, 10px) {
-                @include span-columns(4);
-                @include nth-omega(2n)
-            };
+            @include span-columns(4);
+            @include nth-omega(2n)
         }
 
         ul {

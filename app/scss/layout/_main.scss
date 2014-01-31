@@ -2,13 +2,16 @@
 @import "modules";
 @import "nav";
 
-.content {
-    @include at-breakpoint($tablet) {
-        @include span-columns(6 omega);
-    }
 
-    @include at-breakpoint($computer) {
-        @include span-columns(10 omega);
+@include with-grid-settings(8, 4em, 0em, 10px) {
+    .content {
+        @include at-breakpoint($tablet) {
+            @include span-columns(6 omega);
+        }
+
+        @include at-breakpoint($computer) {
+            @include span-columns(10 omega);
+        }
     }
 }
 
