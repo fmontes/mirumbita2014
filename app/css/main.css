@@ -918,6 +918,8 @@ ul.pagelist .prev .disabledlink:before {
     float: left;
     margin-right: 0%;
     display: block;
+    position: absolute;
+    height: 100%;
   }
 }
 @media (min-width: 70em) {
@@ -1268,6 +1270,11 @@ ul.pagelist .prev .disabledlink:before {
 }
 
 /* line 1, ../scss/styles/_footer.scss */
+.footer-wrapper {
+  position: relative;
+}
+
+/* line 5, ../scss/styles/_footer.scss */
 .footer {
   background-color: white;
   border-top: solid 1px #cccccc;
@@ -1276,12 +1283,12 @@ ul.pagelist .prev .disabledlink:before {
   padding: 10px 0;
 }
 @media (min-width: 40em) {
-  /* line 1, ../scss/styles/_footer.scss */
+  /* line 5, ../scss/styles/_footer.scss */
   .footer {
     margin-top: 0;
   }
 }
-/* line 12, ../scss/styles/_footer.scss */
+/* line 16, ../scss/styles/_footer.scss */
 .footer .copyright {
   color: #aaaaaa;
   margin: 0;
@@ -2039,32 +2046,12 @@ ul.pagelist .current {
   color: white;
 }
 
-@media (min-width: 40em) {
-  /* line 19, ../scss/styles/_main.scss */
-  .content-wrapper {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(25%, #46084e), color-stop(25%, #eeeeee), color-stop(100%, #eeeeee));
-    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
-    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
-    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
-    background-image: linear-gradient(left, #46084e 0%, #46084e 25%, #eeeeee 25%, #eeeeee 100%);
-  }
-}
-@media (min-width: 70em) {
-  /* line 19, ../scss/styles/_main.scss */
-  .content-wrapper {
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #46084e), color-stop(16.66667%, #46084e), color-stop(16.66667%, #eeeeee), color-stop(100%, #eeeeee));
-    background-image: -webkit-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
-    background-image: -moz-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
-    background-image: -o-linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
-    background-image: linear-gradient(left, #46084e 0%, #46084e 16.66667%, #eeeeee 16.66667%, #eeeeee 100%);
-  }
-}
-/* line 27, ../scss/styles/_main.scss */
+/* line 20, ../scss/styles/_main.scss */
 .content-wrapper .content {
   padding-bottom: 30px;
 }
 
-/* line 32, ../scss/styles/_main.scss */
+/* line 25, ../scss/styles/_main.scss */
 .page-title {
   font-size: 1.25em;
   line-height: 1.2em;
@@ -2076,7 +2063,7 @@ ul.pagelist .current {
   text-transform: uppercase;
 }
 @media (min-width: 40em) {
-  /* line 32, ../scss/styles/_main.scss */
+  /* line 25, ../scss/styles/_main.scss */
   .page-title {
     font-size: 2.25em;
     line-height: 1.33333em;
@@ -2088,13 +2075,13 @@ ul.pagelist .current {
   }
 }
 
-/* line 53, ../scss/styles/_main.scss */
+/* line 46, ../scss/styles/_main.scss */
 #admin {
   position: absolute;
   right: 10px;
   top: 0;
 }
-/* line 58, ../scss/styles/_main.scss */
+/* line 51, ../scss/styles/_main.scss */
 #admin h3 {
   font-size: 0.875em;
   line-height: 1.71429em;
@@ -2102,13 +2089,13 @@ ul.pagelist .current {
   margin: 0;
   padding: 0 10px;
 }
-/* line 64, ../scss/styles/_main.scss */
+/* line 57, ../scss/styles/_main.scss */
 #admin h3 a {
   color: black;
   text-decoration: none;
 }
 
-/* line 71, ../scss/styles/_main.scss */
+/* line 64, ../scss/styles/_main.scss */
 #admin_data {
   background-color: white;
   border: solid 1px #cccccc;
@@ -2119,12 +2106,12 @@ ul.pagelist .current {
   top: 24px;
   width: 123px;
 }
-/* line 81, ../scss/styles/_main.scss */
+/* line 74, ../scss/styles/_main.scss */
 #admin_data ul {
   margin: 0;
   padding: 0;
 }
-/* line 86, ../scss/styles/_main.scss */
+/* line 79, ../scss/styles/_main.scss */
 #admin_data li {
   line-height: 1.5;
 }

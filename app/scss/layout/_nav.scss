@@ -46,6 +46,8 @@
         @include at-breakpoint($tablet) {
             @include span-columns(2);
             display: block;
+            position: absolute;
+            height: 100%;
         }
 
         @include at-breakpoint($computer) {
