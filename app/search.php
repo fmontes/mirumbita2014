@@ -43,7 +43,7 @@
                         <?php if ($total > 0 ) { ?>
                             <p class="search-results">
                                 <?php //@TODO: translate this //printf(ngettext('We found <b>%1$u</b> albums for « <b>%2$s</b> »', 'We found <b>%1$u</b> images for « <b>%2$s</b> »', $total), $total, html_encode($searchwords)); ?>
-                                <?php printf(ngettext('Encontramos <b>%1$u</b> albums con « <b>%2$s</b> »', 'Enontramos <b>%1$u</b> imagenes con « <b>%2$s</b> »', $total), $total, html_encode($searchwords)); ?>
+                                <?php printf(ngettext('Encontramos <b>%1$u</b> albums con « <b>%2$s</b> »', 'Encontramos <b>%1$u</b> imagenes con « <b>%2$s</b> »', $total), $total, html_encode($searchwords)); ?>
                             </p>
                         <?php } ?>
 

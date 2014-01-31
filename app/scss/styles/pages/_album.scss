@@ -25,7 +25,7 @@
     @include pie-clearfix;
 
     @include at-breakpoint($tablet) {
-        padding: 0 $pg * 2 $pg * 2;
+        padding: 0 $pg * 3 $pg * 2;
     }
 
     li {

@@ -1540,7 +1540,7 @@ ul.pagelist .current {
 @media (min-width: 40em) {
   /* line 24, ../scss/styles/pages/_album.scss */
   .album-listing {
-    padding: 0 20px 20px;
+    padding: 0 30px 20px;
   }
 }
 /* line 31, ../scss/styles/pages/_album.scss */
@@ -1834,23 +1834,10 @@ ul.pagelist .current {
   }
 }
 
-/* line 2, ../scss/styles/pages/_search.scss */
-.search .page-title,
+/* line 3, ../scss/styles/pages/_search.scss */
 .search .search-results,
 .search .no-results {
-  *zoom: 1;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 38, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.search .page-title:after,
-.search .search-results:after,
-.search .no-results:after {
-  content: "";
-  display: table;
-  clear: both;
+  padding: 0 30px 0;
 }
 
 /* line 1, ../scss/styles/pages/_request-service.scss */

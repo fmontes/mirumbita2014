@@ -1,7 +1,7 @@
 .search {
-    .page-title,
+    //.page-title,
     .search-results,
     .no-results {
-        @include container;
+        padding: 0 $pg * 3 0;
     }
 }

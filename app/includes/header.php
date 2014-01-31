@@ -8,7 +8,7 @@
             <a href="<?php echo html_encode(getGalleryIndexURL());?>" title="<?php echo gettext("Albums Index"); ?>" class="logo">
                 <img src="<?php echo $_zp_themeroot; ?>/images/logo-mirumbita.svg" alt="<?php echo getGalleryTitle();?>">
             </a>
-            <a href="#" class="btn btn-request-service"><?php echo gettext_th("Contract Service", "mirumbita"); ?></a>
+            <a href="/page/request-service" class="btn btn-request-service"><?php echo gettext_th("Contract Service", "mirumbita"); ?></a>
         </div>
 
         <!-- <nav class="nav header-nav js-header-nav" role="navigation">
