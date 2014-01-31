@@ -1748,13 +1748,16 @@ ul.pagelist .current {
   .image .main-image {
     background-color: white;
     display: inline-block;
-    margin-top: 30px;
     padding: 10px;
     text-align: center;
   }
-  /* line 14, ../scss/styles/pages/_image.scss */
+  /* line 13, ../scss/styles/pages/_image.scss */
   .image .main-image img {
     display: block;
+  }
+  /* line 18, ../scss/styles/pages/_image.scss */
+  .image .page-title {
+    text-align: left;
   }
 }
 /* line 2, ../scss/styles/pages/_page.scss */

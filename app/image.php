@@ -20,6 +20,10 @@
 
                     <div class="content" role="main">
 
+                        <div class="album-intro">
+                            <h1 class="page-title"><?php printAlbumTitle();?></h1>
+                        </div>
+
                         <a href="<?php echo getFullImageURL(); ?>" title="<?php echo getBareImageTitle();?>" class="main-image">
                             <img src="<?php echo getDefaultSizedImage(); ?>" alt="<?php echo getBareImageTitle();?>">
                         </a>

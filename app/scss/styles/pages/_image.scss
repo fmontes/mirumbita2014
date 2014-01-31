@@ -7,13 +7,16 @@
         .main-image {
             background-color: $white;
             display: inline-block;
-            margin-top: $pv * 3;
             padding: $pg;
             text-align: center;
 
             img {
                 display: block;
             }
+        }
+
+        .page-title {
+            text-align: left;
         }
     }
 }
