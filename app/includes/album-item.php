@@ -8,7 +8,7 @@
                 <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>">
                     <?php
                         $temp = getAlbumTitle();
-                        $title = (strlen($temp) > 40) ? substr($temp, 0, 40).'…' : $temp;
+                        $title = (strlen($temp) > 35) ? substr($temp, 0, 35).'…' : $temp;
                         echo $title;
                     ?>
                 </a>
