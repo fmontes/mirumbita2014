@@ -39,14 +39,16 @@
             width: 29%;
         }
     }
+
+    .image-link {
+        display: block;
+        min-height: 100px;
+        text-align: center;
+    }
 }
 
 // Basic album listing layout
 .item-listing {
-    a {
-        display: block;
-        text-align: center;
-    }
     ul {
         @include reset-list-style;
         margin: 0;
