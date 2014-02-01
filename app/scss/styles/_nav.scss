@@ -66,13 +66,4 @@
     .menu_custompage {
         @extend .active-item;
     }
-
-    .menu_custompage {
-        line-height: 34px;
-        text-indent: $grid-padding;
-
-        a {
-            text-indent: 0;
-        }
-    }
 }
