@@ -18,13 +18,17 @@
             @include span-columns(4);
             @include nth-omega(2n);
             margin: 0;
-            padding: 0 0 $pv;
+            padding: 0 0 $pv * 2;
         }
 
-        @include at-breakpoint($computer) {
+        @include at-breakpoint($computer) {;
             @include span-columns(3, 9);
-            @include remove-nth-omega(2n);
-            @include nth-omega(3n)
+
+            &:nth-child(2n) {
+                @include remove-omega(9);
+            }
+
+            @include nth-omega(3n);
         }
     }
 

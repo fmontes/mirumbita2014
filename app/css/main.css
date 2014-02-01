@@ -1712,7 +1712,7 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.5641%;
     margin: 0;
-    padding: 0 0 10px;
+    padding: 0 0 20px;
   }
   /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
   .home-latest-albums li:nth-child(2n) {
@@ -1727,10 +1727,10 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.27273%;
   }
-  /* line 251, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
+  /* line 27, ../scss/styles/pages/_home.scss */
   .home-latest-albums li:nth-child(2n) {
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 2.27273%;
   }
   /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
   .home-latest-albums li:nth-child(3n) {
@@ -1738,7 +1738,7 @@ ul.pagelist .current {
     margin-right: 0;
   }
 }
-/* line 31, ../scss/styles/pages/_home.scss */
+/* line 35, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-info {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1752,15 +1752,15 @@ ul.pagelist .current {
   display: table;
   clear: both;
 }
-/* line 36, ../scss/styles/pages/_home.scss */
+/* line 40, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-title {
   margin: 10px 0 0;
 }
-/* line 40, ../scss/styles/pages/_home.scss */
+/* line 44, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-thumb {
   display: block;
 }
-/* line 44, ../scss/styles/pages/_home.scss */
+/* line 48, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }
