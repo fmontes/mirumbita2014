@@ -777,21 +777,26 @@ textarea {
 }
 
 /* line 46, ../scss/layout/_modules.scss */
+.item-listing a {
+  display: block;
+  text-align: center;
+}
+/* line 50, ../scss/layout/_modules.scss */
 .item-listing ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 52, ../scss/layout/_modules.scss */
+/* line 56, ../scss/layout/_modules.scss */
 .item-listing .album-info {
   padding-top: 1px;
 }
-/* line 56, ../scss/layout/_modules.scss */
+/* line 60, ../scss/layout/_modules.scss */
 .item-listing .album-meta,
 .item-listing .album-title {
   padding: 0 10px;
 }
-/* line 62, ../scss/layout/_modules.scss */
+/* line 66, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
   display: -moz-inline-stack;
   display: inline-block;
@@ -802,25 +807,25 @@ textarea {
 }
 
 @media (min-width: 40em) {
-  /* line 69, ../scss/layout/_modules.scss */
+  /* line 73, ../scss/layout/_modules.scss */
   div.pagelist {
     text-align: center;
   }
 }
 
-/* line 75, ../scss/layout/_modules.scss */
+/* line 79, ../scss/layout/_modules.scss */
 ul.pagelist {
   list-style: none;
   margin: 20px 0 0;
   padding: 0;
   text-align: center;
 }
-/* line 81, ../scss/layout/_modules.scss */
+/* line 85, ../scss/layout/_modules.scss */
 ul.pagelist.disabled_nav {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 85, ../scss/layout/_modules.scss */
+/* line 89, ../scss/layout/_modules.scss */
 ul.pagelist li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -829,44 +834,44 @@ ul.pagelist li {
   zoom: 1;
   *display: inline;
 }
-/* line 91, ../scss/layout/_modules.scss */
+/* line 95, ../scss/layout/_modules.scss */
 ul.pagelist .next .disabledlink,
 ul.pagelist .prev .disabledlink {
   display: block;
 }
 @media (min-width: 40em) {
-  /* line 89, ../scss/layout/_modules.scss */
+  /* line 93, ../scss/layout/_modules.scss */
   ul.pagelist .next,
   ul.pagelist .prev {
     display: inline-block;
   }
 }
-/* line 100, ../scss/layout/_modules.scss */
+/* line 104, ../scss/layout/_modules.scss */
 ul.pagelist .next {
   float: right;
 }
 @media (min-width: 40em) {
-  /* line 100, ../scss/layout/_modules.scss */
+  /* line 104, ../scss/layout/_modules.scss */
   ul.pagelist .next {
     float: none;
   }
 }
-/* line 107, ../scss/layout/_modules.scss */
+/* line 111, ../scss/layout/_modules.scss */
 ul.pagelist .next a:before,
 ul.pagelist .next .disabledlink:before {
   content: '»';
 }
-/* line 113, ../scss/layout/_modules.scss */
+/* line 117, ../scss/layout/_modules.scss */
 ul.pagelist .prev {
   float: left;
 }
 @media (min-width: 40em) {
-  /* line 113, ../scss/layout/_modules.scss */
+  /* line 117, ../scss/layout/_modules.scss */
   ul.pagelist .prev {
     float: none;
   }
 }
-/* line 121, ../scss/layout/_modules.scss */
+/* line 125, ../scss/layout/_modules.scss */
 ul.pagelist .prev a:before,
 ul.pagelist .prev .disabledlink:before {
   content: '«';

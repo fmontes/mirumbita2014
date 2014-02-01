@@ -143,6 +143,7 @@ function isIE8() {
 function packery(imagelist, imageItem) {
     if (!isMobile() || isIE8()) {
         var $imageList = $(imagelist);
+        $imageList.find('img').trigger('unveil');
         $imageList.imagesLoaded(function() {
             $imageList.packery({
                 itemSelector: imageItem,
@@ -152,7 +153,16 @@ function packery(imagelist, imageItem) {
     }
 }
 
+function lazyLoad() {
+    $('.lazy').unveil();
+
+    if(isMobile) {
+        $('.js-image-listing-item img').unveil();
+    }
+}
+
 $(document).on('ready', function() {
+    lazyLoad();
     svgFallback();
     requestServiceForm();
     packery('.js-subalbum .js-image-listing', '.js-image-listing-item');
@@ -168,6 +178,4 @@ $(document).on('ready', function() {
             e.preventDefault();
         });
     }
-
-    $('.lazy').unveil();
 });

@@ -43,6 +43,10 @@
 
 // Basic album listing layout
 .item-listing {
+    a {
+        display: block;
+        text-align: center;
+    }
     ul {
         @include reset-list-style;
         margin: 0;
