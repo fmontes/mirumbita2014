@@ -35,7 +35,7 @@
             @include span-columns(4);
             @include nth-omega(2n);
             margin: 0;
-            padding: $pv 0;
+            padding: 0 0 $pv;
         }
 
         @include at-breakpoint($computer) {
@@ -71,7 +71,6 @@
 
         img {
             display: block;
-            width: 80px;
         }
     }
 }

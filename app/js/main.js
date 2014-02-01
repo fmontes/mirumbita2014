@@ -2,7 +2,7 @@
 //@TODO: add fastClick
 
 function svgFallback() {
-    if(!Modernizr.svg) {
+    if (!Modernizr.svg) {
         $('img[src*="svg"]').attr('src', function() {
             return $(this).attr('src').replace('.svg', '.png');
         });
@@ -135,8 +135,13 @@ function isMobile() {
     return !Modernizr.mq('only screen and (min-width: 40em)');
 }
 
+// Target IE8 (I know it sucks)
+function isIE8() {
+    return $('html').hasClass('lt-ie9');
+}
+
 function packery(imagelist, imageItem) {
-    if(!isMobile()) {
+    if (!isMobile() || isIE8()) {
         var $imageList = $(imagelist);
         $imageList.imagesLoaded(function() {
             $imageList.packery({
@@ -152,8 +157,12 @@ $(document).on('ready', function() {
     requestServiceForm();
     packery('.js-subalbum .js-image-listing', '.js-image-listing-item');
 
+    if (isIE8()) {
+        $('.js-home-latest-albums li:nth-child(3n), .js-album-listing li:nth-child(3n)').css('margin-right', '0');
+    }
 
-    if(isMobile()) {
+
+    if (!isIE8() && isMobile()) {
         toggleNav();
         toggleSearch();
         $('.js-image-link').on('click', function(e) {

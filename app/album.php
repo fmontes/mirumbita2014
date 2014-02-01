@@ -41,7 +41,7 @@
                             <?php } ?>
                         </div>
 
-                        <section class="item-listing album-listing">
+                        <section class="item-listing album-listing js-album-listing">
                             <ul>
                                 <?php
                                     while (next_album()):

@@ -1562,7 +1562,7 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.5641%;
     margin: 0;
-    padding: 10px 0;
+    padding: 0 0 10px;
   }
   /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
   .album-listing li:nth-child(2n) {
@@ -1635,10 +1635,9 @@ ul.pagelist .current {
 /* line 72, ../scss/styles/pages/_album.scss */
 .album-listing .album-thumb img {
   display: block;
-  width: 80px;
 }
 
-/* line 80, ../scss/styles/pages/_album.scss */
+/* line 79, ../scss/styles/pages/_album.scss */
 .subalbum .album-intro {
   -webkit-box-shadow: 0 2px 2px 0 #dedede;
   -moz-box-shadow: 0 2px 2px 0 #dedede;
@@ -1646,29 +1645,29 @@ ul.pagelist .current {
   background-color: white;
 }
 @media (min-width: 40em) {
-  /* line 80, ../scss/styles/pages/_album.scss */
+  /* line 79, ../scss/styles/pages/_album.scss */
   .subalbum .album-intro {
     margin: 0;
     padding: 0;
   }
 }
-/* line 89, ../scss/styles/pages/_album.scss */
+/* line 88, ../scss/styles/pages/_album.scss */
 .subalbum .album-social {
   margin-top: 0;
 }
 @media (min-width: 40em) {
-  /* line 89, ../scss/styles/pages/_album.scss */
+  /* line 88, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
     padding: 15px 30px 10px;
   }
 }
 @media (min-width: 40em) {
-  /* line 97, ../scss/styles/pages/_album.scss */
+  /* line 96, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 101, ../scss/styles/pages/_album.scss */
+  /* line 100, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1676,12 +1675,12 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 105, ../scss/styles/pages/_album.scss */
+  /* line 104, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 117, ../scss/styles/pages/_album.scss */
+/* line 116, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   margin-bottom: 0;
 }
@@ -1713,7 +1712,7 @@ ul.pagelist .current {
     float: left;
     margin-right: 2.5641%;
     margin: 0;
-    padding: 10px 0;
+    padding: 0 0 10px;
   }
   /* line 184, ../../../../../../.rvm/gems/ruby-1.9.3-p286/gems/susy-1.0.9/sass/susy/_grid.scss */
   .home-latest-albums li:nth-child(2n) {
