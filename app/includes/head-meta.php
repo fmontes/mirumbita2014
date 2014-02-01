@@ -15,6 +15,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta name="description" content="">
 
+        <link rel="icon" type="image/png" href="<?php echo $_zp_themeroot; ?>/images/favicon.png">
+        <link rel="icon" type="image/gif" href="<?php echo $_zp_themeroot; ?>/images/favicon.gif">
+
         <!-- build:css(app) /css/main.css -->
         <link rel="stylesheet" href="css/main.css" type="text/css" />
         <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.css" type="text/css" />
