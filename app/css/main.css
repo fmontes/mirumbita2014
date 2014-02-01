@@ -1886,6 +1886,11 @@ ul.pagelist .current {
   }
 }
 
+/* line 37, ../scss/styles/pages/_request-service.scss */
+.trap {
+  display: none;
+}
+
 /* line 2, ../scss/styles/pages/_page-servicios.scss */
 .page-servicios .package-container {
   *zoom: 1;

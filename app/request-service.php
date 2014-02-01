@@ -126,6 +126,7 @@
                                 <label for="address"><?php echo gettext_th("Other Address", "mirumbita"); ?></label>
                                 <!-- @TODO: validate this field -->
                                 <textarea name="address" id="address" name="address" cols="30" rows="5" tabindex="9"></textarea>
+                                <input type="text" name="trap" class="trap">
                             </div>
                             <div class="form-group button-group">
                                 <button type="submit" class="btn btn-submit js-btn-submit" tabindex="10"><?php echo gettext_th("Submit", "mirumbita"); ?></button>
