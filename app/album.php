@@ -41,25 +41,29 @@
                             <?php } ?>
                         </div>
 
-                        <section class="item-listing album-listing js-album-listing">
-                            <ul>
-                                <?php
-                                    while (next_album()):
-                                        include "includes/album-item.php";
-                                    endwhile;
-                                ?>
-                            </ul>
-                        </section>
+                        <?php if (getNumAlbums() > 0) { ?>
+                            <section class="item-listing album-listing js-album-listing">
+                                <ul>
+                                    <?php
+                                        while (next_album()):
+                                            include "includes/album-item.php";
+                                        endwhile;
+                                    ?>
+                                </ul>
+                            </section>
+                        <?php } ?>
 
-                        <div class="item-listing image-listing js-image-listing">
-                            <ul>
-                                <?php
-                                    while (next_image()):
-                                        include "includes/image-item.php";
-                                    endwhile;
-                                ?>
-                            </ul>
-                        </div>
+                        <?php if (getNumImages() > 0) { ?>
+                            <div class="item-listing image-listing js-image-listing">
+                                <ul>
+                                    <?php
+                                        while (next_image()):
+                                            include "includes/image-item.php";
+                                        endwhile;
+                                    ?>
+                                </ul>
+                            </div>
+                        <?php } ?>
 
                         <?php printPageListWithNav(); ?>
 

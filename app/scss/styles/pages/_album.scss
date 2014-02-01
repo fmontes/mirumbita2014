@@ -89,6 +89,7 @@
         margin-top: 0;
         @include at-breakpoint($tablet) {
             border: none;
+            margin-bottom: $pv * 3;
             padding: 15px $ph * 3 $pv;
         }
     }

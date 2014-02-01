@@ -1659,15 +1659,16 @@ ul.pagelist .current {
   /* line 88, ../scss/styles/pages/_album.scss */
   .subalbum .album-social {
     border: none;
+    margin-bottom: 30px;
     padding: 15px 30px 10px;
   }
 }
 @media (min-width: 40em) {
-  /* line 96, ../scss/styles/pages/_album.scss */
+  /* line 97, ../scss/styles/pages/_album.scss */
   .subalbum .image-listing {
     padding: 0 30px;
   }
-  /* line 100, ../scss/styles/pages/_album.scss */
+  /* line 101, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing {
     -webkit-transition: opacity 0.5s ease-out;
     -moz-transition: opacity 0.5s ease-out;
@@ -1675,12 +1676,12 @@ ul.pagelist .current {
     transition: opacity 0.5s ease-out;
     opacity: 0;
   }
-  /* line 104, ../scss/styles/pages/_album.scss */
+  /* line 105, ../scss/styles/pages/_album.scss */
   .csstransitions .subalbum .image-listing.ready {
     opacity: 1;
   }
 }
-/* line 116, ../scss/styles/pages/_album.scss */
+/* line 117, ../scss/styles/pages/_album.scss */
 .subalbum .page-title {
   margin-bottom: 0;
 }
@@ -2060,7 +2061,7 @@ ul.pagelist .current {
     line-height: 1.33333em;
     background-color: #cccccc;
     color: #444444;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px 30px;
     text-transform: none;
   }
