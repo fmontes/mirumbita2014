@@ -659,7 +659,7 @@ textarea {
 }
 
 /* line 77, ../scss/layout/_header.scss */
-.logo {
+.logo img {
   display: block;
   margin: auto;
   padding: 13px 0 14px;
@@ -667,10 +667,10 @@ textarea {
 }
 @media (min-width: 40em) {
   /* line 77, ../scss/layout/_header.scss */
-  .logo {
+  .logo img {
     float: left;
     margin: 0;
-    padding: 17px 0 18px;
+    padding: 20px 0;
     width: 200px;
   }
 }

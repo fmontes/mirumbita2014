@@ -1,7 +1,7 @@
 <li>
     <article>
         <a href="<?php echo html_encode(getAlbumLinkURL());?>" title="<?php echo gettext("View album:"); ?> <?php echo getAnnotatedAlbumTitle();?>" class="album-thumb">
-            <img src="<?php echo getCustomAlbumThumb(80,80,80,80); ?>" alt="<?php echo getAnnotatedAlbumTitle();?>">
+            <img src="<?php echo getCustomAlbumThumb(80,80,80,80); ?>" alt="<?php echo getAnnotatedAlbumTitle();?>" width="80" height="80">
         </a>
         <div class="album-info">
             <h3 class="album-title">
