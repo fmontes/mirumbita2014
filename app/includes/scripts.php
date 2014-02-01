@@ -13,6 +13,7 @@
 <script src="bower_components/eventEmitter/EventEmitter.js"></script>
 <script src="bower_components/eventie/eventie.js"></script>
 <script src="bower_components/imagesloaded/imagesloaded.js"></script>
+<script src="bower_components/unveil/jquery.unveil.js"></script>
 <script src="js/vendor/packery.pkgd.min.js"></script>
 <!-- endbuild -->
 

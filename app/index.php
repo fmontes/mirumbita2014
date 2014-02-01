@@ -30,7 +30,7 @@
                                 <li class="js-album-item">
                                     <article>
                                         <a href="<?php echo $album->getAlbumLink() ?>" class="album-thumb">
-                                            <img src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>">
+                                            <img src="<?php echo $_zp_themeroot; ?>/images/loader.gif" data-src="<?php echo $album->getAlbumThumb(); ?>" alt="<?php echo $album->getTitle() ?>" class="lazy">
                                         </a>
                                         <div class="album-info">
                                             <h3 class="album-title">

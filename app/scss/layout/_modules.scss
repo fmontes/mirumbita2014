@@ -24,7 +24,7 @@
 
 .image-listing {
     img {
-        display: block;
+        @include inline-block;
     }
 
     li {
@@ -60,7 +60,7 @@
 
     .album-thumb {
         img {
-            display: block;
+            @include inline-block;
         }
     }
 }

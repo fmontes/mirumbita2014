@@ -161,7 +161,6 @@ $(document).on('ready', function() {
         $('.js-home-latest-albums li:nth-child(3n), .js-album-listing li:nth-child(3n)').css('margin-right', '0');
     }
 
-
     if (!isIE8() && isMobile()) {
         toggleNav();
         toggleSearch();
@@ -169,4 +168,6 @@ $(document).on('ready', function() {
             e.preventDefault();
         });
     }
+
+    $('.lazy').unveil();
 });

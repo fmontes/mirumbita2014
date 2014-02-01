@@ -751,7 +751,12 @@ textarea {
 
 /* line 26, ../scss/layout/_modules.scss */
 .image-listing img {
-  display: block;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
 /* line 30, ../scss/layout/_modules.scss */
 .image-listing li {
@@ -788,7 +793,12 @@ textarea {
 }
 /* line 62, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
-  display: block;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
 }
 
 @media (min-width: 40em) {
@@ -1750,9 +1760,11 @@ ul.pagelist .current {
 }
 /* line 44, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-thumb {
+  background-color: white;
   display: block;
+  text-align: center;
 }
-/* line 48, ../scss/styles/pages/_home.scss */
+/* line 50, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }
