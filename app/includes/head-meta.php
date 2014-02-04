@@ -36,4 +36,38 @@
         <![endif]-->
 
         <?php zp_apply_filter('theme_head'); ?>
+
+        <?php
+            if ($_zp_gallery_page == 'index.php') {
+                $fbtitle = getMainSiteName();
+                $fbimage = $_zp_themeroot . '/images/fb-avatar.jpg';
+                $fblink = getMainSiteURL();
+            }
+            if ($_zp_gallery_page == 'album.php') {
+                $fbtitle = getAlbumTitle();
+                $fbimage = getAlbumThumb();
+                $fblink = getAlbumLinkURL();
+            }
+            if ($_zp_gallery_page == 'image.php') {
+                $fbtitle = getImageTitle();
+                $fbimage = getImageThumb();
+                $fblink = getImageLinkURL();
+            }
+            if ($_zp_gallery_page == 'pages.php') {
+                $fbtitle = getPageTitle();
+                $fbimage = $_zp_themeroot . '/images/fb-avatar.jpg';
+                $fblink = getMainSiteURL();
+            }
+        ?>
+
+        <meta property="og:site_name" content="<?php echo getMainSiteName(); ?>">
+        <meta property="og:title" content="<?php echo $fbtitle; ?>">
+        <meta property="og:description" content="Desde más de 7 años somos el portal de fiestas infantiles más completo de la regiön.">
+        <meta property="og:image" content="<?php echo '//' . getMainSiteURL() .  $fbimage; ?>">
+        <meta property="og:url" content="<?php echo '//' . getMainSiteURL() . $fblink ?>">
+        <meta property="fb:app_id" content="242087732633401">
     </head>
+
+
+
+
