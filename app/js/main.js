@@ -112,7 +112,7 @@ function requestServiceForm() {
         e.preventDefault();
 
         $.ajax({
-            url: 'themes/mirumbita/request-service-send.php',
+            url: '/themes/mirumbita/request-service-send.php',
             type: 'POST',
             dataType: 'html',
             data: form.serialize(),
