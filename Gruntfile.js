@@ -203,6 +203,14 @@ module.exports = function(grunt) {
                     from:   '<script src="<?php echo $_zp_themeroot; ?>/js/jquery.js"></script>',
                     to:     '<script>window.jQuery || document.write(\'<script src="<?php echo $_zp_themeroot; ?>/js/jquery.js"><\\/script>\');</script>'
                 }]
+            },
+            jsbuild: {
+                src: ['<%= project.dist %>/includes/scripts.php', '<%= project.dist %>/includes/head-meta.php'],
+                overwrite: true,
+                replacements: [{
+                    from:   '<script src="//localhost:35729/livereload.js"></script>',
+                    to:     '',
+                }]
             }
         }
     });
@@ -228,7 +236,8 @@ module.exports = function(grunt) {
         'copy:dist',
         'usemin',
         'cssmin',
-        'replace:js'
+        'replace:js',
+        'replace:jsbuild'
     ]);
 
 };

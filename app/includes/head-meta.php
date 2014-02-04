@@ -25,9 +25,6 @@
         <link rel="stylesheet" href="bower_components/pickadate/lib/themes/default.time.css" type="text/css" />
         <!-- endbuild -->
 
-        <?php zp_apply_filter('theme_head'); ?>
-
-        <!-- @TODO find a way to remove this automatically for production -->
         <script src="//localhost:35729/livereload.js"></script>
 
         <script src="<?php echo $_zp_themeroot; ?>/js/vendor/modernizr.custom.js"></script>
@@ -37,4 +34,6 @@
         <script src="bower_components/respond/src/respond.js"></script>
         <!-- endbuild -->
         <![endif]-->
+
+        <?php zp_apply_filter('theme_head'); ?>
     </head>
