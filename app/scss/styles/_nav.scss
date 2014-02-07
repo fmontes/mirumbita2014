@@ -37,7 +37,7 @@
         color: $white;
         display: block;
         line-height: 24px;
-        padding: 8px $ph;
+        padding: 6px $ph;
         text-decoration: none;
 
         @include at-breakpoint($tablet) {
@@ -50,8 +50,7 @@
     }
 
     .corporate-menu {
-        margin-top: $pg * 2;
-        padding-top: $pg * 2;
+        margin-top: $pv * 3;
 
         a {
             background-color: $purple-dark;

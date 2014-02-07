@@ -973,7 +973,7 @@ ul.pagelist .prev .disabledlink:before {
   width: 70%;
   z-index: 1;
 }
-/* line 37, ../scss/layout/_nav.scss */
+/* line 33, ../scss/layout/_nav.scss */
 .csstransitions .off-canvas-nav {
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
@@ -981,12 +981,12 @@ ul.pagelist .prev .disabledlink:before {
   transition: all 0.25s ease-out;
 }
 
-/* line 43, ../scss/layout/_nav.scss */
+/* line 39, ../scss/layout/_nav.scss */
 .side-nav {
   display: none;
 }
 @media (min-width: 40em) {
-  /* line 43, ../scss/layout/_nav.scss */
+  /* line 39, ../scss/layout/_nav.scss */
   .side-nav {
     width: 25%;
     float: left;
@@ -997,7 +997,7 @@ ul.pagelist .prev .disabledlink:before {
   }
 }
 @media (min-width: 70em) {
-  /* line 43, ../scss/layout/_nav.scss */
+  /* line 39, ../scss/layout/_nav.scss */
   .side-nav {
     width: 16.66667%;
     float: left;
@@ -1421,7 +1421,7 @@ ul.pagelist .prev .disabledlink:before {
   color: white;
   display: block;
   line-height: 24px;
-  padding: 8px 10px;
+  padding: 6px 10px;
   text-decoration: none;
 }
 @media (min-width: 40em) {
@@ -1436,10 +1436,9 @@ ul.pagelist .prev .disabledlink:before {
 }
 /* line 52, ../scss/styles/_nav.scss */
 .nav .corporate-menu {
-  margin-top: 20px;
-  padding-top: 20px;
+  margin-top: 30px;
 }
-/* line 56, ../scss/styles/_nav.scss */
+/* line 55, ../scss/styles/_nav.scss */
 .nav .corporate-menu a {
   background-color: #3e0746;
 }

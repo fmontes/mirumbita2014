@@ -30,10 +30,6 @@
     width: 70%;
     z-index: 1;
 
-    .csstransforms3d & {
-        //@include translate3d(-100%, 0, 0, 0);
-    }
-
     .csstransitions & {
         @include transition(all .25s ease-out);
     }
