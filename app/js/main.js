@@ -178,4 +178,12 @@ $(document).on('ready', function() {
             e.preventDefault();
         });
     }
+
+    $('.js-album-social').mouseover(function (){
+        var link = $('.js-facebook-btn').attr('data-href');
+        $(this).prepend('<div class="fb-wrapper js-fb-wrapper"><div class="fb-like" data-href="' + link + '" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div></div>');
+        FB.XFBML.parse($(this).find('.js-fb-wrapper').get(0));
+        $(this).find('.js-facebook-btn').remove();
+        $(this).off();
+    });
 });

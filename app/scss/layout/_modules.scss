@@ -1,24 +1,32 @@
 .album-social {
     border-top: solid 1px $gray-light;
+    height: 44px;
     margin-top: $pv;
-    padding: $pv $ph $pv - 3;
+    padding: $pv $ph;
 
     .album-comments-icons,
-    .fb-like,
+    .fb-wrapper,
     .twitter-share-button {
         @include inline-block(top);
     }
     .album-comments-icons {
         @include icon-24('icn-fbcomments');
         color: $fb-blue;
-        margin: 0 $ph;
+        height: 24px;
+        margin: 0 6px;
         position: relative;
         text-decoration: none;
-        top: -4px;
+    }
 
-        &:before {
-            top: 2px;
-        }
+    .facebook-btn {
+        @include icon-24('icn-fb');
+        padding-left: 0;
+        height: 24px;
+        width: 24px;
+    }
+
+    .fb-like > span {
+        top: -4px;
     }
 }
 

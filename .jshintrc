@@ -21,6 +21,7 @@
     "jquery": true,
     "globals": {
         "happy": true,
-        "Modernizr": true
+        "Modernizr": true,
+        "FB": true
     }
 }

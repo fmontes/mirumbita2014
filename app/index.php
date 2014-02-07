@@ -47,8 +47,8 @@
                                                 <time datetime="<?php echo date_format($date, 'Y-m-d'); ?>" class="album-date"><?php echo date_format($date, 'd/m/y'); ?></time>
                                                 <span class="album-image-number"><?php echo $album->getNumImages() . " " . gettext("photos") ?></span>
                                             </div>
-                                            <div class="album-social">
-                                                <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                            <div class="album-social js-album-social">
+                                                <span data-href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>" class="facebook-btn js-facebook-btn"></span>
                                                 <a href="<?php echo $album->getAlbumLink() ?>#album-comments" class="album-comments-icons">
                                                     <fb:comments-count href="http://<?php echo getMainSiteURL() ?><?php echo $album->getAlbumLink() ?>"></fb:comments-count>
                                                 </a>

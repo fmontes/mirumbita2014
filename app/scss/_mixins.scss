@@ -83,7 +83,7 @@
 // }
 
 @mixin icon($name) {
-    @include inline-block;
+    @include inline-block(top);
     position: relative;
 
     &:before {
