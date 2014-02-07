@@ -819,26 +819,43 @@ textarea {
 /* line 51, ../scss/layout/_modules.scss */
 .image-listing .image-link {
   display: block;
-  min-height: 100px;
+  min-height: 200px;
+  position: relative;
   text-align: center;
 }
+/* line 57, ../scss/layout/_modules.scss */
+.image-listing .image-link img {
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  position: absolute;
+  top: 50%;
+}
+/* line 64, ../scss/layout/_modules.scss */
+.image-listing .image-link.loaded {
+  min-height: 0;
+}
+/* line 67, ../scss/layout/_modules.scss */
+.image-listing .image-link.loaded img {
+  margin: 0;
+  position: static;
+}
 
-/* line 60, ../scss/layout/_modules.scss */
+/* line 77, ../scss/layout/_modules.scss */
 .item-listing ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 66, ../scss/layout/_modules.scss */
+/* line 83, ../scss/layout/_modules.scss */
 .item-listing .album-info {
   padding-top: 1px;
 }
-/* line 70, ../scss/layout/_modules.scss */
+/* line 87, ../scss/layout/_modules.scss */
 .item-listing .album-meta,
 .item-listing .album-title {
   padding: 0 10px;
 }
-/* line 76, ../scss/layout/_modules.scss */
+/* line 93, ../scss/layout/_modules.scss */
 .item-listing .album-thumb img {
   display: -moz-inline-stack;
   display: inline-block;
@@ -849,25 +866,25 @@ textarea {
 }
 
 @media (min-width: 40em) {
-  /* line 83, ../scss/layout/_modules.scss */
+  /* line 100, ../scss/layout/_modules.scss */
   div.pagelist {
     text-align: center;
   }
 }
 
-/* line 89, ../scss/layout/_modules.scss */
+/* line 106, ../scss/layout/_modules.scss */
 ul.pagelist {
   list-style: none;
   margin: 20px 0 0;
   padding: 0;
   text-align: center;
 }
-/* line 95, ../scss/layout/_modules.scss */
+/* line 112, ../scss/layout/_modules.scss */
 ul.pagelist.disabled_nav {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
-/* line 99, ../scss/layout/_modules.scss */
+/* line 116, ../scss/layout/_modules.scss */
 ul.pagelist li {
   display: -moz-inline-stack;
   display: inline-block;
@@ -876,44 +893,44 @@ ul.pagelist li {
   zoom: 1;
   *display: inline;
 }
-/* line 105, ../scss/layout/_modules.scss */
+/* line 122, ../scss/layout/_modules.scss */
 ul.pagelist .next .disabledlink,
 ul.pagelist .prev .disabledlink {
   display: block;
 }
 @media (min-width: 40em) {
-  /* line 103, ../scss/layout/_modules.scss */
+  /* line 120, ../scss/layout/_modules.scss */
   ul.pagelist .next,
   ul.pagelist .prev {
     display: inline-block;
   }
 }
-/* line 114, ../scss/layout/_modules.scss */
+/* line 131, ../scss/layout/_modules.scss */
 ul.pagelist .next {
   float: right;
 }
 @media (min-width: 40em) {
-  /* line 114, ../scss/layout/_modules.scss */
+  /* line 131, ../scss/layout/_modules.scss */
   ul.pagelist .next {
     float: none;
   }
 }
-/* line 121, ../scss/layout/_modules.scss */
+/* line 138, ../scss/layout/_modules.scss */
 ul.pagelist .next a:before,
 ul.pagelist .next .disabledlink:before {
   content: '»';
 }
-/* line 127, ../scss/layout/_modules.scss */
+/* line 144, ../scss/layout/_modules.scss */
 ul.pagelist .prev {
   float: left;
 }
 @media (min-width: 40em) {
-  /* line 127, ../scss/layout/_modules.scss */
+  /* line 144, ../scss/layout/_modules.scss */
   ul.pagelist .prev {
     float: none;
   }
 }
-/* line 135, ../scss/layout/_modules.scss */
+/* line 152, ../scss/layout/_modules.scss */
 ul.pagelist .prev a:before,
 ul.pagelist .prev .disabledlink:before {
   content: '«';
@@ -1809,10 +1826,27 @@ ul.pagelist .current {
 .home-latest-albums .album-thumb {
   background-color: white;
   display: block;
-  min-height: 100px;
+  min-height: 300px;
+  position: relative;
   text-align: center;
 }
 /* line 51, ../scss/styles/pages/_home.scss */
+.home-latest-albums .album-thumb img {
+  left: 50%;
+  margin: -18px 0 0 -18px;
+  position: absolute;
+  top: 50%;
+}
+/* line 58, ../scss/styles/pages/_home.scss */
+.home-latest-albums .album-thumb.loaded {
+  min-height: 0;
+}
+/* line 61, ../scss/styles/pages/_home.scss */
+.home-latest-albums .album-thumb.loaded img {
+  margin: 0;
+  position: static;
+}
+/* line 68, ../scss/styles/pages/_home.scss */
 .home-latest-albums .album-social {
   *zoom: 1;
 }

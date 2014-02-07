@@ -154,10 +154,18 @@ function packery(imagelist, imageItem) {
 }
 
 function lazyLoad() {
-    $('.lazy').unveil();
+    $('.lazy').unveil(400, function(){
+        $(this).load(function() {
+            $(this).parent().addClass('loaded');
+        });
+    });
 
     if(isMobile) {
-        $('.js-image-listing-item img').unveil();
+        $('.js-image-listing-item img').unveil(400, function(){
+            $(this).load(function() {
+                $(this).parent().addClass('loaded');
+            });
+        });
     }
 }
 

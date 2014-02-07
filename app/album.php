@@ -31,7 +31,9 @@
 
                             <?php if ($isSubalbum) { ?>
                                 <div class="album-social">
-                                    <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                    <div class="fb-wrapper">
+                                        <div class="fb-like" data-href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                                    </div>
                                     <a href="#album-comments" class="album-comments-icons">
                                         <fb:comments-count href="http://<?php echo getMainSiteURL() ?><?php echo getAlbumLinkURL() ?>"></fb:comments-count>
                                     </a>

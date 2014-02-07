@@ -50,8 +50,25 @@
 
     .image-link {
         display: block;
-        min-height: 100px;
+        min-height: 200px;
+        position: relative;
         text-align: center;
+
+        img {
+            left: 50%;
+            margin: -18px 0 0 -18px;
+            position: absolute;
+            top: 50%;
+        }
+
+        &.loaded {
+            min-height: 0;
+
+            img {
+                margin: 0;
+                position: static;
+            }
+        }
     }
 }
 
